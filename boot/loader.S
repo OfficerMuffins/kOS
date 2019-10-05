@@ -28,8 +28,6 @@ loader:                         ; the loader label (defined as entry point in li
   call read_sectors
   jmp 0x7e00
 
-  jmp halt
-
 err_no_lba:
   mov si, ErrReadDiskMsg
   call simple_print
@@ -56,6 +54,13 @@ dw 0xaa55
 ; first 512 bytes end
 
 stage2:
+
+  mov ax, 2 ; load in bootmain
+  mov ebx, 0x8000
+  mov cx, 14
+  call read_sectors
+  jc err_reading_disk
+
   mov si, DoneMsg
   call simple_print
 
@@ -78,8 +83,6 @@ bits 32
   mov ax, 0x20 ; mark segments as data
   mov ds, ax
   mov es, ax
-
-  xor ax, ax ; zero segment not ready for use
   mov fs, ax
   mov gs, ax
   mov ss, ax
@@ -89,4 +92,9 @@ bits 32
 bits 16
 %include 'a20.inc'
 %include 'gdt.inc'
+
+err_reading_disk:
+  mov si, ErrReadDiskMsg
+  call simple_print
+
 times 1024-($-$$) db 0
