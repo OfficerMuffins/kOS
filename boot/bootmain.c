@@ -1,3 +1,4 @@
+#include "../driver/cga.h"
 // specify the entry
 asm (
     ".section .entry\n\t"
@@ -14,5 +15,7 @@ void
 bootmain()
 {
   init_cga();
-  for (;;);
+  print("Booting kOS\n");
+  for (;;) {
+  }
 }
