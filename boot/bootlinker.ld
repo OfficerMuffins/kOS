@@ -14,6 +14,6 @@ SECTIONS
     .data : {
         KEEP(*(.data*))
         KEEP(*(.bss*))
-        . += 7168 - (. - bootsect_begin);
+        . += 2048 - (. - bootsect_begin); /*only 4 setors are loaded after stage2*/
     }
 }

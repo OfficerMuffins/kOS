@@ -3,7 +3,7 @@
 
 static volatile uint16_t *cga_mem = (volatile uint16_t*) 0xb8000;
 static uint8_t text_palette = 0x07;
-static uint8_t cursor_offset = 0;
+static uint8_t cursor_offset = 1;
 static uint8_t curr_row = 0;
 
 void init_cga()
@@ -41,6 +41,13 @@ print(char* c, uint8_t fg, uint8_t bg)
     putc(c, fg, bg, cursor_offset++, curr_row);
     draw_cursor(curr_row, cursor_offset);
   }
+}
+
+void println(char* c, uint8_t fg, uint8_t bg)
+{
+  print(c, fg, bg);
+  curr_row++;
+  cursor_offset = 0;
 }
 
 void

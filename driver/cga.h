@@ -12,5 +12,6 @@ void clear_screen();
 void draw_cursor();
 void enable_cursor(uint8_t cursor_start, uint8_t cursor_end);
 void print(char* c, uint8_t fg, uint8_t bg);
+void println(char* c, uint8_t fg, uint8_t bg);
 
 #endif

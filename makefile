@@ -1,9 +1,9 @@
 # NASM flags
-NASM_FLAGS = -fbin
+NASM_FLAGS =
 
 # GCC flags and stuff
 CC = gcc
-CC_FLAGS = -m32 -c -nostdlib -nostdinc -fno-builtin -fno-pie -fno-stack-protector -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -O0
+CC_FLAGS = -m32 -c -nostdlib -nostdinc -fno-builtin -fno-pie -fno-stack-protector -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -Og
 
 # QEMU configs and stuff
 CPUS = 1
@@ -15,18 +15,20 @@ LD = ld
 LDFLAGS = \
 	-m elf_i386 \
 	-nostdlib \
-	-Tboot/bootlinker.ld\
-	-Ttext 0x8000\
-	-e bootmain
 
 OBJDUMP = objdump
 OBJCOPY = objcopy
 
 # object files
 BOOT_OBJ = bootmain.o
-DRIVER_OBJ = cga.o
+DRIVER_OBJ = cga.o\
+	     disk.o
+KERNEL_OBJ = main.o\
+	     entry.o
 BOOT_OBJ := $(addprefix boot/,$(BOOT_OBJ))
 DRIVER_OBJ := $(addprefix driver/,$(DRIVER_OBJ))
+KERNEL_OBJ := $(addprefix kernel/,$(KERNEL_OBJ))
+
 
 C_FILES := $(shell find ./ -type f -name '*.c')
 OBJ := $(C_FILES:.c=.o)
@@ -34,24 +36,36 @@ OBJ := $(C_FILES:.c=.o)
 all:
 	make kOS.img
 
-boot/bootblock: $(OBJ)
-	cd boot && nasm $(NASM_FLAGS) loader.S -o loader.bin
-	$(LD) $(LDFLAGS) $(BOOT_OBJ) $(DRIVER_OBJ) -o boot/bootmain.bin
+boot/bootblock:
+	cd boot && nasm $(NASM_FLAGS) -fbin loader.S -o loader.bin
+	$(LD) $(LDFLAGS) -Tboot/bootlinker.ld -Ttext 0x8000 -e bootmain $(BOOT_OBJ) $(DRIVER_OBJ) -o boot/bootmain.bin
 	cat boot/loader.bin boot/bootmain.bin > $@
 	$(OBJDUMP) -S boot/bootmain.o > boot/bootmain.asm
 
-kOS.img: boot/bootblock
+kernel/kernel.elf:
+	cd kernel && nasm $(NASM_FLAGS) -f elf entry.S -o entry.o
+	$(LD) $(LDFLAGS) -Tkernel/kernel.ld $(DRIVER_OBJ) $(KERNEL_OBJ) -o kernel/kernel.elf
+	$(OBJDUMP) -S kernel/kernel.elf > kernel/kernel.asm
+
+
+kOS.img: $(OBJ) boot/bootblock kernel/kernel.elf
 	dd if=/dev/zero of=kOS.img count=10000
-	dd if=$< of=kOS.img conv=notrunc
+	dd if=boot/bootblock of=kOS.img conv=notrunc
+	dd if=kernel/kernel.elf of=kOS.img seek=6 conv=notrunc
+
+compile: $(OBJ)
 
 qemu-win:
 	$(QEMU) $(QEMU_FLAGS)
+
+ctags:
+	ctags -R
 
 %.o: %.c
 	$(CC) $(CC_FLAGS) -c $< -o $@
 
 
-.PHONY: clean all
+.PHONY: clean all ctags
 clean:
 	find . -name "*.o" -type f -delete
 	find . -name "*.elf" -type f -delete

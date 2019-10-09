@@ -54,10 +54,9 @@ dw 0xaa55
 ; first 512 bytes end
 
 stage2:
-
   mov ax, 2 ; load in bootmain
   mov ebx, 0x8000
-  mov cx, 14
+  mov cx, 4
   call read_sectors
   jc err_reading_disk
 
@@ -73,7 +72,7 @@ stage2:
   cli         ; no longer running under BIOS, prevent BIOS interrputs
 
   mov eax, cr0
-  or eax, 00000001b ; turn on paging
+  or eax, 00000001b ; turn on protection
   mov cr0, eax
 
   jmp 0x18:.pmode ; complete the jump to protected mode
