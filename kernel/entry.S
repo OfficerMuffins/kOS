@@ -3,18 +3,15 @@
 %define CR0_PG          0x80000000      ; Paging
 %define CR0_WP          0x00010000      ; Write Protect
 %define CR4_PSE         0x00000010      ; Page size extension
+%define CR0_PE          0x00000001      ; Protection Enable
 %define KSTACKSIZE      4096
 
+;org 0x1000
 section .text
-extern main
-extern entrypgdir
 
 ; default entry
 global _start
-_start:
-  ret
-  call V2P_WO(entry)
-  ;ret ; allow boot main to error
+_start equ V2P_WO(entry)
 
 global entry
 entry:
@@ -27,20 +24,29 @@ entry:
   mov eax, V2P_WO(entrypgdir)
   mov cr3, eax
 
+  ; FIXME:
   ; turn on paging
   mov eax, cr0
-  or  eax, (CR0_PG|CR0_WP)
+  or  eax, (CR0_PG|CR0_WP|CR0_PE)
   mov cr0, eax
+  jmp spin
 
+  mov eax, relocated
+  jmp relocated ; jmp to high address
+
+relocated:
+  xor ebp, ebp ; zero the ebp
   mov esp, (kernel_stack + KSTACKSIZE)
+  call main
 
-  xor ebp,ebp ; zero the ebp
-
-  mov eax, main
-  jmp eax
+spin:
+  jmp spin
 
 section .bss
   align KSTACKSIZE                        ; align at page
   global kernel_stack
   kernel_stack:                           ; label points to beginning of memory
     resb KSTACKSIZE                  ; reserve stack for the kernel
+
+extern main
+extern entrypgdir

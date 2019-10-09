@@ -2,7 +2,7 @@
 asm (
     ".section .entry\n\t"
     "call bootmain\n\t"
-    "jmp 0x7c00\n\t" // retry booting TODO: maybe delete?
+    "jmp 0x7c00\n\t" // retry booting TODO: delete?
 );
 
 #include "../driver/cga.h"
@@ -49,8 +49,9 @@ bootmain()
 
   // Call the entry point from the ELF header.
   // Does not return!
-  entry = (void(*)(void))(elf->entry);
+  entry = (void(*)())(elf->entry);
   println("Entering kernel", 0x07, 0x00);
+
   entry();
 
   error(-2);
@@ -66,5 +67,5 @@ error(int errcode)
     println("Error: entry returned", 0x07, 0x00);
 
   // block
-  for(;;);
+  while(1);
 }

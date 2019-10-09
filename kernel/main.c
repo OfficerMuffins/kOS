@@ -9,8 +9,8 @@ pte_t entrypgtable[NPTENTRIES];
 int
 main()
 {
-  println("Starting kernel", 0x07, 0x00);
-  for(;;);
+  //println("Starting kernel", 0x07, 0x00);
+  while(1);
 }
 
 // The entry.S page directory maps the first 4MB of physical memory

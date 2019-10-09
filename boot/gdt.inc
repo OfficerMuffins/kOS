@@ -47,7 +47,7 @@ db 10011010b		; Access
 db 11001111b		; Granularity
 db 0x00				; Base (high 8 bits)
 
-.PmodeData:  ; offset 0x18
+.PmodeData:  ; offset 0x20
 
 dw 0xFFFF			; Limit
 dw 0x0000			; Base (low 16 bits)
