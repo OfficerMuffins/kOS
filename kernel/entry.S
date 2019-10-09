@@ -1,46 +1,46 @@
 %define KERNBASE   0x80000000
 %define V2P_WO(va) (va - KERNBASE)
+%define CR0_PG          0x80000000      ; Paging
+%define CR0_WP          0x00010000      ; Write Protect
+%define CR4_PSE         0x00000010      ; Page size extension
+%define KSTACKSIZE      4096
 
+section .text
 extern main
+extern entrypgdir
 
-# default entry
+; default entry
 global _start
 _start:
+  ret
   call V2P_WO(entry)
-  ret ; allow boot main to error
+  ;ret ; allow boot main to error
 
 global entry
 entry:
+  ; Turn on superpage
   mov eax, cr4
   or  eax, CR4_PSE
   mov cr4, eax
 
-  mov eax, V2P(entrypgdir)
+  ; Set page directory
+  mov eax, V2P_WO(entrypgdir)
   mov cr3, eax
 
-  ; Turn on page size extension for 4Mbyte pages
-  movl    %cr4, %eax
-  orl     $(CR4_PSE), %eax
-  movl    %eax, %cr4
+  ; turn on paging
+  mov eax, cr0
+  or  eax, (CR0_PG|CR0_WP)
+  mov cr0, eax
 
-  ; Set page directory
-  movl    $(V2P_WO(entrypgdir)), %eax
-  movl    %eax, %cr3
+  mov esp, (kernel_stack + KSTACKSIZE)
 
-  ; Turn on paging.
-  movl    %cr0, %eax
-  orl     $(CR0_PG|CR0_WP), %eax
-  movl    %eax, %cr0
+  xor ebp,ebp ; zero the ebp
 
-  ; Set up the stack pointer.
-  movl $(stack + KSTACKSIZE), %esp
+  mov eax, main
+  jmp eax
 
-  ; Jump to main(), and switch to executing at
-  ; high addresses. The indirect call is needed because
-  ; the assembler produces a PC-relative instruction
-  ; for a direct jump.
-  mov $main, %eax
-  jmp *%eax
-
-.comm stack, KSTACKSIZE
-  call main
+section .bss
+  align KSTACKSIZE                        ; align at page
+  global kernel_stack
+  kernel_stack:                           ; label points to beginning of memory
+    resb KSTACKSIZE                  ; reserve stack for the kernel

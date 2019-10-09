@@ -59,7 +59,7 @@ qemu-win:
 	$(QEMU) $(QEMU_FLAGS)
 
 ctags:
-	ctags -R
+	ctags -R %cd% # for windows
 
 %.o: %.c
 	$(CC) $(CC_FLAGS) -c $< -o $@
@@ -67,6 +67,5 @@ ctags:
 
 .PHONY: clean all ctags
 clean:
-	find . -name "*.o" -type f -delete
-	find . -name "*.elf" -type f -delete
-	rm boot/bootasm.bin boot/bootblock kOS.img
+	find . \( -name "*.elf" -o -name "*.o" -o -name "*.bin" \) -type f -delete
+	rm boot/bootasm.bin boot/bootblock kOS.img boot/bootmain

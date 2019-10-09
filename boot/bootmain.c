@@ -36,6 +36,7 @@ bootmain()
     error(-1);
 
   println("Loading the program segments", 0x07, 0x00);
+
   // Load each program segment (ignores ph flags).
   ph = (struct proghdr*)((uchar*)elf + elf->phoff);
   eph = ph + elf->phnum;

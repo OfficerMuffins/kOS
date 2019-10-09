@@ -56,4 +56,8 @@ dkms.conf
 ./*/*.swp
 ./*/*.swo
 *.img
-tags
+./tags
+./*/*.bin
+./boot/bootmain
+./*/*.asm
+./*/*.elf

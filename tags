@@ -1,0 +1,413 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALT	C:\VBox\shared\kOS\driver\keyboard.h	11;"	d
+ASSERT	C:\VBox\shared\kOS\driver\lapic.h	16;"	d
+BCAST	C:\VBox\shared\kOS\driver\lapic.h	19;"	d
+BUSY	C:\VBox\shared\kOS\driver\lapic.h	20;"	d
+C	C:\VBox\shared\kOS\driver\keyboard.h	32;"	d
+CAPSLOCK	C:\VBox\shared\kOS\driver\keyboard.h	13;"	d
+COLOR	C:\VBox\shared\kOS\driver\cga.h	7;"	d
+CR0_AM	C:\VBox\shared\kOS\lib\mmu.h	35;"	d
+CR0_CD	C:\VBox\shared\kOS\lib\mmu.h	37;"	d
+CR0_EM	C:\VBox\shared\kOS\lib\mmu.h	30;"	d
+CR0_ET	C:\VBox\shared\kOS\lib\mmu.h	32;"	d
+CR0_MP	C:\VBox\shared\kOS\lib\mmu.h	29;"	d
+CR0_NE	C:\VBox\shared\kOS\lib\mmu.h	33;"	d
+CR0_NW	C:\VBox\shared\kOS\lib\mmu.h	36;"	d
+CR0_PE	C:\VBox\shared\kOS\lib\mmu.h	28;"	d
+CR0_PG	C:\VBox\shared\kOS\lib\mmu.h	38;"	d
+CR0_TS	C:\VBox\shared\kOS\lib\mmu.h	31;"	d
+CR0_WP	C:\VBox\shared\kOS\lib\mmu.h	34;"	d
+CR4_PSE	C:\VBox\shared\kOS\lib\mmu.h	40;"	d
+CTL	C:\VBox\shared\kOS\driver\keyboard.h	10;"	d
+DEASSERT	C:\VBox\shared\kOS\driver\lapic.h	17;"	d
+DELIVS	C:\VBox\shared\kOS\driver\lapic.h	15;"	d
+DEVSPACE	C:\VBox\shared\kOS\lib\memlayout.h	7;"	d
+DPL_USER	C:\VBox\shared\kOS\lib\mmu.h	83;"	d
+Disassembly	C:\VBox\shared\kOS\boot\bootmain.asm	/^Disassembly of section .text:$/;"	l
+Disassembly	C:\VBox\shared\kOS\kernel\kernel.asm	/^Disassembly of section .text:$/;"	l
+DoneMsg	C:\VBox\shared\kOS\boot\loader.S	/^DoneMsg db '  DONE', 0x0D, 0x0A, 0x00$/;"	d
+E0ESC	C:\VBox\shared\kOS\driver\keyboard.h	17;"	d
+ELF_MAGIC	C:\VBox\shared\kOS\lib\elf.h	5;"	d
+ELF_PROG_FLAG_EXEC	C:\VBox\shared\kOS\lib\elf.h	42;"	d
+ELF_PROG_FLAG_READ	C:\VBox\shared\kOS\lib\elf.h	44;"	d
+ELF_PROG_FLAG_WRITE	C:\VBox\shared\kOS\lib\elf.h	43;"	d
+ELF_PROG_LOAD	C:\VBox\shared\kOS\lib\elf.h	39;"	d
+ENABLE	C:\VBox\shared\kOS\driver\lapic.h	10;"	d
+EOI	C:\VBox\shared\kOS\driver\lapic.h	8;"	d
+ERROR	C:\VBox\shared\kOS\driver\lapic.h	29;"	d
+ESR	C:\VBox\shared\kOS\driver\lapic.h	11;"	d
+EXTMEM	C:\VBox\shared\kOS\lib\memlayout.h	5;"	d
+EnablingA20	C:\VBox\shared\kOS\boot\loader.S	/^EnablingA20 db 0x0D, 0x0A, 'Enabling the A20...', 0x00$/;"	d
+ErrEnableA20Msg	C:\VBox\shared\kOS\boot\loader.S	/^ErrEnableA20Msg db 0x0D, 0x0A, 'Error enabling a20, system halted.', 0x00$/;"	d
+ErrReadDiskMsg	C:\VBox\shared\kOS\boot\loader.S	/^ErrReadDiskMsg db 0x0D, 0x0A, 'Error reading disk, system halted.', 0x00$/;"	d
+FIXED	C:\VBox\shared\kOS\driver\lapic.h	21;"	d
+FL_AC	C:\VBox\shared\kOS\lib\mmu.h	22;"	d
+FL_AF	C:\VBox\shared\kOS\lib\mmu.h	7;"	d
+FL_CF	C:\VBox\shared\kOS\lib\mmu.h	5;"	d
+FL_DF	C:\VBox\shared\kOS\lib\mmu.h	12;"	d
+FL_ID	C:\VBox\shared\kOS\lib\mmu.h	25;"	d
+FL_IF	C:\VBox\shared\kOS\lib\mmu.h	11;"	d
+FL_IOPL_0	C:\VBox\shared\kOS\lib\mmu.h	15;"	d
+FL_IOPL_1	C:\VBox\shared\kOS\lib\mmu.h	16;"	d
+FL_IOPL_2	C:\VBox\shared\kOS\lib\mmu.h	17;"	d
+FL_IOPL_3	C:\VBox\shared\kOS\lib\mmu.h	18;"	d
+FL_IOPL_MASK	C:\VBox\shared\kOS\lib\mmu.h	14;"	d
+FL_NT	C:\VBox\shared\kOS\lib\mmu.h	19;"	d
+FL_OF	C:\VBox\shared\kOS\lib\mmu.h	13;"	d
+FL_PF	C:\VBox\shared\kOS\lib\mmu.h	6;"	d
+FL_RF	C:\VBox\shared\kOS\lib\mmu.h	20;"	d
+FL_SF	C:\VBox\shared\kOS\lib\mmu.h	9;"	d
+FL_TF	C:\VBox\shared\kOS\lib\mmu.h	10;"	d
+FL_VIF	C:\VBox\shared\kOS\lib\mmu.h	23;"	d
+FL_VIP	C:\VBox\shared\kOS\lib\mmu.h	24;"	d
+FL_VM	C:\VBox\shared\kOS\lib\mmu.h	21;"	d
+FL_ZF	C:\VBox\shared\kOS\lib\mmu.h	8;"	d
+FinishedLoading	C:\VBox\shared\kOS\boot\loader.S	/^FinishedLoading db 0x0D,0x0A, 'Finished stage 1', 0x0D, 0x0A, 0x0A, 0x00$/;"	d
+GB	C:\VBox\shared\kOS\lib\types.h	61;"	d
+ICRHI	C:\VBox\shared\kOS\driver\lapic.h	22;"	d
+ICRLO	C:\VBox\shared\kOS\driver\lapic.h	12;"	d
+ID	C:\VBox\shared\kOS\driver\lapic.h	5;"	d
+INIT	C:\VBox\shared\kOS\driver\lapic.h	13;"	d
+KB	C:\VBox\shared\kOS\lib\types.h	59;"	d
+KBDATAP	C:\VBox\shared\kOS\driver\keyboard.h	5;"	d
+KBSTATP	C:\VBox\shared\kOS\driver\keyboard.h	3;"	d
+KBS_DIB	C:\VBox\shared\kOS\driver\keyboard.h	4;"	d
+KERNBASE	C:\VBox\shared\kOS\lib\memlayout.h	10;"	d
+KERNLINK	C:\VBox\shared\kOS\lib\memlayout.h	11;"	d
+KEY_DEL	C:\VBox\shared\kOS\driver\keyboard.h	29;"	d
+KEY_DN	C:\VBox\shared\kOS\driver\keyboard.h	23;"	d
+KEY_END	C:\VBox\shared\kOS\driver\keyboard.h	21;"	d
+KEY_HOME	C:\VBox\shared\kOS\driver\keyboard.h	20;"	d
+KEY_INS	C:\VBox\shared\kOS\driver\keyboard.h	28;"	d
+KEY_LF	C:\VBox\shared\kOS\driver\keyboard.h	24;"	d
+KEY_PGDN	C:\VBox\shared\kOS\driver\keyboard.h	27;"	d
+KEY_PGUP	C:\VBox\shared\kOS\driver\keyboard.h	26;"	d
+KEY_RT	C:\VBox\shared\kOS\driver\keyboard.h	25;"	d
+KEY_UP	C:\VBox\shared\kOS\driver\keyboard.h	22;"	d
+LEVEL	C:\VBox\shared\kOS\driver\lapic.h	18;"	d
+LINT0	C:\VBox\shared\kOS\driver\lapic.h	27;"	d
+LINT1	C:\VBox\shared\kOS\driver\lapic.h	28;"	d
+LoadingMsg	C:\VBox\shared\kOS\boot\loader.S	/^LoadingMsg db 0x0D, 0x0A, '<kOS>', 0x0D, 0x0A, 0x0A, 0x00$/;"	d
+MASKED	C:\VBox\shared\kOS\driver\lapic.h	30;"	d
+MAX	C:\VBox\shared\kOS\lib\types.h	34;"	d
+MB	C:\VBox\shared\kOS\lib\types.h	60;"	d
+MIN	C:\VBox\shared\kOS\lib\types.h	28;"	d
+NO	C:\VBox\shared\kOS\driver\keyboard.h	7;"	d
+NPDENTRIES	C:\VBox\shared\kOS\lib\mmu.h	125;"	d
+NPTENTRIES	C:\VBox\shared\kOS\lib\mmu.h	126;"	d
+NSEGS	C:\VBox\shared\kOS\lib\mmu.h	51;"	d
+NUMLOCK	C:\VBox\shared\kOS\driver\keyboard.h	14;"	d
+P2V	C:\VBox\shared\kOS\lib\memlayout.h	14;"	d
+P2V_WO	C:\VBox\shared\kOS\lib\memlayout.h	17;"	d
+PCINT	C:\VBox\shared\kOS\driver\lapic.h	26;"	d
+PDX	C:\VBox\shared\kOS\lib\mmu.h	116;"	d
+PDXSHIFT	C:\VBox\shared\kOS\lib\mmu.h	131;"	d
+PERIODIC	C:\VBox\shared\kOS\driver\lapic.h	25;"	d
+PGADDR	C:\VBox\shared\kOS\lib\mmu.h	122;"	d
+PGROUNDDOWN	C:\VBox\shared\kOS\lib\mmu.h	134;"	d
+PGROUNDUP	C:\VBox\shared\kOS\lib\mmu.h	133;"	d
+PGSHIFT	C:\VBox\shared\kOS\lib\mmu.h	129;"	d
+PGSIZE	C:\VBox\shared\kOS\lib\mmu.h	127;"	d
+PHYSTOP	C:\VBox\shared\kOS\lib\memlayout.h	6;"	d
+POS	C:\VBox\shared\kOS\driver\cga.h	6;"	d
+PTE_A	C:\VBox\shared\kOS\lib\mmu.h	142;"	d
+PTE_ADDR	C:\VBox\shared\kOS\lib\mmu.h	148;"	d
+PTE_D	C:\VBox\shared\kOS\lib\mmu.h	143;"	d
+PTE_FLAGS	C:\VBox\shared\kOS\lib\mmu.h	149;"	d
+PTE_MBZ	C:\VBox\shared\kOS\lib\mmu.h	145;"	d
+PTE_P	C:\VBox\shared\kOS\lib\mmu.h	137;"	d
+PTE_PCD	C:\VBox\shared\kOS\lib\mmu.h	141;"	d
+PTE_PS	C:\VBox\shared\kOS\lib\mmu.h	144;"	d
+PTE_PWT	C:\VBox\shared\kOS\lib\mmu.h	140;"	d
+PTE_U	C:\VBox\shared\kOS\lib\mmu.h	139;"	d
+PTE_W	C:\VBox\shared\kOS\lib\mmu.h	138;"	d
+PTX	C:\VBox\shared\kOS\lib\mmu.h	119;"	d
+PTXSHIFT	C:\VBox\shared\kOS\lib\mmu.h	130;"	d
+ROUNDDOWN	C:\VBox\shared\kOS\lib\types.h	43;"	d
+ROUNDUP	C:\VBox\shared\kOS\lib\types.h	49;"	d
+SCROLLLOCK	C:\VBox\shared\kOS\driver\keyboard.h	15;"	d
+SECTION	C:\VBox\shared\kOS\kernel\entry.S	/^SECTION .text$/;"	l
+SECTSIZE	C:\VBox\shared\kOS\driver\disk.h	6;"	d
+SEG	C:\VBox\shared\kOS\lib\mmu.h	73;"	d
+SEG16	C:\VBox\shared\kOS\lib\mmu.h	77;"	d
+SEG_KCODE	C:\VBox\shared\kOS\lib\mmu.h	43;"	d
+SEG_KCPU	C:\VBox\shared\kOS\lib\mmu.h	45;"	d
+SEG_KDATA	C:\VBox\shared\kOS\lib\mmu.h	44;"	d
+SEG_TSS	C:\VBox\shared\kOS\lib\mmu.h	48;"	d
+SEG_UCODE	C:\VBox\shared\kOS\lib\mmu.h	46;"	d
+SEG_UDATA	C:\VBox\shared\kOS\lib\mmu.h	47;"	d
+SETGATE	C:\VBox\shared\kOS\lib\mmu.h	216;"	d
+SHIFT	C:\VBox\shared\kOS\driver\keyboard.h	9;"	d
+STARTUP	C:\VBox\shared\kOS\driver\lapic.h	14;"	d
+STA_A	C:\VBox\shared\kOS\lib\mmu.h	91;"	d
+STA_C	C:\VBox\shared\kOS\lib\mmu.h	88;"	d
+STA_E	C:\VBox\shared\kOS\lib\mmu.h	87;"	d
+STA_R	C:\VBox\shared\kOS\lib\mmu.h	90;"	d
+STA_W	C:\VBox\shared\kOS\lib\mmu.h	89;"	d
+STA_X	C:\VBox\shared\kOS\lib\mmu.h	86;"	d
+STS_CG16	C:\VBox\shared\kOS\lib\mmu.h	97;"	d
+STS_CG32	C:\VBox\shared\kOS\lib\mmu.h	103;"	d
+STS_IG16	C:\VBox\shared\kOS\lib\mmu.h	99;"	d
+STS_IG32	C:\VBox\shared\kOS\lib\mmu.h	104;"	d
+STS_LDT	C:\VBox\shared\kOS\lib\mmu.h	95;"	d
+STS_T16A	C:\VBox\shared\kOS\lib\mmu.h	94;"	d
+STS_T16B	C:\VBox\shared\kOS\lib\mmu.h	96;"	d
+STS_T32A	C:\VBox\shared\kOS\lib\mmu.h	101;"	d
+STS_T32B	C:\VBox\shared\kOS\lib\mmu.h	102;"	d
+STS_TG	C:\VBox\shared\kOS\lib\mmu.h	98;"	d
+STS_TG16	C:\VBox\shared\kOS\lib\mmu.h	100;"	d
+STS_TG32	C:\VBox\shared\kOS\lib\mmu.h	105;"	d
+SVR	C:\VBox\shared\kOS\driver\lapic.h	9;"	d
+Stage2Msg	C:\VBox\shared\kOS\boot\loader.S	/^Stage2Msg db 'stage1: Loading stage2...', 0x00$/;"	d
+TCCR	C:\VBox\shared\kOS\driver\lapic.h	32;"	d
+TDCR	C:\VBox\shared\kOS\driver\lapic.h	33;"	d
+TICR	C:\VBox\shared\kOS\driver\lapic.h	31;"	d
+TIMER	C:\VBox\shared\kOS\driver\lapic.h	23;"	d
+TPR	C:\VBox\shared\kOS\driver\lapic.h	7;"	d
+V2P	C:\VBox\shared\kOS\lib\memlayout.h	13;"	d
+V2P_WO	C:\VBox\shared\kOS\lib\memlayout.h	16;"	d
+VER	C:\VBox\shared\kOS\driver\lapic.h	6;"	d
+X1	C:\VBox\shared\kOS\driver\lapic.h	24;"	d
+__CUSTOM_TYPES__	C:\VBox\shared\kOS\lib\custom_types.h	2;"	d
+__DISK__	C:\VBox\shared\kOS\driver\disk.h	4;"	d
+__ELF_HEADER__	C:\VBox\shared\kOS\lib\elf.h	2;"	d
+__LAPIC__	C:\VBox\shared\kOS\driver\lapic.h	2;"	d
+__MEMLAYOUT__	C:\VBox\shared\kOS\lib\memlayout.h	2;"	d
+__TYPES__	C:\VBox\shared\kOS\lib\types.h	2;"	d
+__VGA_TEXTMODE_H__	C:\VBox\shared\kOS\driver\cga.h	4;"	d
+__X86__	C:\VBox\shared\kOS\lib\x86.h	2;"	d
+_start	C:\VBox\shared\kOS\kernel\entry.S	/^_start:$/;"	l
+a2	C:\VBox\shared\kOS\boot\bootmain.asm	/^  a2:	0f b7 35 2c 00 01 00 	movzwl 0x1002c,%esi$/;"	l
+a9	C:\VBox\shared\kOS\boot\bootmain.asm	/^  a9:	c1 e6 05             	shl    $0x5,%esi$/;"	l
+ac	C:\VBox\shared\kOS\boot\bootmain.asm	/^  ac:	01 de                	add    %ebx,%esi$/;"	l
+ae	C:\VBox\shared\kOS\boot\bootmain.asm	/^  ae:	83 c4 10             	add    $0x10,%esp$/;"	l
+align	C:\VBox\shared\kOS\lib\elf.h	/^  uint align;$/;"	m	struct:proghdr
+args	C:\VBox\shared\kOS\lib\mmu.h	/^  uint args : 5;        \/\/ # args, 0 for interrupt\/trap gates$/;"	m	struct:gatedesc
+avl	C:\VBox\shared\kOS\lib\mmu.h	/^  uint avl : 1;        \/\/ Unused (available for software use)$/;"	m	struct:segdesc
+b	C:\VBox\shared\kOS\boot\bootmain.asm	/^   b:	74 07                	je     14 <error+0x14>$/;"	l
+b1	C:\VBox\shared\kOS\boot\bootmain.asm	/^  b1:	eb 03                	jmp    b6 <bootmain+0x76>$/;"	l
+b3	C:\VBox\shared\kOS\boot\bootmain.asm	/^  b3:	83 c3 20             	add    $0x20,%ebx$/;"	l
+b6	C:\VBox\shared\kOS\boot\bootmain.asm	/^  b6:	39 f3                	cmp    %esi,%ebx$/;"	l
+b8	C:\VBox\shared\kOS\boot\bootmain.asm	/^  b8:	73 2d                	jae    e7 <bootmain+0xa7>$/;"	l
+ba	C:\VBox\shared\kOS\boot\bootmain.asm	/^  ba:	8b 7b 0c             	mov    0xc(%ebx),%edi$/;"	l
+base_15_0	C:\VBox\shared\kOS\lib\mmu.h	/^  uint base_15_0 : 16; \/\/ Low bits of segment base address$/;"	m	struct:segdesc
+base_23_16	C:\VBox\shared\kOS\lib\mmu.h	/^  uint base_23_16 : 8; \/\/ Middle bits of segment base address$/;"	m	struct:segdesc
+base_31_24	C:\VBox\shared\kOS\lib\mmu.h	/^  uint base_31_24 : 8; \/\/ High bits of segment base address$/;"	m	struct:segdesc
+bd	C:\VBox\shared\kOS\boot\bootmain.asm	/^  bd:	83 ec 04             	sub    $0x4,%esp$/;"	l
+bits	C:\VBox\shared\kOS\boot\loader.S	/^bits 16$/;"	l
+bits	C:\VBox\shared\kOS\boot\loader.S	/^bits 32$/;"	l
+bootmain	C:\VBox\shared\kOS\boot\bootmain.c	/^bootmain()$/;"	f
+breakpoint	C:\VBox\shared\kOS\lib\x86.h	/^breakpoint(void)$/;"	f
+c0	C:\VBox\shared\kOS\boot\bootmain.asm	/^  c0:	ff 73 04             	pushl  0x4(%ebx)$/;"	l
+c3	C:\VBox\shared\kOS\boot\bootmain.asm	/^  c3:	ff 73 10             	pushl  0x10(%ebx)$/;"	l
+c6	C:\VBox\shared\kOS\boot\bootmain.asm	/^  c6:	57                   	push   %edi$/;"	l
+c7	C:\VBox\shared\kOS\boot\bootmain.asm	/^  c7:	e8 fc ff ff ff       	call   c8 <bootmain+0x88>$/;"	l
+cc	C:\VBox\shared\kOS\boot\bootmain.asm	/^  cc:	8b 4b 14             	mov    0x14(%ebx),%ecx$/;"	l
+cf	C:\VBox\shared\kOS\boot\bootmain.asm	/^  cf:	8b 43 10             	mov    0x10(%ebx),%eax$/;"	l
+cga_mem	C:\VBox\shared\kOS\driver\cga.c	/^static volatile uint16_t *cga_mem = (volatile uint16_t*) 0xb8000;$/;"	v	file:
+clear_screen	C:\VBox\shared\kOS\driver\cga.c	/^clear_screen()$/;"	f
+cli	C:\VBox\shared\kOS\lib\x86.h	/^cli(void)$/;"	f
+cr3	C:\VBox\shared\kOS\lib\mmu.h	/^  void *cr3;         \/\/ Page directory base$/;"	m	struct:taskstate
+cs	C:\VBox\shared\kOS\lib\mmu.h	/^  uint cs : 16;         \/\/ code segment selector$/;"	m	struct:gatedesc
+cs	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort cs;$/;"	m	struct:taskstate
+cs	C:\VBox\shared\kOS\lib\x86.h	/^  ushort cs;$/;"	m	struct:trapframe
+ctlmap	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar ctlmap[256] =$/;"	v
+curr_row	C:\VBox\shared\kOS\driver\cga.c	/^static uint8_t curr_row = 0;$/;"	v	file:
+cursor_offset	C:\VBox\shared\kOS\driver\cga.c	/^static uint8_t cursor_offset = 1;$/;"	v	file:
+d	C:\VBox\shared\kOS\boot\bootmain.asm	/^   d:	83 fb fe             	cmp    $0xfffffffe,%ebx$/;"	l
+d2	C:\VBox\shared\kOS\boot\bootmain.asm	/^  d2:	83 c4 10             	add    $0x10,%esp$/;"	l
+d5	C:\VBox\shared\kOS\boot\bootmain.asm	/^  d5:	39 c1                	cmp    %eax,%ecx$/;"	l
+d7	C:\VBox\shared\kOS\boot\bootmain.asm	/^  d7:	76 da                	jbe    b3 <bootmain+0x73>$/;"	l
+d9	C:\VBox\shared\kOS\boot\bootmain.asm	/^  d9:	29 c1                	sub    %eax,%ecx$/;"	l
+db	C:\VBox\shared\kOS\boot\bootmain.asm	/^  db:	01 c7                	add    %eax,%edi$/;"	l
+db	C:\VBox\shared\kOS\lib\mmu.h	/^  uint db : 1;         \/\/ 0 = 16-bit segment, 1 = 32-bit segment$/;"	m	struct:segdesc
+dd	C:\VBox\shared\kOS\boot\bootmain.asm	/^  dd:	b8 00 00 00 00       	mov    $0x0,%eax$/;"	l
+dpl	C:\VBox\shared\kOS\lib\mmu.h	/^  uint dpl : 2;         \/\/ descriptor(meaning new) privilege level$/;"	m	struct:gatedesc
+dpl	C:\VBox\shared\kOS\lib\mmu.h	/^  uint dpl : 2;        \/\/ Descriptor Privilege Level$/;"	m	struct:segdesc
+draw_cursor	C:\VBox\shared\kOS\driver\cga.c	/^draw_cursor()$/;"	f
+ds	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ds;$/;"	m	struct:taskstate
+ds	C:\VBox\shared\kOS\lib\x86.h	/^  ushort ds;$/;"	m	struct:trapframe
+dw	C:\VBox\shared\kOS\boot\loader.S	/^dw 0xaa55$/;"	l
+e2	C:\VBox\shared\kOS\boot\bootmain.asm	/^  e2:	fc                   	cld    $/;"	l
+e3	C:\VBox\shared\kOS\boot\bootmain.asm	/^  e3:	f3 aa                	rep stos %al,%es:(%edi)$/;"	l
+e5	C:\VBox\shared\kOS\boot\bootmain.asm	/^  e5:	eb cc                	jmp    b3 <bootmain+0x73>$/;"	l
+e7	C:\VBox\shared\kOS\boot\bootmain.asm	/^  e7:	8b 1d 18 00 01 00    	mov    0x10018,%ebx$/;"	l
+eax	C:\VBox\shared\kOS\lib\mmu.h	/^  uint eax;          \/\/ More saved state (registers)$/;"	m	struct:taskstate
+eax	C:\VBox\shared\kOS\lib\x86.h	/^  uint eax;$/;"	m	struct:trapframe
+ebp	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *ebp;$/;"	m	struct:taskstate
+ebp	C:\VBox\shared\kOS\lib\x86.h	/^  uint ebp;$/;"	m	struct:trapframe
+ebx	C:\VBox\shared\kOS\lib\mmu.h	/^  uint ebx;$/;"	m	struct:taskstate
+ebx	C:\VBox\shared\kOS\lib\x86.h	/^  uint ebx;$/;"	m	struct:trapframe
+ecx	C:\VBox\shared\kOS\lib\mmu.h	/^  uint ecx;$/;"	m	struct:taskstate
+ecx	C:\VBox\shared\kOS\lib\x86.h	/^  uint ecx;$/;"	m	struct:trapframe
+ed	C:\VBox\shared\kOS\boot\bootmain.asm	/^  ed:	83 ec 04             	sub    $0x4,%esp$/;"	l
+edi	C:\VBox\shared\kOS\lib\mmu.h	/^  uint edi;$/;"	m	struct:taskstate
+edi	C:\VBox\shared\kOS\lib\x86.h	/^  uint edi;$/;"	m	struct:trapframe
+edx	C:\VBox\shared\kOS\lib\mmu.h	/^  uint edx;$/;"	m	struct:taskstate
+edx	C:\VBox\shared\kOS\lib\x86.h	/^  uint edx;$/;"	m	struct:trapframe
+eflags	C:\VBox\shared\kOS\lib\mmu.h	/^  uint eflags;$/;"	m	struct:taskstate
+eflags	C:\VBox\shared\kOS\lib\x86.h	/^  uint eflags;$/;"	m	struct:trapframe
+ehsize	C:\VBox\shared\kOS\lib\elf.h	/^  ushort ehsize;$/;"	m	struct:elfhdr
+eip	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *eip;         \/\/ Saved state from last task switch$/;"	m	struct:taskstate
+eip	C:\VBox\shared\kOS\lib\x86.h	/^  uint eip;$/;"	m	struct:trapframe
+elf	C:\VBox\shared\kOS\lib\elf.h	/^  uchar elf[12];$/;"	m	struct:elfhdr
+elfhdr	C:\VBox\shared\kOS\lib\elf.h	/^struct elfhdr {$/;"	s
+enable_cursor	C:\VBox\shared\kOS\driver\cga.c	/^enable_cursor(uint8_t cursor_start, uint8_t cursor_end)$/;"	f
+entry	C:\VBox\shared\kOS\kernel\entry.S	/^entry:$/;"	l
+entry	C:\VBox\shared\kOS\lib\elf.h	/^  uint entry;$/;"	m	struct:elfhdr
+entry_pgdir	C:\VBox\shared\kOS\kernel\main.c	/^pde_t entry_pgdir[NPDENTRIES] =$/;"	v
+entry_pgtable	C:\VBox\shared\kOS\kernel\main.c	/^pte_t entry_pgtable[NPTENTRIES];$/;"	v
+err	C:\VBox\shared\kOS\lib\x86.h	/^  uint err;$/;"	m	struct:trapframe
+err_no_lba	C:\VBox\shared\kOS\boot\loader.S	/^err_no_lba:$/;"	l
+err_reading_disk	C:\VBox\shared\kOS\boot\loader.S	/^err_reading_disk:$/;"	l
+error	C:\VBox\shared\kOS\boot\bootmain.c	/^error(int errcode)$/;"	f
+es	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort es;         \/\/ Even more saved state (segment selectors)$/;"	m	struct:taskstate
+es	C:\VBox\shared\kOS\lib\x86.h	/^  ushort es;$/;"	m	struct:trapframe
+esi	C:\VBox\shared\kOS\lib\mmu.h	/^  uint esi;$/;"	m	struct:taskstate
+esi	C:\VBox\shared\kOS\lib\x86.h	/^  uint esi;$/;"	m	struct:trapframe
+esp	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *esp;$/;"	m	struct:taskstate
+esp	C:\VBox\shared\kOS\lib\x86.h	/^  uint esp;$/;"	m	struct:trapframe
+esp0	C:\VBox\shared\kOS\lib\mmu.h	/^  uint esp0;         \/\/ Stack pointers and segment selectors$/;"	m	struct:taskstate
+esp1	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *esp1;$/;"	m	struct:taskstate
+esp2	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *esp2;$/;"	m	struct:taskstate
+extern	C:\VBox\shared\kOS\kernel\entry.S	/^extern main$/;"	l
+f0	C:\VBox\shared\kOS\boot\bootmain.asm	/^  f0:	6a 00                	push   $0x0$/;"	l
+f2	C:\VBox\shared\kOS\boot\bootmain.asm	/^  f2:	6a 07                	push   $0x7$/;"	l
+f4	C:\VBox\shared\kOS\boot\bootmain.asm	/^  f4:	68 48 00 00 00       	push   $0x48$/;"	l
+f9	C:\VBox\shared\kOS\boot\bootmain.asm	/^  f9:	e8 fc ff ff ff       	call   fa <bootmain+0xba>$/;"	l
+fe	C:\VBox\shared\kOS\boot\bootmain.asm	/^  fe:	ff d3                	call   *%ebx$/;"	l
+filesz	C:\VBox\shared\kOS\lib\elf.h	/^  uint filesz;$/;"	m	struct:proghdr
+flags	C:\VBox\shared\kOS\lib\elf.h	/^  uint flags;$/;"	m	struct:elfhdr
+flags	C:\VBox\shared\kOS\lib\elf.h	/^  uint flags;$/;"	m	struct:proghdr
+fs	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort fs;$/;"	m	struct:taskstate
+fs	C:\VBox\shared\kOS\lib\x86.h	/^  ushort fs;$/;"	m	struct:trapframe
+g	C:\VBox\shared\kOS\lib\mmu.h	/^  uint g : 1;          \/\/ Granularity: limit scaled by 4K when set$/;"	m	struct:segdesc
+gatedesc	C:\VBox\shared\kOS\lib\mmu.h	/^struct gatedesc {$/;"	s
+global	C:\VBox\shared\kOS\kernel\entry.S	/^global _start$/;"	l
+global	C:\VBox\shared\kOS\kernel\entry.S	/^global entry$/;"	l
+gs	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort gs;$/;"	m	struct:taskstate
+gs	C:\VBox\shared\kOS\lib\x86.h	/^  ushort gs;$/;"	m	struct:trapframe
+halt	C:\VBox\shared\kOS\boot\loader.S	/^halt:$/;"	l
+inb	C:\VBox\shared\kOS\lib\x86.h	/^inb(ushort port)$/;"	f
+init_cga	C:\VBox\shared\kOS\driver\cga.c	/^void init_cga()$/;"	f
+insl	C:\VBox\shared\kOS\lib\x86.h	/^insl(int port, void *addr, int cnt)$/;"	f
+int16_t	C:\VBox\shared\kOS\lib\types.h	/^typedef short int16_t;$/;"	t
+int32_t	C:\VBox\shared\kOS\lib\types.h	/^typedef int int32_t;$/;"	t
+int64_t	C:\VBox\shared\kOS\lib\types.h	/^typedef long long int64_t;$/;"	t
+int8_t	C:\VBox\shared\kOS\lib\types.h	/^typedef __signed char int8_t;$/;"	t
+invlpg	C:\VBox\shared\kOS\lib\x86.h	/^invlpg(void *addr)$/;"	f
+iomb	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort iomb;       \/\/ I\/O map base address$/;"	m	struct:taskstate
+kernel_stack	C:\VBox\shared\kOS\kernel\entry.S	/^  kernel_stack:                           ; label points to beginning of memory$/;"	l
+lcr3	C:\VBox\shared\kOS\lib\x86.h	/^lcr3(uint val)$/;"	f
+ldt	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ldt;$/;"	m	struct:taskstate
+lgdt	C:\VBox\shared\kOS\lib\x86.h	/^lgdt(struct segdesc *p, int size)$/;"	f
+lidt	C:\VBox\shared\kOS\lib\x86.h	/^lidt(struct gatedesc *p, int size)$/;"	f
+lim_15_0	C:\VBox\shared\kOS\lib\mmu.h	/^  uint lim_15_0 : 16;  \/\/ Low bits of segment limit$/;"	m	struct:segdesc
+lim_19_16	C:\VBox\shared\kOS\lib\mmu.h	/^  uint lim_19_16 : 4;  \/\/ High bits of segment limit$/;"	m	struct:segdesc
+link	C:\VBox\shared\kOS\lib\mmu.h	/^  uint link;         \/\/ Old ts selector$/;"	m	struct:taskstate
+loader	C:\VBox\shared\kOS\boot\loader.S	/^loader:                         ; the loader label (defined as entry point in linker script)$/;"	l
+loadgs	C:\VBox\shared\kOS\lib\x86.h	/^loadgs(ushort v)$/;"	f
+ltr	C:\VBox\shared\kOS\lib\x86.h	/^ltr(ushort sel)$/;"	f
+machine	C:\VBox\shared\kOS\lib\elf.h	/^  ushort machine;$/;"	m	struct:elfhdr
+magic	C:\VBox\shared\kOS\lib\elf.h	/^  uint magic;  \/\/ must equal ELF_MAGIC$/;"	m	struct:elfhdr
+main	C:\VBox\shared\kOS\kernel\main.c	/^main()$/;"	f
+memsz	C:\VBox\shared\kOS\lib\elf.h	/^  uint memsz;$/;"	m	struct:proghdr
+normalmap	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar normalmap[256] =$/;"	v
+oesp	C:\VBox\shared\kOS\lib\x86.h	/^  uint oesp;      \/\/ useless & ignored$/;"	m	struct:trapframe
+off	C:\VBox\shared\kOS\lib\elf.h	/^  uint off;$/;"	m	struct:proghdr
+off_15_0	C:\VBox\shared\kOS\lib\mmu.h	/^  uint off_15_0 : 16;   \/\/ low 16 bits of offset in segment$/;"	m	struct:gatedesc
+off_31_16	C:\VBox\shared\kOS\lib\mmu.h	/^  uint off_31_16 : 16;  \/\/ high bits of offset in segment$/;"	m	struct:gatedesc
+off_t	C:\VBox\shared\kOS\lib\types.h	/^typedef int32_t off_t;$/;"	t
+offsetof	C:\VBox\shared\kOS\lib\types.h	56;"	d
+org	C:\VBox\shared\kOS\boot\loader.S	/^org 0x7c00$/;"	l
+outb	C:\VBox\shared\kOS\lib\x86.h	/^outb(ushort port, uchar data)$/;"	f
+outsl	C:\VBox\shared\kOS\lib\x86.h	/^outsl(int port, const void *addr, int cnt)$/;"	f
+outw	C:\VBox\shared\kOS\lib\x86.h	/^outw(ushort port, ushort data)$/;"	f
+p	C:\VBox\shared\kOS\lib\mmu.h	/^  uint p : 1;           \/\/ Present$/;"	m	struct:gatedesc
+p	C:\VBox\shared\kOS\lib\mmu.h	/^  uint p : 1;          \/\/ Present$/;"	m	struct:segdesc
+padding1	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding1;$/;"	m	struct:taskstate
+padding1	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding1;$/;"	m	struct:trapframe
+padding10	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding10;$/;"	m	struct:taskstate
+padding2	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding2;$/;"	m	struct:taskstate
+padding2	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding2;$/;"	m	struct:trapframe
+padding3	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding3;$/;"	m	struct:taskstate
+padding3	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding3;$/;"	m	struct:trapframe
+padding4	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding4;$/;"	m	struct:taskstate
+padding4	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding4;$/;"	m	struct:trapframe
+padding5	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding5;$/;"	m	struct:taskstate
+padding5	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding5;$/;"	m	struct:trapframe
+padding6	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding6;$/;"	m	struct:taskstate
+padding6	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding6;$/;"	m	struct:trapframe
+padding7	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding7;$/;"	m	struct:taskstate
+padding8	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding8;$/;"	m	struct:taskstate
+padding9	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding9;$/;"	m	struct:taskstate
+paddr	C:\VBox\shared\kOS\lib\elf.h	/^  uint paddr;$/;"	m	struct:proghdr
+pde_t	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef uint pde_t;$/;"	t
+phentsize	C:\VBox\shared\kOS\lib\elf.h	/^  ushort phentsize;$/;"	m	struct:elfhdr
+phnum	C:\VBox\shared\kOS\lib\elf.h	/^  ushort phnum;$/;"	m	struct:elfhdr
+phoff	C:\VBox\shared\kOS\lib\elf.h	/^  uint phoff;$/;"	m	struct:elfhdr
+ppn_t	C:\VBox\shared\kOS\lib\types.h	/^typedef uint32_t ppn_t;$/;"	t
+print	C:\VBox\shared\kOS\driver\cga.c	/^print(char* c, uint8_t fg, uint8_t bg)$/;"	f
+println	C:\VBox\shared\kOS\driver\cga.c	/^void println(char* c, uint8_t fg, uint8_t bg)$/;"	f
+proghdr	C:\VBox\shared\kOS\lib\elf.h	/^struct proghdr {$/;"	s
+pte_t	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef uint pte_t;$/;"	t
+putc	C:\VBox\shared\kOS\driver\cga.c	/^putc(char* c, uint8_t fg, uint8_t bg, int x, int y)$/;"	f
+rcr2	C:\VBox\shared\kOS\lib\x86.h	/^rcr2(void)$/;"	f
+read_ebp	C:\VBox\shared\kOS\lib\x86.h	/^read_ebp(void)$/;"	f
+read_eflags	C:\VBox\shared\kOS\lib\x86.h	/^read_eflags(void)$/;"	f
+read_esp	C:\VBox\shared\kOS\lib\x86.h	/^read_esp(void)$/;"	f
+readeflags	C:\VBox\shared\kOS\lib\x86.h	/^readeflags(void)$/;"	f
+readsect	C:\VBox\shared\kOS\driver\disk.c	/^readsect(void *dst, uint offset)$/;"	f
+readseg	C:\VBox\shared\kOS\driver\disk.c	/^readseg(uchar* pa, uint count, uint offset)$/;"	f
+rsv1	C:\VBox\shared\kOS\lib\mmu.h	/^  uint rsv1 : 1;       \/\/ Reserved$/;"	m	struct:segdesc
+rsv1	C:\VBox\shared\kOS\lib\mmu.h	/^  uint rsv1 : 3;        \/\/ reserved(should be zero I guess)$/;"	m	struct:gatedesc
+s	C:\VBox\shared\kOS\lib\mmu.h	/^  uint s : 1;           \/\/ must be 0 (system)$/;"	m	struct:gatedesc
+s	C:\VBox\shared\kOS\lib\mmu.h	/^  uint s : 1;          \/\/ 0 = system, 1 = application$/;"	m	struct:segdesc
+section	C:\VBox\shared\kOS\kernel\entry.S	/^section .bss$/;"	l
+segdesc	C:\VBox\shared\kOS\lib\mmu.h	/^struct segdesc {$/;"	s
+shentsize	C:\VBox\shared\kOS\lib\elf.h	/^  ushort shentsize;$/;"	m	struct:elfhdr
+shiftcode	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar shiftcode[256] =$/;"	v
+shiftmap	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar shiftmap[256] =$/;"	v
+shnum	C:\VBox\shared\kOS\lib\elf.h	/^  ushort shnum;$/;"	m	struct:elfhdr
+shoff	C:\VBox\shared\kOS\lib\elf.h	/^  uint shoff;$/;"	m	struct:elfhdr
+shstrndx	C:\VBox\shared\kOS\lib\elf.h	/^  ushort shstrndx;$/;"	m	struct:elfhdr
+size_t	C:\VBox\shared\kOS\lib\types.h	/^typedef uint32_t size_t;$/;"	t
+ss	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ss;$/;"	m	struct:taskstate
+ss	C:\VBox\shared\kOS\lib\x86.h	/^  ushort ss;$/;"	m	struct:trapframe
+ss0	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ss0;        \/\/   after an increase in privilege level$/;"	m	struct:taskstate
+ss1	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ss1;$/;"	m	struct:taskstate
+ss2	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ss2;$/;"	m	struct:taskstate
+ssize_t	C:\VBox\shared\kOS\lib\types.h	/^typedef int32_t ssize_t;$/;"	t
+stage2	C:\VBox\shared\kOS\boot\loader.S	/^stage2:$/;"	l
+sti	C:\VBox\shared\kOS\lib\x86.h	/^sti(void)$/;"	f
+stosb	C:\VBox\shared\kOS\lib\x86.h	/^stosb(void *addr, int data, int cnt)$/;"	f
+stosl	C:\VBox\shared\kOS\lib\x86.h	/^stosl(void *addr, int data, int cnt)$/;"	f
+t	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort t;          \/\/ Trap on task switch$/;"	m	struct:taskstate
+taskstate	C:\VBox\shared\kOS\lib\mmu.h	/^struct taskstate {$/;"	s
+text_palette	C:\VBox\shared\kOS\driver\cga.c	/^static uint8_t text_palette = 0x07;$/;"	v	file:
+times	C:\VBox\shared\kOS\boot\loader.S	/^times 1024-($-$$) db 0$/;"	l
+times	C:\VBox\shared\kOS\boot\loader.S	/^times 510-($-$$) db 0$/;"	l
+togglecode	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar togglecode[256] =$/;"	v
+trapframe	C:\VBox\shared\kOS\lib\x86.h	/^struct trapframe {$/;"	s
+trapno	C:\VBox\shared\kOS\lib\x86.h	/^  uint trapno;$/;"	m	struct:trapframe
+type	C:\VBox\shared\kOS\lib\elf.h	/^  uint type;$/;"	m	struct:proghdr
+type	C:\VBox\shared\kOS\lib\elf.h	/^  ushort type;$/;"	m	struct:elfhdr
+type	C:\VBox\shared\kOS\lib\mmu.h	/^  uint type : 4;        \/\/ type(STS_{TG,IG32,TG32})$/;"	m	struct:gatedesc
+type	C:\VBox\shared\kOS\lib\mmu.h	/^  uint type : 4;       \/\/ Segment type (see STS_ constants)$/;"	m	struct:segdesc
+uchar	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef unsigned char  uchar;$/;"	t
+uint	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef unsigned int   uint;$/;"	t
+uint16_t	C:\VBox\shared\kOS\lib\types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	C:\VBox\shared\kOS\lib\types.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64_t	C:\VBox\shared\kOS\lib\types.h	/^typedef unsigned long long uint64_t;$/;"	t
+uint8_t	C:\VBox\shared\kOS\lib\types.h	/^typedef unsigned char uint8_t;$/;"	t
+ushort	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef unsigned short ushort;$/;"	t
+vaddr	C:\VBox\shared\kOS\lib\elf.h	/^  uint vaddr;$/;"	m	struct:proghdr
+version	C:\VBox\shared\kOS\lib\elf.h	/^  uint version;$/;"	m	struct:elfhdr
+waitdisk	C:\VBox\shared\kOS\driver\disk.c	/^waitdisk(void)$/;"	f
+write_eflags	C:\VBox\shared\kOS\lib\x86.h	/^write_eflags(uint32_t eflags)$/;"	f
+xchg	C:\VBox\shared\kOS\lib\x86.h	/^xchg(volatile uint *addr, uint newval)$/;"	f
