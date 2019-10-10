@@ -9,6 +9,7 @@ asm (
 #include "../driver/disk.h"
 #include "../lib/x86.h"
 #include "../lib/elf.h"
+#include "../lib/ulib.h"
 
 void error(int errcode);
 
@@ -39,7 +40,18 @@ bootmain()
 
   // Load each program segment (ignores ph flags).
   ph = (struct proghdr*)((uchar*)elf + elf->phoff);
-  eph = ph + elf->phnum;
+  eph = ph + elf->phnum; // 0x28003?
+  asm("movl %0,%%eax\n\t"
+      "movl %1,%%ebx\n\t"
+      :
+      : "m" (elf->phnum), "m" (elf->phnum)
+      );
+  while(1);
+  char num_ph[10];
+  itoa((uint) elf->phnum + 1, num_ph, 10);
+  println(num_ph, 0x07, 0x0);
+
+  while(1);
   for(; ph < eph; ph++){
     pa = (uchar*)ph->paddr;
     readseg(pa, ph->filesz, ph->off);

@@ -9,6 +9,7 @@ CC_FLAGS = -m32 -c -nostdlib -nostdinc -fno-builtin -fno-pie -fno-stack-protecto
 CPUS = 1
 QEMU = qemu-system-i386
 QEMU_FLAGS := -drive file=kOS.img,index=0,media=disk,format=raw -smp $(CPUS) -m 512
+QEMU_OPTS = -monitor stdio
 
 # LD stuff
 LD = ld
@@ -25,9 +26,11 @@ DRIVER_OBJ = cga.o\
 	     disk.o
 KERNEL_OBJ = main.o\
 	     entry.o
+LIB_OBJ = ulib.o
 BOOT_OBJ := $(addprefix boot/,$(BOOT_OBJ))
 DRIVER_OBJ := $(addprefix driver/,$(DRIVER_OBJ))
 KERNEL_OBJ := $(addprefix kernel/,$(KERNEL_OBJ))
+LIB_OBJ := $(addprefix lib/,$(LIB_OBJ))
 
 
 C_FILES := $(shell find ./ -type f -name '*.c')
@@ -38,7 +41,7 @@ all:
 
 boot/bootblock:
 	cd boot && nasm $(NASM_FLAGS) -fbin loader.S -o loader.bin
-	$(LD) $(LDFLAGS) -Tboot/bootlinker.ld -Ttext 0x8000 -e bootmain $(BOOT_OBJ) $(DRIVER_OBJ) -o boot/bootmain.bin
+	$(LD) $(LDFLAGS) -Tboot/bootlinker.ld -Ttext 0x8000 -e bootmain $(LIB_OBJ) $(BOOT_OBJ) $(DRIVER_OBJ) -o boot/bootmain.bin
 	cat boot/loader.bin boot/bootmain.bin > $@
 	$(OBJDUMP) -S boot/bootmain.o > boot/bootmain.asm
 

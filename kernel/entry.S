@@ -23,13 +23,13 @@ entry:
   ; Set page directory
   mov eax, V2P_WO(entrypgdir)
   mov cr3, eax
+  jmp spin
 
   ; FIXME:
   ; turn on paging
   mov eax, cr0
   or  eax, (CR0_PG|CR0_WP|CR0_PE)
   mov cr0, eax
-  jmp spin
 
   mov eax, relocated
   jmp relocated ; jmp to high address
@@ -42,9 +42,8 @@ relocated:
 spin:
   jmp spin
 
-section .bss
+section .data
   align KSTACKSIZE                        ; align at page
-  global kernel_stack
   kernel_stack:                           ; label points to beginning of memory
     resb KSTACKSIZE                  ; reserve stack for the kernel
 

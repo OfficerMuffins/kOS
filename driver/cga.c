@@ -39,7 +39,7 @@ print(char* c, uint8_t fg, uint8_t bg)
 {
   while(*c++) {
     putc(c, fg, bg, cursor_offset++, curr_row);
-    draw_cursor(curr_row, cursor_offset);
+//    draw_cursor(curr_row, cursor_offset);
   }
 }
 
