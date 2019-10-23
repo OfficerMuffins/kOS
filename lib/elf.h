@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __ELF_HEADER__
 #define __ELF_HEADER__
 // Format of an ELF executable file

@@ -56,7 +56,8 @@ dw 0xaa55
 stage2:
   mov ax, 2 ; load in bootmain
   mov ebx, 0x8000
-  mov cx, 4
+  mov cx, 12 ; bootmain comprises of sectors 3-10 [400-d00]
+             ; load in few extra sectors to be safe
   call read_sectors
   jc err_reading_disk
 

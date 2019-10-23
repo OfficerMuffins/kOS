@@ -2,8 +2,9 @@
 #include "../lib/x86.h"
 
 static volatile uint16_t *cga_mem = (volatile uint16_t*) 0xb8000;
-static uint8_t text_palette = 0x07;
-static uint8_t cursor_offset = 1;
+static uint8_t text_palette = 0x07; // black
+static uint8_t bg_palette = 0x0; // white
+static uint8_t cursor_offset = 0;
 static uint8_t curr_row = 0;
 
 void init_cga()
@@ -12,10 +13,11 @@ void init_cga()
 }
 
 void
-putc(char* c, uint8_t fg, uint8_t bg, int x, int y)
+putc(char* c, int fg, int bg)
 {
   uint16_t color = (bg << 4) | (fg & 0x0f);
-  cga_mem[POS(x, y)] = *c | (color << 8);
+  cga_mem[POS(cursor_offset, curr_row)] = *c | (color << 8);
+  cursor_offset++;
 }
 
 void
@@ -30,22 +32,21 @@ clear_screen()
 void
 draw_cursor()
 {
-  char *space = " ";
-  putc(space, 0x0f, 0x0f, cursor_offset, curr_row);
+  putc(" ", 0x0f, 0x0f);
 }
 
 void
-print(char* c, uint8_t fg, uint8_t bg)
+print(char* str)
 {
-  while(*c++) {
-    putc(c, fg, bg, cursor_offset++, curr_row);
+  for(int i = 0; str[i]; i++) {
+    putc(&str[i], text_palette, bg_palette);
 //    draw_cursor(curr_row, cursor_offset);
   }
 }
 
-void println(char* c, uint8_t fg, uint8_t bg)
+void println(char* str)
 {
-  print(c, fg, bg);
+  print(str);
   curr_row++;
   cursor_offset = 0;
 }

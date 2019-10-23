@@ -23,7 +23,6 @@ entry:
   ; Set page directory
   mov eax, V2P_WO(entrypgdir)
   mov cr3, eax
-  jmp spin
 
   ; FIXME:
   ; turn on paging
@@ -47,5 +46,5 @@ section .data
   kernel_stack:                           ; label points to beginning of memory
     resb KSTACKSIZE                  ; reserve stack for the kernel
 
-extern main
 extern entrypgdir
+extern main

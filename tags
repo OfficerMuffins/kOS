@@ -1,413 +1,586 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-ALT	C:\VBox\shared\kOS\driver\keyboard.h	11;"	d
-ASSERT	C:\VBox\shared\kOS\driver\lapic.h	16;"	d
-BCAST	C:\VBox\shared\kOS\driver\lapic.h	19;"	d
-BUSY	C:\VBox\shared\kOS\driver\lapic.h	20;"	d
-C	C:\VBox\shared\kOS\driver\keyboard.h	32;"	d
-CAPSLOCK	C:\VBox\shared\kOS\driver\keyboard.h	13;"	d
-COLOR	C:\VBox\shared\kOS\driver\cga.h	7;"	d
-CR0_AM	C:\VBox\shared\kOS\lib\mmu.h	35;"	d
-CR0_CD	C:\VBox\shared\kOS\lib\mmu.h	37;"	d
-CR0_EM	C:\VBox\shared\kOS\lib\mmu.h	30;"	d
-CR0_ET	C:\VBox\shared\kOS\lib\mmu.h	32;"	d
-CR0_MP	C:\VBox\shared\kOS\lib\mmu.h	29;"	d
-CR0_NE	C:\VBox\shared\kOS\lib\mmu.h	33;"	d
-CR0_NW	C:\VBox\shared\kOS\lib\mmu.h	36;"	d
-CR0_PE	C:\VBox\shared\kOS\lib\mmu.h	28;"	d
-CR0_PG	C:\VBox\shared\kOS\lib\mmu.h	38;"	d
-CR0_TS	C:\VBox\shared\kOS\lib\mmu.h	31;"	d
-CR0_WP	C:\VBox\shared\kOS\lib\mmu.h	34;"	d
-CR4_PSE	C:\VBox\shared\kOS\lib\mmu.h	40;"	d
-CTL	C:\VBox\shared\kOS\driver\keyboard.h	10;"	d
-DEASSERT	C:\VBox\shared\kOS\driver\lapic.h	17;"	d
-DELIVS	C:\VBox\shared\kOS\driver\lapic.h	15;"	d
-DEVSPACE	C:\VBox\shared\kOS\lib\memlayout.h	7;"	d
-DPL_USER	C:\VBox\shared\kOS\lib\mmu.h	83;"	d
-Disassembly	C:\VBox\shared\kOS\boot\bootmain.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	C:\VBox\shared\kOS\kernel\kernel.asm	/^Disassembly of section .text:$/;"	l
-DoneMsg	C:\VBox\shared\kOS\boot\loader.S	/^DoneMsg db '  DONE', 0x0D, 0x0A, 0x00$/;"	d
-E0ESC	C:\VBox\shared\kOS\driver\keyboard.h	17;"	d
-ELF_MAGIC	C:\VBox\shared\kOS\lib\elf.h	5;"	d
-ELF_PROG_FLAG_EXEC	C:\VBox\shared\kOS\lib\elf.h	42;"	d
-ELF_PROG_FLAG_READ	C:\VBox\shared\kOS\lib\elf.h	44;"	d
-ELF_PROG_FLAG_WRITE	C:\VBox\shared\kOS\lib\elf.h	43;"	d
-ELF_PROG_LOAD	C:\VBox\shared\kOS\lib\elf.h	39;"	d
-ENABLE	C:\VBox\shared\kOS\driver\lapic.h	10;"	d
-EOI	C:\VBox\shared\kOS\driver\lapic.h	8;"	d
-ERROR	C:\VBox\shared\kOS\driver\lapic.h	29;"	d
-ESR	C:\VBox\shared\kOS\driver\lapic.h	11;"	d
-EXTMEM	C:\VBox\shared\kOS\lib\memlayout.h	5;"	d
-EnablingA20	C:\VBox\shared\kOS\boot\loader.S	/^EnablingA20 db 0x0D, 0x0A, 'Enabling the A20...', 0x00$/;"	d
-ErrEnableA20Msg	C:\VBox\shared\kOS\boot\loader.S	/^ErrEnableA20Msg db 0x0D, 0x0A, 'Error enabling a20, system halted.', 0x00$/;"	d
-ErrReadDiskMsg	C:\VBox\shared\kOS\boot\loader.S	/^ErrReadDiskMsg db 0x0D, 0x0A, 'Error reading disk, system halted.', 0x00$/;"	d
-FIXED	C:\VBox\shared\kOS\driver\lapic.h	21;"	d
-FL_AC	C:\VBox\shared\kOS\lib\mmu.h	22;"	d
-FL_AF	C:\VBox\shared\kOS\lib\mmu.h	7;"	d
-FL_CF	C:\VBox\shared\kOS\lib\mmu.h	5;"	d
-FL_DF	C:\VBox\shared\kOS\lib\mmu.h	12;"	d
-FL_ID	C:\VBox\shared\kOS\lib\mmu.h	25;"	d
-FL_IF	C:\VBox\shared\kOS\lib\mmu.h	11;"	d
-FL_IOPL_0	C:\VBox\shared\kOS\lib\mmu.h	15;"	d
-FL_IOPL_1	C:\VBox\shared\kOS\lib\mmu.h	16;"	d
-FL_IOPL_2	C:\VBox\shared\kOS\lib\mmu.h	17;"	d
-FL_IOPL_3	C:\VBox\shared\kOS\lib\mmu.h	18;"	d
-FL_IOPL_MASK	C:\VBox\shared\kOS\lib\mmu.h	14;"	d
-FL_NT	C:\VBox\shared\kOS\lib\mmu.h	19;"	d
-FL_OF	C:\VBox\shared\kOS\lib\mmu.h	13;"	d
-FL_PF	C:\VBox\shared\kOS\lib\mmu.h	6;"	d
-FL_RF	C:\VBox\shared\kOS\lib\mmu.h	20;"	d
-FL_SF	C:\VBox\shared\kOS\lib\mmu.h	9;"	d
-FL_TF	C:\VBox\shared\kOS\lib\mmu.h	10;"	d
-FL_VIF	C:\VBox\shared\kOS\lib\mmu.h	23;"	d
-FL_VIP	C:\VBox\shared\kOS\lib\mmu.h	24;"	d
-FL_VM	C:\VBox\shared\kOS\lib\mmu.h	21;"	d
-FL_ZF	C:\VBox\shared\kOS\lib\mmu.h	8;"	d
-FinishedLoading	C:\VBox\shared\kOS\boot\loader.S	/^FinishedLoading db 0x0D,0x0A, 'Finished stage 1', 0x0D, 0x0A, 0x0A, 0x00$/;"	d
-GB	C:\VBox\shared\kOS\lib\types.h	61;"	d
-ICRHI	C:\VBox\shared\kOS\driver\lapic.h	22;"	d
-ICRLO	C:\VBox\shared\kOS\driver\lapic.h	12;"	d
-ID	C:\VBox\shared\kOS\driver\lapic.h	5;"	d
-INIT	C:\VBox\shared\kOS\driver\lapic.h	13;"	d
-KB	C:\VBox\shared\kOS\lib\types.h	59;"	d
-KBDATAP	C:\VBox\shared\kOS\driver\keyboard.h	5;"	d
-KBSTATP	C:\VBox\shared\kOS\driver\keyboard.h	3;"	d
-KBS_DIB	C:\VBox\shared\kOS\driver\keyboard.h	4;"	d
-KERNBASE	C:\VBox\shared\kOS\lib\memlayout.h	10;"	d
-KERNLINK	C:\VBox\shared\kOS\lib\memlayout.h	11;"	d
-KEY_DEL	C:\VBox\shared\kOS\driver\keyboard.h	29;"	d
-KEY_DN	C:\VBox\shared\kOS\driver\keyboard.h	23;"	d
-KEY_END	C:\VBox\shared\kOS\driver\keyboard.h	21;"	d
-KEY_HOME	C:\VBox\shared\kOS\driver\keyboard.h	20;"	d
-KEY_INS	C:\VBox\shared\kOS\driver\keyboard.h	28;"	d
-KEY_LF	C:\VBox\shared\kOS\driver\keyboard.h	24;"	d
-KEY_PGDN	C:\VBox\shared\kOS\driver\keyboard.h	27;"	d
-KEY_PGUP	C:\VBox\shared\kOS\driver\keyboard.h	26;"	d
-KEY_RT	C:\VBox\shared\kOS\driver\keyboard.h	25;"	d
-KEY_UP	C:\VBox\shared\kOS\driver\keyboard.h	22;"	d
-LEVEL	C:\VBox\shared\kOS\driver\lapic.h	18;"	d
-LINT0	C:\VBox\shared\kOS\driver\lapic.h	27;"	d
-LINT1	C:\VBox\shared\kOS\driver\lapic.h	28;"	d
-LoadingMsg	C:\VBox\shared\kOS\boot\loader.S	/^LoadingMsg db 0x0D, 0x0A, '<kOS>', 0x0D, 0x0A, 0x0A, 0x00$/;"	d
-MASKED	C:\VBox\shared\kOS\driver\lapic.h	30;"	d
-MAX	C:\VBox\shared\kOS\lib\types.h	34;"	d
-MB	C:\VBox\shared\kOS\lib\types.h	60;"	d
-MIN	C:\VBox\shared\kOS\lib\types.h	28;"	d
-NO	C:\VBox\shared\kOS\driver\keyboard.h	7;"	d
-NPDENTRIES	C:\VBox\shared\kOS\lib\mmu.h	125;"	d
-NPTENTRIES	C:\VBox\shared\kOS\lib\mmu.h	126;"	d
-NSEGS	C:\VBox\shared\kOS\lib\mmu.h	51;"	d
-NUMLOCK	C:\VBox\shared\kOS\driver\keyboard.h	14;"	d
-P2V	C:\VBox\shared\kOS\lib\memlayout.h	14;"	d
-P2V_WO	C:\VBox\shared\kOS\lib\memlayout.h	17;"	d
-PCINT	C:\VBox\shared\kOS\driver\lapic.h	26;"	d
-PDX	C:\VBox\shared\kOS\lib\mmu.h	116;"	d
-PDXSHIFT	C:\VBox\shared\kOS\lib\mmu.h	131;"	d
-PERIODIC	C:\VBox\shared\kOS\driver\lapic.h	25;"	d
-PGADDR	C:\VBox\shared\kOS\lib\mmu.h	122;"	d
-PGROUNDDOWN	C:\VBox\shared\kOS\lib\mmu.h	134;"	d
-PGROUNDUP	C:\VBox\shared\kOS\lib\mmu.h	133;"	d
-PGSHIFT	C:\VBox\shared\kOS\lib\mmu.h	129;"	d
-PGSIZE	C:\VBox\shared\kOS\lib\mmu.h	127;"	d
-PHYSTOP	C:\VBox\shared\kOS\lib\memlayout.h	6;"	d
-POS	C:\VBox\shared\kOS\driver\cga.h	6;"	d
-PTE_A	C:\VBox\shared\kOS\lib\mmu.h	142;"	d
-PTE_ADDR	C:\VBox\shared\kOS\lib\mmu.h	148;"	d
-PTE_D	C:\VBox\shared\kOS\lib\mmu.h	143;"	d
-PTE_FLAGS	C:\VBox\shared\kOS\lib\mmu.h	149;"	d
-PTE_MBZ	C:\VBox\shared\kOS\lib\mmu.h	145;"	d
-PTE_P	C:\VBox\shared\kOS\lib\mmu.h	137;"	d
-PTE_PCD	C:\VBox\shared\kOS\lib\mmu.h	141;"	d
-PTE_PS	C:\VBox\shared\kOS\lib\mmu.h	144;"	d
-PTE_PWT	C:\VBox\shared\kOS\lib\mmu.h	140;"	d
-PTE_U	C:\VBox\shared\kOS\lib\mmu.h	139;"	d
-PTE_W	C:\VBox\shared\kOS\lib\mmu.h	138;"	d
-PTX	C:\VBox\shared\kOS\lib\mmu.h	119;"	d
-PTXSHIFT	C:\VBox\shared\kOS\lib\mmu.h	130;"	d
-ROUNDDOWN	C:\VBox\shared\kOS\lib\types.h	43;"	d
-ROUNDUP	C:\VBox\shared\kOS\lib\types.h	49;"	d
-SCROLLLOCK	C:\VBox\shared\kOS\driver\keyboard.h	15;"	d
-SECTION	C:\VBox\shared\kOS\kernel\entry.S	/^SECTION .text$/;"	l
-SECTSIZE	C:\VBox\shared\kOS\driver\disk.h	6;"	d
-SEG	C:\VBox\shared\kOS\lib\mmu.h	73;"	d
-SEG16	C:\VBox\shared\kOS\lib\mmu.h	77;"	d
-SEG_KCODE	C:\VBox\shared\kOS\lib\mmu.h	43;"	d
-SEG_KCPU	C:\VBox\shared\kOS\lib\mmu.h	45;"	d
-SEG_KDATA	C:\VBox\shared\kOS\lib\mmu.h	44;"	d
-SEG_TSS	C:\VBox\shared\kOS\lib\mmu.h	48;"	d
-SEG_UCODE	C:\VBox\shared\kOS\lib\mmu.h	46;"	d
-SEG_UDATA	C:\VBox\shared\kOS\lib\mmu.h	47;"	d
-SETGATE	C:\VBox\shared\kOS\lib\mmu.h	216;"	d
-SHIFT	C:\VBox\shared\kOS\driver\keyboard.h	9;"	d
-STARTUP	C:\VBox\shared\kOS\driver\lapic.h	14;"	d
-STA_A	C:\VBox\shared\kOS\lib\mmu.h	91;"	d
-STA_C	C:\VBox\shared\kOS\lib\mmu.h	88;"	d
-STA_E	C:\VBox\shared\kOS\lib\mmu.h	87;"	d
-STA_R	C:\VBox\shared\kOS\lib\mmu.h	90;"	d
-STA_W	C:\VBox\shared\kOS\lib\mmu.h	89;"	d
-STA_X	C:\VBox\shared\kOS\lib\mmu.h	86;"	d
-STS_CG16	C:\VBox\shared\kOS\lib\mmu.h	97;"	d
-STS_CG32	C:\VBox\shared\kOS\lib\mmu.h	103;"	d
-STS_IG16	C:\VBox\shared\kOS\lib\mmu.h	99;"	d
-STS_IG32	C:\VBox\shared\kOS\lib\mmu.h	104;"	d
-STS_LDT	C:\VBox\shared\kOS\lib\mmu.h	95;"	d
-STS_T16A	C:\VBox\shared\kOS\lib\mmu.h	94;"	d
-STS_T16B	C:\VBox\shared\kOS\lib\mmu.h	96;"	d
-STS_T32A	C:\VBox\shared\kOS\lib\mmu.h	101;"	d
-STS_T32B	C:\VBox\shared\kOS\lib\mmu.h	102;"	d
-STS_TG	C:\VBox\shared\kOS\lib\mmu.h	98;"	d
-STS_TG16	C:\VBox\shared\kOS\lib\mmu.h	100;"	d
-STS_TG32	C:\VBox\shared\kOS\lib\mmu.h	105;"	d
-SVR	C:\VBox\shared\kOS\driver\lapic.h	9;"	d
-Stage2Msg	C:\VBox\shared\kOS\boot\loader.S	/^Stage2Msg db 'stage1: Loading stage2...', 0x00$/;"	d
-TCCR	C:\VBox\shared\kOS\driver\lapic.h	32;"	d
-TDCR	C:\VBox\shared\kOS\driver\lapic.h	33;"	d
-TICR	C:\VBox\shared\kOS\driver\lapic.h	31;"	d
-TIMER	C:\VBox\shared\kOS\driver\lapic.h	23;"	d
-TPR	C:\VBox\shared\kOS\driver\lapic.h	7;"	d
-V2P	C:\VBox\shared\kOS\lib\memlayout.h	13;"	d
-V2P_WO	C:\VBox\shared\kOS\lib\memlayout.h	16;"	d
-VER	C:\VBox\shared\kOS\driver\lapic.h	6;"	d
-X1	C:\VBox\shared\kOS\driver\lapic.h	24;"	d
-__CUSTOM_TYPES__	C:\VBox\shared\kOS\lib\custom_types.h	2;"	d
-__DISK__	C:\VBox\shared\kOS\driver\disk.h	4;"	d
-__ELF_HEADER__	C:\VBox\shared\kOS\lib\elf.h	2;"	d
-__LAPIC__	C:\VBox\shared\kOS\driver\lapic.h	2;"	d
-__MEMLAYOUT__	C:\VBox\shared\kOS\lib\memlayout.h	2;"	d
-__TYPES__	C:\VBox\shared\kOS\lib\types.h	2;"	d
-__VGA_TEXTMODE_H__	C:\VBox\shared\kOS\driver\cga.h	4;"	d
-__X86__	C:\VBox\shared\kOS\lib\x86.h	2;"	d
-_start	C:\VBox\shared\kOS\kernel\entry.S	/^_start:$/;"	l
-a2	C:\VBox\shared\kOS\boot\bootmain.asm	/^  a2:	0f b7 35 2c 00 01 00 	movzwl 0x1002c,%esi$/;"	l
-a9	C:\VBox\shared\kOS\boot\bootmain.asm	/^  a9:	c1 e6 05             	shl    $0x5,%esi$/;"	l
-ac	C:\VBox\shared\kOS\boot\bootmain.asm	/^  ac:	01 de                	add    %ebx,%esi$/;"	l
-ae	C:\VBox\shared\kOS\boot\bootmain.asm	/^  ae:	83 c4 10             	add    $0x10,%esp$/;"	l
-align	C:\VBox\shared\kOS\lib\elf.h	/^  uint align;$/;"	m	struct:proghdr
-args	C:\VBox\shared\kOS\lib\mmu.h	/^  uint args : 5;        \/\/ # args, 0 for interrupt\/trap gates$/;"	m	struct:gatedesc
-avl	C:\VBox\shared\kOS\lib\mmu.h	/^  uint avl : 1;        \/\/ Unused (available for software use)$/;"	m	struct:segdesc
-b	C:\VBox\shared\kOS\boot\bootmain.asm	/^   b:	74 07                	je     14 <error+0x14>$/;"	l
-b1	C:\VBox\shared\kOS\boot\bootmain.asm	/^  b1:	eb 03                	jmp    b6 <bootmain+0x76>$/;"	l
-b3	C:\VBox\shared\kOS\boot\bootmain.asm	/^  b3:	83 c3 20             	add    $0x20,%ebx$/;"	l
-b6	C:\VBox\shared\kOS\boot\bootmain.asm	/^  b6:	39 f3                	cmp    %esi,%ebx$/;"	l
-b8	C:\VBox\shared\kOS\boot\bootmain.asm	/^  b8:	73 2d                	jae    e7 <bootmain+0xa7>$/;"	l
-ba	C:\VBox\shared\kOS\boot\bootmain.asm	/^  ba:	8b 7b 0c             	mov    0xc(%ebx),%edi$/;"	l
-base_15_0	C:\VBox\shared\kOS\lib\mmu.h	/^  uint base_15_0 : 16; \/\/ Low bits of segment base address$/;"	m	struct:segdesc
-base_23_16	C:\VBox\shared\kOS\lib\mmu.h	/^  uint base_23_16 : 8; \/\/ Middle bits of segment base address$/;"	m	struct:segdesc
-base_31_24	C:\VBox\shared\kOS\lib\mmu.h	/^  uint base_31_24 : 8; \/\/ High bits of segment base address$/;"	m	struct:segdesc
-bd	C:\VBox\shared\kOS\boot\bootmain.asm	/^  bd:	83 ec 04             	sub    $0x4,%esp$/;"	l
-bits	C:\VBox\shared\kOS\boot\loader.S	/^bits 16$/;"	l
-bits	C:\VBox\shared\kOS\boot\loader.S	/^bits 32$/;"	l
-bootmain	C:\VBox\shared\kOS\boot\bootmain.c	/^bootmain()$/;"	f
-breakpoint	C:\VBox\shared\kOS\lib\x86.h	/^breakpoint(void)$/;"	f
-c0	C:\VBox\shared\kOS\boot\bootmain.asm	/^  c0:	ff 73 04             	pushl  0x4(%ebx)$/;"	l
-c3	C:\VBox\shared\kOS\boot\bootmain.asm	/^  c3:	ff 73 10             	pushl  0x10(%ebx)$/;"	l
-c6	C:\VBox\shared\kOS\boot\bootmain.asm	/^  c6:	57                   	push   %edi$/;"	l
-c7	C:\VBox\shared\kOS\boot\bootmain.asm	/^  c7:	e8 fc ff ff ff       	call   c8 <bootmain+0x88>$/;"	l
-cc	C:\VBox\shared\kOS\boot\bootmain.asm	/^  cc:	8b 4b 14             	mov    0x14(%ebx),%ecx$/;"	l
-cf	C:\VBox\shared\kOS\boot\bootmain.asm	/^  cf:	8b 43 10             	mov    0x10(%ebx),%eax$/;"	l
-cga_mem	C:\VBox\shared\kOS\driver\cga.c	/^static volatile uint16_t *cga_mem = (volatile uint16_t*) 0xb8000;$/;"	v	file:
-clear_screen	C:\VBox\shared\kOS\driver\cga.c	/^clear_screen()$/;"	f
-cli	C:\VBox\shared\kOS\lib\x86.h	/^cli(void)$/;"	f
-cr3	C:\VBox\shared\kOS\lib\mmu.h	/^  void *cr3;         \/\/ Page directory base$/;"	m	struct:taskstate
-cs	C:\VBox\shared\kOS\lib\mmu.h	/^  uint cs : 16;         \/\/ code segment selector$/;"	m	struct:gatedesc
-cs	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort cs;$/;"	m	struct:taskstate
-cs	C:\VBox\shared\kOS\lib\x86.h	/^  ushort cs;$/;"	m	struct:trapframe
-ctlmap	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar ctlmap[256] =$/;"	v
-curr_row	C:\VBox\shared\kOS\driver\cga.c	/^static uint8_t curr_row = 0;$/;"	v	file:
-cursor_offset	C:\VBox\shared\kOS\driver\cga.c	/^static uint8_t cursor_offset = 1;$/;"	v	file:
-d	C:\VBox\shared\kOS\boot\bootmain.asm	/^   d:	83 fb fe             	cmp    $0xfffffffe,%ebx$/;"	l
-d2	C:\VBox\shared\kOS\boot\bootmain.asm	/^  d2:	83 c4 10             	add    $0x10,%esp$/;"	l
-d5	C:\VBox\shared\kOS\boot\bootmain.asm	/^  d5:	39 c1                	cmp    %eax,%ecx$/;"	l
-d7	C:\VBox\shared\kOS\boot\bootmain.asm	/^  d7:	76 da                	jbe    b3 <bootmain+0x73>$/;"	l
-d9	C:\VBox\shared\kOS\boot\bootmain.asm	/^  d9:	29 c1                	sub    %eax,%ecx$/;"	l
-db	C:\VBox\shared\kOS\boot\bootmain.asm	/^  db:	01 c7                	add    %eax,%edi$/;"	l
-db	C:\VBox\shared\kOS\lib\mmu.h	/^  uint db : 1;         \/\/ 0 = 16-bit segment, 1 = 32-bit segment$/;"	m	struct:segdesc
-dd	C:\VBox\shared\kOS\boot\bootmain.asm	/^  dd:	b8 00 00 00 00       	mov    $0x0,%eax$/;"	l
-dpl	C:\VBox\shared\kOS\lib\mmu.h	/^  uint dpl : 2;         \/\/ descriptor(meaning new) privilege level$/;"	m	struct:gatedesc
-dpl	C:\VBox\shared\kOS\lib\mmu.h	/^  uint dpl : 2;        \/\/ Descriptor Privilege Level$/;"	m	struct:segdesc
-draw_cursor	C:\VBox\shared\kOS\driver\cga.c	/^draw_cursor()$/;"	f
-ds	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ds;$/;"	m	struct:taskstate
-ds	C:\VBox\shared\kOS\lib\x86.h	/^  ushort ds;$/;"	m	struct:trapframe
-dw	C:\VBox\shared\kOS\boot\loader.S	/^dw 0xaa55$/;"	l
-e2	C:\VBox\shared\kOS\boot\bootmain.asm	/^  e2:	fc                   	cld    $/;"	l
-e3	C:\VBox\shared\kOS\boot\bootmain.asm	/^  e3:	f3 aa                	rep stos %al,%es:(%edi)$/;"	l
-e5	C:\VBox\shared\kOS\boot\bootmain.asm	/^  e5:	eb cc                	jmp    b3 <bootmain+0x73>$/;"	l
-e7	C:\VBox\shared\kOS\boot\bootmain.asm	/^  e7:	8b 1d 18 00 01 00    	mov    0x10018,%ebx$/;"	l
-eax	C:\VBox\shared\kOS\lib\mmu.h	/^  uint eax;          \/\/ More saved state (registers)$/;"	m	struct:taskstate
-eax	C:\VBox\shared\kOS\lib\x86.h	/^  uint eax;$/;"	m	struct:trapframe
-ebp	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *ebp;$/;"	m	struct:taskstate
-ebp	C:\VBox\shared\kOS\lib\x86.h	/^  uint ebp;$/;"	m	struct:trapframe
-ebx	C:\VBox\shared\kOS\lib\mmu.h	/^  uint ebx;$/;"	m	struct:taskstate
-ebx	C:\VBox\shared\kOS\lib\x86.h	/^  uint ebx;$/;"	m	struct:trapframe
-ecx	C:\VBox\shared\kOS\lib\mmu.h	/^  uint ecx;$/;"	m	struct:taskstate
-ecx	C:\VBox\shared\kOS\lib\x86.h	/^  uint ecx;$/;"	m	struct:trapframe
-ed	C:\VBox\shared\kOS\boot\bootmain.asm	/^  ed:	83 ec 04             	sub    $0x4,%esp$/;"	l
-edi	C:\VBox\shared\kOS\lib\mmu.h	/^  uint edi;$/;"	m	struct:taskstate
-edi	C:\VBox\shared\kOS\lib\x86.h	/^  uint edi;$/;"	m	struct:trapframe
-edx	C:\VBox\shared\kOS\lib\mmu.h	/^  uint edx;$/;"	m	struct:taskstate
-edx	C:\VBox\shared\kOS\lib\x86.h	/^  uint edx;$/;"	m	struct:trapframe
-eflags	C:\VBox\shared\kOS\lib\mmu.h	/^  uint eflags;$/;"	m	struct:taskstate
-eflags	C:\VBox\shared\kOS\lib\x86.h	/^  uint eflags;$/;"	m	struct:trapframe
-ehsize	C:\VBox\shared\kOS\lib\elf.h	/^  ushort ehsize;$/;"	m	struct:elfhdr
-eip	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *eip;         \/\/ Saved state from last task switch$/;"	m	struct:taskstate
-eip	C:\VBox\shared\kOS\lib\x86.h	/^  uint eip;$/;"	m	struct:trapframe
-elf	C:\VBox\shared\kOS\lib\elf.h	/^  uchar elf[12];$/;"	m	struct:elfhdr
-elfhdr	C:\VBox\shared\kOS\lib\elf.h	/^struct elfhdr {$/;"	s
-enable_cursor	C:\VBox\shared\kOS\driver\cga.c	/^enable_cursor(uint8_t cursor_start, uint8_t cursor_end)$/;"	f
-entry	C:\VBox\shared\kOS\kernel\entry.S	/^entry:$/;"	l
-entry	C:\VBox\shared\kOS\lib\elf.h	/^  uint entry;$/;"	m	struct:elfhdr
-entry_pgdir	C:\VBox\shared\kOS\kernel\main.c	/^pde_t entry_pgdir[NPDENTRIES] =$/;"	v
-entry_pgtable	C:\VBox\shared\kOS\kernel\main.c	/^pte_t entry_pgtable[NPTENTRIES];$/;"	v
-err	C:\VBox\shared\kOS\lib\x86.h	/^  uint err;$/;"	m	struct:trapframe
-err_no_lba	C:\VBox\shared\kOS\boot\loader.S	/^err_no_lba:$/;"	l
-err_reading_disk	C:\VBox\shared\kOS\boot\loader.S	/^err_reading_disk:$/;"	l
-error	C:\VBox\shared\kOS\boot\bootmain.c	/^error(int errcode)$/;"	f
-es	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort es;         \/\/ Even more saved state (segment selectors)$/;"	m	struct:taskstate
-es	C:\VBox\shared\kOS\lib\x86.h	/^  ushort es;$/;"	m	struct:trapframe
-esi	C:\VBox\shared\kOS\lib\mmu.h	/^  uint esi;$/;"	m	struct:taskstate
-esi	C:\VBox\shared\kOS\lib\x86.h	/^  uint esi;$/;"	m	struct:trapframe
-esp	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *esp;$/;"	m	struct:taskstate
-esp	C:\VBox\shared\kOS\lib\x86.h	/^  uint esp;$/;"	m	struct:trapframe
-esp0	C:\VBox\shared\kOS\lib\mmu.h	/^  uint esp0;         \/\/ Stack pointers and segment selectors$/;"	m	struct:taskstate
-esp1	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *esp1;$/;"	m	struct:taskstate
-esp2	C:\VBox\shared\kOS\lib\mmu.h	/^  uint *esp2;$/;"	m	struct:taskstate
-extern	C:\VBox\shared\kOS\kernel\entry.S	/^extern main$/;"	l
-f0	C:\VBox\shared\kOS\boot\bootmain.asm	/^  f0:	6a 00                	push   $0x0$/;"	l
-f2	C:\VBox\shared\kOS\boot\bootmain.asm	/^  f2:	6a 07                	push   $0x7$/;"	l
-f4	C:\VBox\shared\kOS\boot\bootmain.asm	/^  f4:	68 48 00 00 00       	push   $0x48$/;"	l
-f9	C:\VBox\shared\kOS\boot\bootmain.asm	/^  f9:	e8 fc ff ff ff       	call   fa <bootmain+0xba>$/;"	l
-fe	C:\VBox\shared\kOS\boot\bootmain.asm	/^  fe:	ff d3                	call   *%ebx$/;"	l
-filesz	C:\VBox\shared\kOS\lib\elf.h	/^  uint filesz;$/;"	m	struct:proghdr
-flags	C:\VBox\shared\kOS\lib\elf.h	/^  uint flags;$/;"	m	struct:elfhdr
-flags	C:\VBox\shared\kOS\lib\elf.h	/^  uint flags;$/;"	m	struct:proghdr
-fs	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort fs;$/;"	m	struct:taskstate
-fs	C:\VBox\shared\kOS\lib\x86.h	/^  ushort fs;$/;"	m	struct:trapframe
-g	C:\VBox\shared\kOS\lib\mmu.h	/^  uint g : 1;          \/\/ Granularity: limit scaled by 4K when set$/;"	m	struct:segdesc
-gatedesc	C:\VBox\shared\kOS\lib\mmu.h	/^struct gatedesc {$/;"	s
-global	C:\VBox\shared\kOS\kernel\entry.S	/^global _start$/;"	l
-global	C:\VBox\shared\kOS\kernel\entry.S	/^global entry$/;"	l
-gs	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort gs;$/;"	m	struct:taskstate
-gs	C:\VBox\shared\kOS\lib\x86.h	/^  ushort gs;$/;"	m	struct:trapframe
-halt	C:\VBox\shared\kOS\boot\loader.S	/^halt:$/;"	l
-inb	C:\VBox\shared\kOS\lib\x86.h	/^inb(ushort port)$/;"	f
-init_cga	C:\VBox\shared\kOS\driver\cga.c	/^void init_cga()$/;"	f
-insl	C:\VBox\shared\kOS\lib\x86.h	/^insl(int port, void *addr, int cnt)$/;"	f
-int16_t	C:\VBox\shared\kOS\lib\types.h	/^typedef short int16_t;$/;"	t
-int32_t	C:\VBox\shared\kOS\lib\types.h	/^typedef int int32_t;$/;"	t
-int64_t	C:\VBox\shared\kOS\lib\types.h	/^typedef long long int64_t;$/;"	t
-int8_t	C:\VBox\shared\kOS\lib\types.h	/^typedef __signed char int8_t;$/;"	t
-invlpg	C:\VBox\shared\kOS\lib\x86.h	/^invlpg(void *addr)$/;"	f
-iomb	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort iomb;       \/\/ I\/O map base address$/;"	m	struct:taskstate
-kernel_stack	C:\VBox\shared\kOS\kernel\entry.S	/^  kernel_stack:                           ; label points to beginning of memory$/;"	l
-lcr3	C:\VBox\shared\kOS\lib\x86.h	/^lcr3(uint val)$/;"	f
-ldt	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ldt;$/;"	m	struct:taskstate
-lgdt	C:\VBox\shared\kOS\lib\x86.h	/^lgdt(struct segdesc *p, int size)$/;"	f
-lidt	C:\VBox\shared\kOS\lib\x86.h	/^lidt(struct gatedesc *p, int size)$/;"	f
-lim_15_0	C:\VBox\shared\kOS\lib\mmu.h	/^  uint lim_15_0 : 16;  \/\/ Low bits of segment limit$/;"	m	struct:segdesc
-lim_19_16	C:\VBox\shared\kOS\lib\mmu.h	/^  uint lim_19_16 : 4;  \/\/ High bits of segment limit$/;"	m	struct:segdesc
-link	C:\VBox\shared\kOS\lib\mmu.h	/^  uint link;         \/\/ Old ts selector$/;"	m	struct:taskstate
-loader	C:\VBox\shared\kOS\boot\loader.S	/^loader:                         ; the loader label (defined as entry point in linker script)$/;"	l
-loadgs	C:\VBox\shared\kOS\lib\x86.h	/^loadgs(ushort v)$/;"	f
-ltr	C:\VBox\shared\kOS\lib\x86.h	/^ltr(ushort sel)$/;"	f
-machine	C:\VBox\shared\kOS\lib\elf.h	/^  ushort machine;$/;"	m	struct:elfhdr
-magic	C:\VBox\shared\kOS\lib\elf.h	/^  uint magic;  \/\/ must equal ELF_MAGIC$/;"	m	struct:elfhdr
-main	C:\VBox\shared\kOS\kernel\main.c	/^main()$/;"	f
-memsz	C:\VBox\shared\kOS\lib\elf.h	/^  uint memsz;$/;"	m	struct:proghdr
-normalmap	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar normalmap[256] =$/;"	v
-oesp	C:\VBox\shared\kOS\lib\x86.h	/^  uint oesp;      \/\/ useless & ignored$/;"	m	struct:trapframe
-off	C:\VBox\shared\kOS\lib\elf.h	/^  uint off;$/;"	m	struct:proghdr
-off_15_0	C:\VBox\shared\kOS\lib\mmu.h	/^  uint off_15_0 : 16;   \/\/ low 16 bits of offset in segment$/;"	m	struct:gatedesc
-off_31_16	C:\VBox\shared\kOS\lib\mmu.h	/^  uint off_31_16 : 16;  \/\/ high bits of offset in segment$/;"	m	struct:gatedesc
-off_t	C:\VBox\shared\kOS\lib\types.h	/^typedef int32_t off_t;$/;"	t
-offsetof	C:\VBox\shared\kOS\lib\types.h	56;"	d
-org	C:\VBox\shared\kOS\boot\loader.S	/^org 0x7c00$/;"	l
-outb	C:\VBox\shared\kOS\lib\x86.h	/^outb(ushort port, uchar data)$/;"	f
-outsl	C:\VBox\shared\kOS\lib\x86.h	/^outsl(int port, const void *addr, int cnt)$/;"	f
-outw	C:\VBox\shared\kOS\lib\x86.h	/^outw(ushort port, ushort data)$/;"	f
-p	C:\VBox\shared\kOS\lib\mmu.h	/^  uint p : 1;           \/\/ Present$/;"	m	struct:gatedesc
-p	C:\VBox\shared\kOS\lib\mmu.h	/^  uint p : 1;          \/\/ Present$/;"	m	struct:segdesc
-padding1	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding1;$/;"	m	struct:taskstate
-padding1	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding1;$/;"	m	struct:trapframe
-padding10	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding10;$/;"	m	struct:taskstate
-padding2	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding2;$/;"	m	struct:taskstate
-padding2	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding2;$/;"	m	struct:trapframe
-padding3	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding3;$/;"	m	struct:taskstate
-padding3	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding3;$/;"	m	struct:trapframe
-padding4	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding4;$/;"	m	struct:taskstate
-padding4	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding4;$/;"	m	struct:trapframe
-padding5	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding5;$/;"	m	struct:taskstate
-padding5	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding5;$/;"	m	struct:trapframe
-padding6	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding6;$/;"	m	struct:taskstate
-padding6	C:\VBox\shared\kOS\lib\x86.h	/^  ushort padding6;$/;"	m	struct:trapframe
-padding7	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding7;$/;"	m	struct:taskstate
-padding8	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding8;$/;"	m	struct:taskstate
-padding9	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort padding9;$/;"	m	struct:taskstate
-paddr	C:\VBox\shared\kOS\lib\elf.h	/^  uint paddr;$/;"	m	struct:proghdr
-pde_t	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef uint pde_t;$/;"	t
-phentsize	C:\VBox\shared\kOS\lib\elf.h	/^  ushort phentsize;$/;"	m	struct:elfhdr
-phnum	C:\VBox\shared\kOS\lib\elf.h	/^  ushort phnum;$/;"	m	struct:elfhdr
-phoff	C:\VBox\shared\kOS\lib\elf.h	/^  uint phoff;$/;"	m	struct:elfhdr
-ppn_t	C:\VBox\shared\kOS\lib\types.h	/^typedef uint32_t ppn_t;$/;"	t
-print	C:\VBox\shared\kOS\driver\cga.c	/^print(char* c, uint8_t fg, uint8_t bg)$/;"	f
-println	C:\VBox\shared\kOS\driver\cga.c	/^void println(char* c, uint8_t fg, uint8_t bg)$/;"	f
-proghdr	C:\VBox\shared\kOS\lib\elf.h	/^struct proghdr {$/;"	s
-pte_t	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef uint pte_t;$/;"	t
-putc	C:\VBox\shared\kOS\driver\cga.c	/^putc(char* c, uint8_t fg, uint8_t bg, int x, int y)$/;"	f
-rcr2	C:\VBox\shared\kOS\lib\x86.h	/^rcr2(void)$/;"	f
-read_ebp	C:\VBox\shared\kOS\lib\x86.h	/^read_ebp(void)$/;"	f
-read_eflags	C:\VBox\shared\kOS\lib\x86.h	/^read_eflags(void)$/;"	f
-read_esp	C:\VBox\shared\kOS\lib\x86.h	/^read_esp(void)$/;"	f
-readeflags	C:\VBox\shared\kOS\lib\x86.h	/^readeflags(void)$/;"	f
-readsect	C:\VBox\shared\kOS\driver\disk.c	/^readsect(void *dst, uint offset)$/;"	f
-readseg	C:\VBox\shared\kOS\driver\disk.c	/^readseg(uchar* pa, uint count, uint offset)$/;"	f
-rsv1	C:\VBox\shared\kOS\lib\mmu.h	/^  uint rsv1 : 1;       \/\/ Reserved$/;"	m	struct:segdesc
-rsv1	C:\VBox\shared\kOS\lib\mmu.h	/^  uint rsv1 : 3;        \/\/ reserved(should be zero I guess)$/;"	m	struct:gatedesc
-s	C:\VBox\shared\kOS\lib\mmu.h	/^  uint s : 1;           \/\/ must be 0 (system)$/;"	m	struct:gatedesc
-s	C:\VBox\shared\kOS\lib\mmu.h	/^  uint s : 1;          \/\/ 0 = system, 1 = application$/;"	m	struct:segdesc
-section	C:\VBox\shared\kOS\kernel\entry.S	/^section .bss$/;"	l
-segdesc	C:\VBox\shared\kOS\lib\mmu.h	/^struct segdesc {$/;"	s
-shentsize	C:\VBox\shared\kOS\lib\elf.h	/^  ushort shentsize;$/;"	m	struct:elfhdr
-shiftcode	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar shiftcode[256] =$/;"	v
-shiftmap	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar shiftmap[256] =$/;"	v
-shnum	C:\VBox\shared\kOS\lib\elf.h	/^  ushort shnum;$/;"	m	struct:elfhdr
-shoff	C:\VBox\shared\kOS\lib\elf.h	/^  uint shoff;$/;"	m	struct:elfhdr
-shstrndx	C:\VBox\shared\kOS\lib\elf.h	/^  ushort shstrndx;$/;"	m	struct:elfhdr
-size_t	C:\VBox\shared\kOS\lib\types.h	/^typedef uint32_t size_t;$/;"	t
-ss	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ss;$/;"	m	struct:taskstate
-ss	C:\VBox\shared\kOS\lib\x86.h	/^  ushort ss;$/;"	m	struct:trapframe
-ss0	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ss0;        \/\/   after an increase in privilege level$/;"	m	struct:taskstate
-ss1	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ss1;$/;"	m	struct:taskstate
-ss2	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort ss2;$/;"	m	struct:taskstate
-ssize_t	C:\VBox\shared\kOS\lib\types.h	/^typedef int32_t ssize_t;$/;"	t
-stage2	C:\VBox\shared\kOS\boot\loader.S	/^stage2:$/;"	l
-sti	C:\VBox\shared\kOS\lib\x86.h	/^sti(void)$/;"	f
-stosb	C:\VBox\shared\kOS\lib\x86.h	/^stosb(void *addr, int data, int cnt)$/;"	f
-stosl	C:\VBox\shared\kOS\lib\x86.h	/^stosl(void *addr, int data, int cnt)$/;"	f
-t	C:\VBox\shared\kOS\lib\mmu.h	/^  ushort t;          \/\/ Trap on task switch$/;"	m	struct:taskstate
-taskstate	C:\VBox\shared\kOS\lib\mmu.h	/^struct taskstate {$/;"	s
-text_palette	C:\VBox\shared\kOS\driver\cga.c	/^static uint8_t text_palette = 0x07;$/;"	v	file:
-times	C:\VBox\shared\kOS\boot\loader.S	/^times 1024-($-$$) db 0$/;"	l
-times	C:\VBox\shared\kOS\boot\loader.S	/^times 510-($-$$) db 0$/;"	l
-togglecode	C:\VBox\shared\kOS\driver\keyboard.h	/^static uchar togglecode[256] =$/;"	v
-trapframe	C:\VBox\shared\kOS\lib\x86.h	/^struct trapframe {$/;"	s
-trapno	C:\VBox\shared\kOS\lib\x86.h	/^  uint trapno;$/;"	m	struct:trapframe
-type	C:\VBox\shared\kOS\lib\elf.h	/^  uint type;$/;"	m	struct:proghdr
-type	C:\VBox\shared\kOS\lib\elf.h	/^  ushort type;$/;"	m	struct:elfhdr
-type	C:\VBox\shared\kOS\lib\mmu.h	/^  uint type : 4;        \/\/ type(STS_{TG,IG32,TG32})$/;"	m	struct:gatedesc
-type	C:\VBox\shared\kOS\lib\mmu.h	/^  uint type : 4;       \/\/ Segment type (see STS_ constants)$/;"	m	struct:segdesc
-uchar	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef unsigned char  uchar;$/;"	t
-uint	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef unsigned int   uint;$/;"	t
-uint16_t	C:\VBox\shared\kOS\lib\types.h	/^typedef unsigned short uint16_t;$/;"	t
-uint32_t	C:\VBox\shared\kOS\lib\types.h	/^typedef unsigned int uint32_t;$/;"	t
-uint64_t	C:\VBox\shared\kOS\lib\types.h	/^typedef unsigned long long uint64_t;$/;"	t
-uint8_t	C:\VBox\shared\kOS\lib\types.h	/^typedef unsigned char uint8_t;$/;"	t
-ushort	C:\VBox\shared\kOS\lib\custom_types.h	/^typedef unsigned short ushort;$/;"	t
-vaddr	C:\VBox\shared\kOS\lib\elf.h	/^  uint vaddr;$/;"	m	struct:proghdr
-version	C:\VBox\shared\kOS\lib\elf.h	/^  uint version;$/;"	m	struct:elfhdr
-waitdisk	C:\VBox\shared\kOS\driver\disk.c	/^waitdisk(void)$/;"	f
-write_eflags	C:\VBox\shared\kOS\lib\x86.h	/^write_eflags(uint32_t eflags)$/;"	f
-xchg	C:\VBox\shared\kOS\lib\x86.h	/^xchg(volatile uint *addr, uint newval)$/;"	f
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+%.o	makefile	/^%.o: %.c$/;"	t
+.bss	kernel/kernel.ld	/^	.bss : {$/;"	S
+.data	boot/bootlinker.ld	/^    .data : {$/;"	S
+.data	kernel/kernel.ld	/^	.data : {$/;"	S
+.rodata	kernel/kernel.ld	/^	.rodata : {$/;"	S
+.stab	kernel/kernel.ld	/^	.stab : {$/;"	S
+.stabstr	kernel/kernel.ld	/^	.stabstr : {$/;"	S
+.text	boot/bootlinker.ld	/^    .text : {$/;"	S
+.text	kernel/kernel.ld	/^	.text : AT(0x100000) {$/;"	S
+ALT	driver/keyboard.h	/^#define ALT /;"	d
+ASSERT	driver/lapic.h	/^  #define ASSERT /;"	d
+Augmentation	boot/bootmain.asm	/^  Augmentation:          "zR"$/;"	l
+BCAST	driver/lapic.h	/^  #define BCAST /;"	d
+BOOT_OBJ	makefile	/^BOOT_OBJ := $(addprefix boot\/,$(BOOT_OBJ))$/;"	m
+BOOT_OBJ	makefile	/^BOOT_OBJ = bootmain.o$/;"	m
+BUSY	driver/lapic.h	/^  #define BUSY /;"	d
+C	driver/keyboard.h	/^#define C(/;"	d
+CAPSLOCK	driver/keyboard.h	/^#define CAPSLOCK /;"	d
+CC	makefile	/^CC = gcc$/;"	m
+CC_FLAGS	makefile	/^CC_FLAGS = -m32 -c -nostdlib -nostdinc -fno-builtin -fno-pie -fno-stack-protector -nostartfiles /;"	m
+COLOR	driver/cga.h	/^#define COLOR(/;"	d
+CPUS	makefile	/^CPUS = 1$/;"	m
+CR0_AM	lib/mmu.h	/^#define CR0_AM /;"	d
+CR0_CD	lib/mmu.h	/^#define CR0_CD /;"	d
+CR0_EM	lib/mmu.h	/^#define CR0_EM /;"	d
+CR0_ET	lib/mmu.h	/^#define CR0_ET /;"	d
+CR0_MP	lib/mmu.h	/^#define CR0_MP /;"	d
+CR0_NE	lib/mmu.h	/^#define CR0_NE /;"	d
+CR0_NW	lib/mmu.h	/^#define CR0_NW /;"	d
+CR0_PE	lib/mmu.h	/^#define CR0_PE /;"	d
+CR0_PG	lib/mmu.h	/^#define CR0_PG /;"	d
+CR0_TS	lib/mmu.h	/^#define CR0_TS /;"	d
+CR0_WP	lib/mmu.h	/^#define CR0_WP /;"	d
+CR4_PSE	lib/mmu.h	/^#define CR4_PSE /;"	d
+CTL	driver/keyboard.h	/^#define CTL /;"	d
+C_FILES	makefile	/^C_FILES := $(shell find .\/ -type f -name '*.c')$/;"	m
+Contents	boot/bootmain.asm	/^Contents of the .eh_frame section:$/;"	l
+DEASSERT	driver/lapic.h	/^  #define DEASSERT /;"	d
+DELIVS	driver/lapic.h	/^  #define DELIVS /;"	d
+DEVSPACE	lib/memlayout.h	/^#define DEVSPACE /;"	d
+DPL_USER	lib/mmu.h	/^#define DPL_USER /;"	d
+DRIVER_OBJ	makefile	/^DRIVER_OBJ := $(addprefix driver\/,$(DRIVER_OBJ))$/;"	m
+DRIVER_OBJ	makefile	/^DRIVER_OBJ = cga.o\\$/;"	m
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000001$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000041$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000042$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000043$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 000000d8$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 14 to 000000e6$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 14 to 00000112$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 15 to 0000007f$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 15 to 000000d1$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 19 to 00000017$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000019$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000001b$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000002f$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000031$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000004d$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000004f$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000005e$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000081$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000008b$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000008d$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 000000b3$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 000000b5$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 000000fd$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 000000ff$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000114$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000116$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 21 to 000000fb$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 3 to 00000004$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 3 to 00000089$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 3 to 000000d4$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 3 to 000000d7$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 31 to 000000b1$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000020$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 0000002d$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000036$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000054$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000063$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000068$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000086$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000092$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 000000ba$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000104$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 0000011b$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 00000028$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 0000003e$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 0000004b$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 0000005c$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 00000070$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 000000c2$/;"	l
+DW_CFA_def_cfa	boot/bootmain.asm	/^  DW_CFA_def_cfa: r4 (esp) ofs 4$/;"	l
+DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 12$/;"	l
+DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 16$/;"	l
+DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 20$/;"	l
+DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 24$/;"	l
+DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 28$/;"	l
+DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 32$/;"	l
+DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 8$/;"	l
+DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r3 (ebx) at cfa-16$/;"	l
+DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r3 (ebx) at cfa-8$/;"	l
+DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r6 (esi) at cfa-12$/;"	l
+DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r7 (edi) at cfa-8$/;"	l
+DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r8 (eip) at cfa-4$/;"	l
+Disassembly	boot/bootblock.asm	/^Disassembly of section .data:$/;"	l
+Disassembly	boot/bootmain.asm	/^Disassembly of section .comment:$/;"	l
+Disassembly	boot/bootmain.asm	/^Disassembly of section .eh_frame:$/;"	l
+Disassembly	boot/bootmain.asm	/^Disassembly of section .entry:$/;"	l
+Disassembly	boot/bootmain.asm	/^Disassembly of section .rodata.str1.1:$/;"	l
+Disassembly	boot/bootmain.asm	/^Disassembly of section .rodata.str1.4:$/;"	l
+Disassembly	boot/bootmain.asm	/^Disassembly of section .text:$/;"	l
+Disassembly	kernel/kernel.asm	/^Disassembly of section .bss:$/;"	l
+Disassembly	kernel/kernel.asm	/^Disassembly of section .comment:$/;"	l
+Disassembly	kernel/kernel.asm	/^Disassembly of section .data:$/;"	l
+Disassembly	kernel/kernel.asm	/^Disassembly of section .rodata:$/;"	l
+Disassembly	kernel/kernel.asm	/^Disassembly of section .stab:$/;"	l
+Disassembly	kernel/kernel.asm	/^Disassembly of section .stabstr:$/;"	l
+Disassembly	kernel/kernel.asm	/^Disassembly of section .text:$/;"	l
+DoneMsg	boot/loader.S	/^DoneMsg db '  DONE', 0x0D, 0x0A, 0x00$/;"	d
+E0ESC	driver/keyboard.h	/^#define E0ESC /;"	d
+ELF_MAGIC	lib/elf.h	/^#define ELF_MAGIC /;"	d
+ELF_PROG_FLAG_EXEC	lib/elf.h	/^#define ELF_PROG_FLAG_EXEC /;"	d
+ELF_PROG_FLAG_READ	lib/elf.h	/^#define ELF_PROG_FLAG_READ /;"	d
+ELF_PROG_FLAG_WRITE	lib/elf.h	/^#define ELF_PROG_FLAG_WRITE /;"	d
+ELF_PROG_LOAD	lib/elf.h	/^#define ELF_PROG_LOAD /;"	d
+ENABLE	driver/lapic.h	/^  #define ENABLE /;"	d
+EOI	driver/lapic.h	/^#define EOI /;"	d
+ERROR	driver/lapic.h	/^#define ERROR /;"	d
+ESR	driver/lapic.h	/^#define ESR /;"	d
+EXTMEM	lib/memlayout.h	/^#define EXTMEM /;"	d
+EnablingA20	boot/loader.S	/^EnablingA20 db 0x0D, 0x0A, 'Enabling the A20...', 0x00$/;"	d
+ErrEnableA20Msg	boot/loader.S	/^ErrEnableA20Msg db 0x0D, 0x0A, 'Error enabling a20, system halted.', 0x00$/;"	d
+ErrReadDiskMsg	boot/loader.S	/^ErrReadDiskMsg db 0x0D, 0x0A, 'Error reading disk, system halted.', 0x00$/;"	d
+FIXED	driver/lapic.h	/^  #define FIXED /;"	d
+FL_AC	lib/mmu.h	/^#define FL_AC /;"	d
+FL_AF	lib/mmu.h	/^#define FL_AF /;"	d
+FL_CF	lib/mmu.h	/^#define FL_CF /;"	d
+FL_DF	lib/mmu.h	/^#define FL_DF /;"	d
+FL_ID	lib/mmu.h	/^#define FL_ID /;"	d
+FL_IF	lib/mmu.h	/^#define FL_IF /;"	d
+FL_IOPL_0	lib/mmu.h	/^#define FL_IOPL_0 /;"	d
+FL_IOPL_1	lib/mmu.h	/^#define FL_IOPL_1 /;"	d
+FL_IOPL_2	lib/mmu.h	/^#define FL_IOPL_2 /;"	d
+FL_IOPL_3	lib/mmu.h	/^#define FL_IOPL_3 /;"	d
+FL_IOPL_MASK	lib/mmu.h	/^#define FL_IOPL_MASK /;"	d
+FL_NT	lib/mmu.h	/^#define FL_NT /;"	d
+FL_OF	lib/mmu.h	/^#define FL_OF /;"	d
+FL_PF	lib/mmu.h	/^#define FL_PF /;"	d
+FL_RF	lib/mmu.h	/^#define FL_RF /;"	d
+FL_SF	lib/mmu.h	/^#define FL_SF /;"	d
+FL_TF	lib/mmu.h	/^#define FL_TF /;"	d
+FL_VIF	lib/mmu.h	/^#define FL_VIF /;"	d
+FL_VIP	lib/mmu.h	/^#define FL_VIP /;"	d
+FL_VM	lib/mmu.h	/^#define FL_VM /;"	d
+FL_ZF	lib/mmu.h	/^#define FL_ZF /;"	d
+FinishedLoading	boot/loader.S	/^FinishedLoading db 0x0D,0x0A, 'Finished stage 1', 0x0D, 0x0A, 0x0A, 0x00$/;"	d
+GB	lib/types.h	/^#define GB /;"	d
+ICRHI	driver/lapic.h	/^#define ICRHI /;"	d
+ICRLO	driver/lapic.h	/^#define ICRLO /;"	d
+ID	driver/lapic.h	/^#define ID /;"	d
+INIT	driver/lapic.h	/^  #define INIT /;"	d
+KB	lib/types.h	/^#define KB /;"	d
+KBDATAP	driver/keyboard.h	/^#define KBDATAP /;"	d
+KBSTATP	driver/keyboard.h	/^#define KBSTATP /;"	d
+KBS_DIB	driver/keyboard.h	/^#define KBS_DIB /;"	d
+KERNBASE	lib/memlayout.h	/^#define KERNBASE /;"	d
+KERNEL_OBJ	makefile	/^KERNEL_OBJ := $(addprefix kernel\/,$(KERNEL_OBJ))$/;"	m
+KERNEL_OBJ	makefile	/^KERNEL_OBJ = main.o\\$/;"	m
+KERNLINK	lib/memlayout.h	/^#define KERNLINK /;"	d
+KEY_DEL	driver/keyboard.h	/^#define KEY_DEL /;"	d
+KEY_DN	driver/keyboard.h	/^#define KEY_DN /;"	d
+KEY_END	driver/keyboard.h	/^#define KEY_END /;"	d
+KEY_HOME	driver/keyboard.h	/^#define KEY_HOME /;"	d
+KEY_INS	driver/keyboard.h	/^#define KEY_INS /;"	d
+KEY_LF	driver/keyboard.h	/^#define KEY_LF /;"	d
+KEY_PGDN	driver/keyboard.h	/^#define KEY_PGDN /;"	d
+KEY_PGUP	driver/keyboard.h	/^#define KEY_PGUP /;"	d
+KEY_RT	driver/keyboard.h	/^#define KEY_RT /;"	d
+KEY_UP	driver/keyboard.h	/^#define KEY_UP /;"	d
+LD	makefile	/^LD = ld$/;"	m
+LDFLAGS	makefile	/^LDFLAGS = \\$/;"	m
+LEVEL	driver/lapic.h	/^  #define LEVEL /;"	d
+LIB_OBJ	makefile	/^LIB_OBJ := $(addprefix lib\/,$(LIB_OBJ))$/;"	m
+LIB_OBJ	makefile	/^LIB_OBJ = #ulib.o$/;"	m
+LINT0	driver/lapic.h	/^#define LINT0 /;"	d
+LINT1	driver/lapic.h	/^#define LINT1 /;"	d
+LoadingMsg	boot/loader.S	/^LoadingMsg db 0x0D, 0x0A, '<kOS>', 0x0D, 0x0A, 0x0A, 0x00$/;"	d
+MASKED	driver/lapic.h	/^  #define MASKED /;"	d
+MAX	lib/types.h	/^#define MAX(/;"	d
+MB	lib/types.h	/^#define MB /;"	d
+MIN	lib/types.h	/^#define MIN(/;"	d
+NASM_FLAGS	makefile	/^NASM_FLAGS =$/;"	m
+NO	driver/keyboard.h	/^#define NO /;"	d
+NPDENTRIES	lib/mmu.h	/^#define NPDENTRIES /;"	d
+NPTENTRIES	lib/mmu.h	/^#define NPTENTRIES /;"	d
+NSEGS	lib/mmu.h	/^#define NSEGS /;"	d
+NUMLOCK	driver/keyboard.h	/^#define NUMLOCK /;"	d
+OBJ	makefile	/^OBJ := $(C_FILES:.c=.o)$/;"	m
+OBJCOPY	makefile	/^OBJCOPY = objcopy$/;"	m
+OBJDUMP	makefile	/^OBJDUMP = objdump -mi386$/;"	m
+P2V	lib/memlayout.h	/^#define P2V(/;"	d
+P2V_WO	lib/memlayout.h	/^#define P2V_WO(/;"	d
+PCINT	driver/lapic.h	/^#define PCINT /;"	d
+PDX	lib/mmu.h	/^#define PDX(/;"	d
+PDXSHIFT	lib/mmu.h	/^#define PDXSHIFT /;"	d
+PERIODIC	driver/lapic.h	/^  #define PERIODIC /;"	d
+PGADDR	lib/mmu.h	/^#define PGADDR(/;"	d
+PGROUNDDOWN	lib/mmu.h	/^#define PGROUNDDOWN(/;"	d
+PGROUNDUP	lib/mmu.h	/^#define PGROUNDUP(/;"	d
+PGSHIFT	lib/mmu.h	/^#define PGSHIFT /;"	d
+PGSIZE	lib/mmu.h	/^#define PGSIZE /;"	d
+PHYSTOP	lib/memlayout.h	/^#define PHYSTOP /;"	d
+POS	driver/cga.h	/^#define POS(/;"	d
+PTE_A	lib/mmu.h	/^#define PTE_A /;"	d
+PTE_ADDR	lib/mmu.h	/^#define PTE_ADDR(/;"	d
+PTE_D	lib/mmu.h	/^#define PTE_D /;"	d
+PTE_FLAGS	lib/mmu.h	/^#define PTE_FLAGS(/;"	d
+PTE_MBZ	lib/mmu.h	/^#define PTE_MBZ /;"	d
+PTE_P	lib/mmu.h	/^#define PTE_P /;"	d
+PTE_PCD	lib/mmu.h	/^#define PTE_PCD /;"	d
+PTE_PS	lib/mmu.h	/^#define PTE_PS /;"	d
+PTE_PWT	lib/mmu.h	/^#define PTE_PWT /;"	d
+PTE_U	lib/mmu.h	/^#define PTE_U /;"	d
+PTE_W	lib/mmu.h	/^#define PTE_W /;"	d
+PTX	lib/mmu.h	/^#define PTX(/;"	d
+PTXSHIFT	lib/mmu.h	/^#define PTXSHIFT /;"	d
+QEMU	makefile	/^QEMU = qemu-system-i386$/;"	m
+QEMU_FLAGS	makefile	/^QEMU_FLAGS := -drive file=kOS.img,index=0,media=disk,format=raw -smp $(CPUS) -m 512$/;"	m
+QEMU_OPTS	makefile	/^QEMU_OPTS = -monitor stdio$/;"	m
+ROUNDDOWN	lib/types.h	/^#define ROUNDDOWN(/;"	d
+ROUNDUP	lib/types.h	/^#define ROUNDUP(/;"	d
+SCROLLLOCK	driver/keyboard.h	/^#define SCROLLLOCK /;"	d
+SECTSIZE	driver/disk.h	/^#define SECTSIZE /;"	d
+SEG	lib/mmu.h	/^#define SEG(/;"	d
+SEG16	lib/mmu.h	/^#define SEG16(/;"	d
+SEG_KCODE	lib/mmu.h	/^#define SEG_KCODE /;"	d
+SEG_KCPU	lib/mmu.h	/^#define SEG_KCPU /;"	d
+SEG_KDATA	lib/mmu.h	/^#define SEG_KDATA /;"	d
+SEG_TSS	lib/mmu.h	/^#define SEG_TSS /;"	d
+SEG_UCODE	lib/mmu.h	/^#define SEG_UCODE /;"	d
+SEG_UDATA	lib/mmu.h	/^#define SEG_UDATA /;"	d
+SETGATE	lib/mmu.h	/^#define SETGATE(/;"	d
+SHIFT	driver/keyboard.h	/^#define SHIFT /;"	d
+STARTUP	driver/lapic.h	/^  #define STARTUP /;"	d
+STA_A	lib/mmu.h	/^#define STA_A /;"	d
+STA_C	lib/mmu.h	/^#define STA_C /;"	d
+STA_E	lib/mmu.h	/^#define STA_E /;"	d
+STA_R	lib/mmu.h	/^#define STA_R /;"	d
+STA_W	lib/mmu.h	/^#define STA_W /;"	d
+STA_X	lib/mmu.h	/^#define STA_X /;"	d
+STS_CG16	lib/mmu.h	/^#define STS_CG16 /;"	d
+STS_CG32	lib/mmu.h	/^#define STS_CG32 /;"	d
+STS_IG16	lib/mmu.h	/^#define STS_IG16 /;"	d
+STS_IG32	lib/mmu.h	/^#define STS_IG32 /;"	d
+STS_LDT	lib/mmu.h	/^#define STS_LDT /;"	d
+STS_T16A	lib/mmu.h	/^#define STS_T16A /;"	d
+STS_T16B	lib/mmu.h	/^#define STS_T16B /;"	d
+STS_T32A	lib/mmu.h	/^#define STS_T32A /;"	d
+STS_T32B	lib/mmu.h	/^#define STS_T32B /;"	d
+STS_TG	lib/mmu.h	/^#define STS_TG /;"	d
+STS_TG16	lib/mmu.h	/^#define STS_TG16 /;"	d
+STS_TG32	lib/mmu.h	/^#define STS_TG32 /;"	d
+SVR	driver/lapic.h	/^#define SVR /;"	d
+Stage2Msg	boot/loader.S	/^Stage2Msg db 'stage1: Loading stage2...', 0x00$/;"	d
+TCCR	driver/lapic.h	/^#define TCCR /;"	d
+TDCR	driver/lapic.h	/^#define TDCR /;"	d
+TICR	driver/lapic.h	/^#define TICR /;"	d
+TIMER	driver/lapic.h	/^#define TIMER /;"	d
+TPR	driver/lapic.h	/^#define TPR /;"	d
+V2P	lib/memlayout.h	/^#define V2P(/;"	d
+V2P_WO	lib/memlayout.h	/^#define V2P_WO(/;"	d
+VER	driver/lapic.h	/^#define VER /;"	d
+Version	boot/bootmain.asm	/^  Version:               1$/;"	l
+X1	driver/lapic.h	/^  #define X1 /;"	d
+__CUSTOM_TYPES__	lib/custom_types.h	/^#define __CUSTOM_TYPES__$/;"	d
+__DISK__	driver/disk.h	/^#define __DISK__$/;"	d
+__ELF_HEADER__	lib/elf.h	/^#define __ELF_HEADER__$/;"	d
+__LAPIC__	driver/lapic.h	/^#define  __LAPIC__$/;"	d
+__MEMLAYOUT__	lib/memlayout.h	/^#define __MEMLAYOUT__$/;"	d
+__STABSTR_BEGIN__	kernel/kernel.ld	/^		PROVIDE(__STABSTR_BEGIN__ = .);$/;"	s	section:.stabstr	assignment:provide
+__STABSTR_END__	kernel/kernel.ld	/^		PROVIDE(__STABSTR_END__ = .);$/;"	s	section:.stabstr	assignment:provide
+__STAB_BEGIN__	kernel/kernel.ld	/^		PROVIDE(__STAB_BEGIN__ = .);$/;"	s	section:.stab	assignment:provide
+__STAB_END__	kernel/kernel.ld	/^		PROVIDE(__STAB_END__ = .);$/;"	s	section:.stab	assignment:provide
+__TYPES__	lib/types.h	/^#define __TYPES__$/;"	d
+__VGA_TEXTMODE_H__	driver/cga.h	/^#define __VGA_TEXTMODE_H__$/;"	d
+__X86__	lib/x86.h	/^#define __X86__$/;"	d
+_start	kernel/entry.S	/^_start equ V2P_WO(entry)$/;"	d
+a	boot/bootmain.asm	/^   a:	29 20                	sub    %esp,(%eax)$/;"	l
+a2	boot/bootmain.asm	/^  a2:	0f b7 35 2c 00 01 00 	movzwl 0x1002c,%esi$/;"	l
+a2	boot/bootmain.asm	/^  a2:	14 42                	adc    $0x42,%al$/;"	l
+a4	boot/bootmain.asm	/^  a4:	0e                   	push   %cs$/;"	l
+a5	boot/bootmain.asm	/^  a5:	18 42 0e             	sbb    %al,0xe(%edx)$/;"	l
+a8	boot/bootmain.asm	/^  a8:	1c 45                	sbb    $0x45,%al$/;"	l
+a9	boot/bootmain.asm	/^  a9:	c1 e6 05             	shl    $0x5,%esi$/;"	l
+aa	boot/bootmain.asm	/^  aa:	0e                   	push   %cs$/;"	l
+ab	boot/bootmain.asm	/^  ab:	20 48 0e             	and    %cl,0xe(%eax)$/;"	l
+ac	boot/bootmain.asm	/^  ac:	01 de                	add    %ebx,%esi$/;"	l
+ae	boot/bootmain.asm	/^  ae:	10 4f 0e             	adc    %cl,0xe(%edi)$/;"	l
+ae	boot/bootmain.asm	/^  ae:	83 c4 0c             	add    $0xc,%esp$/;"	l
+align	lib/elf.h	/^  uint align;$/;"	m	struct:proghdr	typeref:typename:uint
+all	makefile	/^all:$/;"	t
+args	lib/mmu.h	/^  uint args : 5;        \/\/ # args, 0 for interrupt\/trap gates$/;"	m	struct:gatedesc	typeref:typename:uint:5
+avl	lib/mmu.h	/^  uint avl : 1;        \/\/ Unused (available for software use)$/;"	m	struct:segdesc	typeref:typename:uint:1
+b	boot/bootmain.asm	/^   b:	00 01                	add    %al,(%ecx)$/;"	l
+b	boot/bootmain.asm	/^   b:	74 07                	je     14 <error+0x14>$/;"	l
+b	boot/bootmain.asm	/^   b:	79 20                	jns    2d <.rodata.str1.1+0x2d>$/;"	l
+b	kernel/kernel.asm	/^   b:	39 2e                	cmp    %ebp,(%esi)$/;"	l
+b1	boot/bootmain.asm	/^  b1:	14 43                	adc    $0x43,%al$/;"	l
+b1	boot/bootmain.asm	/^  b1:	6a 00                	push   $0x0$/;"	l
+b3	boot/bootmain.asm	/^  b3:	0e                   	push   %cs$/;"	l
+b3	boot/bootmain.asm	/^  b3:	6a 07                	push   $0x7$/;"	l
+b4	boot/bootmain.asm	/^  b4:	18 43 0e             	sbb    %al,0xe(%ebx)$/;"	l
+b5	boot/bootmain.asm	/^  b5:	68 48 00 00 00       	push   $0x48$/;"	l
+b7	boot/bootmain.asm	/^  b7:	1c 41                	sbb    $0x41,%al$/;"	l
+b9	boot/bootmain.asm	/^  b9:	0e                   	push   %cs$/;"	l
+ba	boot/bootmain.asm	/^  ba:	20 4e 0e             	and    %cl,0xe(%esi)$/;"	l
+ba	boot/bootmain.asm	/^  ba:	e8 fc ff ff ff       	call   bb <bootmain+0x7b>$/;"	l
+base_15_0	lib/mmu.h	/^  uint base_15_0 : 16; \/\/ Low bits of segment base address$/;"	m	struct:segdesc	typeref:typename:uint:16
+base_23_16	lib/mmu.h	/^  uint base_23_16 : 8; \/\/ Middle bits of segment base address$/;"	m	struct:segdesc	typeref:typename:uint:8
+base_31_24	lib/mmu.h	/^  uint base_31_24 : 8; \/\/ High bits of segment base address$/;"	m	struct:segdesc	typeref:typename:uint:8
+bd	boot/bootmain.asm	/^  bd:	10 55 0e             	adc    %dl,0xe(%ebp)$/;"	l
+bf	boot/bootmain.asm	/^  bf:	83 c4 10             	add    $0x10,%esp$/;"	l
+bits	boot/loader.S	/^bits 16$/;"	l
+bits	boot/loader.S	/^bits 32$/;"	l
+bochs	makefile	/^bochs: kOS.img$/;"	t
+boot/bootblock.bin	makefile	/^boot\/bootblock.bin:$/;"	t
+bootmain	boot/bootmain.c	/^bootmain()$/;"	f	typeref:typename:void
+bootsect_begin	boot/bootlinker.ld	/^        bootsect_begin = .;$/;"	s	section:.text
+breakpoint	lib/x86.h	/^breakpoint(void)$/;"	f	typeref:typename:void
+c	boot/bootmain.asm	/^   c:	39 2e                	cmp    %ebp,(%esi)$/;"	l
+c0	boot/bootmain.asm	/^  c0:	14 42                	adc    $0x42,%al$/;"	l
+c2	boot/bootmain.asm	/^  c2:	0e                   	push   %cs$/;"	l
+c2	boot/bootmain.asm	/^  c2:	eb 03                	jmp    c7 <bootmain+0x87>$/;"	l
+c3	boot/bootmain.asm	/^  c3:	18 42 0e             	sbb    %al,0xe(%edx)$/;"	l
+c4	boot/bootmain.asm	/^  c4:	83 c3 20             	add    $0x20,%ebx$/;"	l
+c6	boot/bootmain.asm	/^  c6:	1c 45                	sbb    $0x45,%al$/;"	l
+c7	boot/bootmain.asm	/^  c7:	39 f3                	cmp    %esi,%ebx$/;"	l
+c8	boot/bootmain.asm	/^  c8:	0e                   	push   %cs$/;"	l
+c9	boot/bootmain.asm	/^  c9:	20 4e 0e             	and    %cl,0xe(%esi)$/;"	l
+c9	boot/bootmain.asm	/^  c9:	73 2d                	jae    f8 <bootmain+0xb8>$/;"	l
+cb	boot/bootmain.asm	/^  cb:	8b 7b 0c             	mov    0xc(%ebx),%edi$/;"	l
+cc	boot/bootmain.asm	/^  cc:	14 42                	adc    $0x42,%al$/;"	l
+ce	boot/bootmain.asm	/^  ce:	0e                   	push   %cs$/;"	l
+ce	boot/bootmain.asm	/^  ce:	83 ec 04             	sub    $0x4,%esp$/;"	l
+cf	boot/bootmain.asm	/^  cf:	18 42 0e             	sbb    %al,0xe(%edx)$/;"	l
+cga_mem	driver/cga.c	/^static volatile uint16_t *cga_mem = (volatile uint16_t*) 0xb8000;$/;"	v	typeref:typename:volatile uint16_t *	file:
+clean	makefile	/^clean:$/;"	t
+clear_screen	driver/cga.c	/^clear_screen()$/;"	f	typeref:typename:void
+cli	lib/x86.h	/^cli(void)$/;"	f	typeref:typename:void
+compile	makefile	/^compile: $(OBJ)$/;"	t
+cr3	lib/mmu.h	/^  void *cr3;         \/\/ Page directory base$/;"	m	struct:taskstate	typeref:typename:void *
+cs	lib/mmu.h	/^  uint cs : 16;         \/\/ code segment selector$/;"	m	struct:gatedesc	typeref:typename:uint:16
+cs	lib/mmu.h	/^  ushort cs;$/;"	m	struct:taskstate	typeref:typename:ushort
+cs	lib/x86.h	/^  ushort cs;$/;"	m	struct:trapframe	typeref:typename:ushort
+ctlmap	driver/keyboard.h	/^static uchar ctlmap[256] =$/;"	v	typeref:typename:uchar[256]
+curr_row	driver/cga.c	/^static uint8_t curr_row = 0;$/;"	v	typeref:typename:uint8_t	file:
+cursor_offset	driver/cga.c	/^static uint8_t cursor_offset = 1;$/;"	v	typeref:typename:uint8_t	file:
+d	boot/bootmain.asm	/^   d:	72 65                	jb     74 <bootmain+0x34>$/;"	l
+d	boot/bootmain.asm	/^   d:	7c 08                	jl     17 <.eh_frame+0x17>$/;"	l
+d	boot/bootmain.asm	/^   d:	83 fb fe             	cmp    $0xfffffffe,%ebx$/;"	l
+d	kernel/kernel.asm	/^   d:	32 2e                	xor    (%esi),%ch$/;"	l
+d1	boot/bootmain.asm	/^  d1:	ff 73 04             	pushl  0x4(%ebx)$/;"	l
+d2	boot/bootmain.asm	/^  d2:	1c 45                	sbb    $0x45,%al$/;"	l
+d4	boot/bootmain.asm	/^  d4:	0e                   	push   %cs$/;"	l
+d4	boot/bootmain.asm	/^  d4:	ff 73 10             	pushl  0x10(%ebx)$/;"	l
+d5	boot/bootmain.asm	/^  d5:	20 00                	and    %al,(%eax)$/;"	l
+d7	boot/bootmain.asm	/^  d7:	57                   	push   %edi$/;"	l
+d8	boot/bootmain.asm	/^  d8:	e8 fc ff ff ff       	call   d9 <bootmain+0x99>$/;"	l
+data	kernel/kernel.ld	/^	PROVIDE(data = .);$/;"	s	assignment:provide
+db	lib/mmu.h	/^  uint db : 1;         \/\/ 0 = 16-bit segment, 1 = 32-bit segment$/;"	m	struct:segdesc	typeref:typename:uint:1
+dd	boot/bootmain.asm	/^  dd:	8b 4b 14             	mov    0x14(%ebx),%ecx$/;"	l
+dpl	lib/mmu.h	/^  uint dpl : 2;         \/\/ descriptor(meaning new) privilege level$/;"	m	struct:gatedesc	typeref:typename:uint:2
+dpl	lib/mmu.h	/^  uint dpl : 2;        \/\/ Descriptor Privilege Level$/;"	m	struct:segdesc	typeref:typename:uint:2
+draw_cursor	driver/cga.c	/^draw_cursor()$/;"	f	typeref:typename:void
+ds	lib/mmu.h	/^  ushort ds;$/;"	m	struct:taskstate	typeref:typename:ushort
+ds	lib/x86.h	/^  ushort ds;$/;"	m	struct:trapframe	typeref:typename:ushort
+dw	boot/loader.S	/^dw 0xaa55$/;"	l
+e	boot/bootmain.asm	/^   e:	32 2e                	xor    (%esi),%ch$/;"	l
+e0	boot/bootmain.asm	/^  e0:	8b 43 10             	mov    0x10(%ebx),%eax$/;"	l
+e3	boot/bootmain.asm	/^  e3:	83 c4 10             	add    $0x10,%esp$/;"	l
+e6	boot/bootmain.asm	/^  e6:	39 c1                	cmp    %eax,%ecx$/;"	l
+e8	boot/bootmain.asm	/^  e8:	76 da                	jbe    c4 <bootmain+0x84>$/;"	l
+ea	boot/bootmain.asm	/^  ea:	29 c1                	sub    %eax,%ecx$/;"	l
+eax	lib/mmu.h	/^  uint eax;          \/\/ More saved state (registers)$/;"	m	struct:taskstate	typeref:typename:uint
+eax	lib/x86.h	/^  uint eax;$/;"	m	struct:trapframe	typeref:typename:uint
+ebp	lib/mmu.h	/^  uint *ebp;$/;"	m	struct:taskstate	typeref:typename:uint *
+ebp	lib/x86.h	/^  uint ebp;$/;"	m	struct:trapframe	typeref:typename:uint
+ebx	lib/mmu.h	/^  uint ebx;$/;"	m	struct:taskstate	typeref:typename:uint
+ebx	lib/x86.h	/^  uint ebx;$/;"	m	struct:trapframe	typeref:typename:uint
+ec	boot/bootmain.asm	/^  ec:	01 c7                	add    %eax,%edi$/;"	l
+ecx	lib/mmu.h	/^  uint ecx;$/;"	m	struct:taskstate	typeref:typename:uint
+ecx	lib/x86.h	/^  uint ecx;$/;"	m	struct:trapframe	typeref:typename:uint
+edata	kernel/kernel.ld	/^	PROVIDE(edata = .);$/;"	s	assignment:provide
+edi	lib/mmu.h	/^  uint edi;$/;"	m	struct:taskstate	typeref:typename:uint
+edi	lib/x86.h	/^  uint edi;$/;"	m	struct:trapframe	typeref:typename:uint
+edx	lib/mmu.h	/^  uint edx;$/;"	m	struct:taskstate	typeref:typename:uint
+edx	lib/x86.h	/^  uint edx;$/;"	m	struct:trapframe	typeref:typename:uint
+ee	boot/bootmain.asm	/^  ee:	b8 00 00 00 00       	mov    $0x0,%eax$/;"	l
+eflags	lib/mmu.h	/^  uint eflags;$/;"	m	struct:taskstate	typeref:typename:uint
+eflags	lib/x86.h	/^  uint eflags;$/;"	m	struct:trapframe	typeref:typename:uint
+ehsize	lib/elf.h	/^  ushort ehsize;$/;"	m	struct:elfhdr	typeref:typename:ushort
+eip	lib/mmu.h	/^  uint *eip;         \/\/ Saved state from last task switch$/;"	m	struct:taskstate	typeref:typename:uint *
+eip	lib/x86.h	/^  uint eip;$/;"	m	struct:trapframe	typeref:typename:uint
+elf	lib/elf.h	/^  uchar elf[12];$/;"	m	struct:elfhdr	typeref:typename:uchar[12]
+elfhdr	lib/elf.h	/^struct elfhdr {$/;"	s
+enable_cursor	driver/cga.c	/^enable_cursor(uint8_t cursor_start, uint8_t cursor_end)$/;"	f	typeref:typename:void
+end	kernel/kernel.ld	/^	PROVIDE(end = .);$/;"	s	assignment:provide
+entry	kernel/entry.S	/^entry:$/;"	l
+entry	lib/elf.h	/^  uint entry;$/;"	m	struct:elfhdr	typeref:typename:uint
+entrypgdir	kernel/main.c	/^pde_t entrypgdir[NPDENTRIES] =$/;"	v	typeref:typename:pde_t[]
+entrypgtable	kernel/main.c	/^pte_t entrypgtable[NPTENTRIES];$/;"	v	typeref:typename:pte_t[]
+err	lib/x86.h	/^  uint err;$/;"	m	struct:trapframe	typeref:typename:uint
+err_no_lba	boot/loader.S	/^err_no_lba:$/;"	l
+err_reading_disk	boot/loader.S	/^err_reading_disk:$/;"	l
+error	boot/bootmain.c	/^error(int errcode)$/;"	f	typeref:typename:void
+es	lib/mmu.h	/^  ushort es;         \/\/ Even more saved state (segment selectors)$/;"	m	struct:taskstate	typeref:typename:ushort
+es	lib/x86.h	/^  ushort es;$/;"	m	struct:trapframe	typeref:typename:ushort
+esi	lib/mmu.h	/^  uint esi;$/;"	m	struct:taskstate	typeref:typename:uint
+esi	lib/x86.h	/^  uint esi;$/;"	m	struct:trapframe	typeref:typename:uint
+esp	lib/mmu.h	/^  uint *esp;$/;"	m	struct:taskstate	typeref:typename:uint *
+esp	lib/x86.h	/^  uint esp;$/;"	m	struct:trapframe	typeref:typename:uint
+esp0	lib/mmu.h	/^  uint esp0;         \/\/ Stack pointers and segment selectors$/;"	m	struct:taskstate	typeref:typename:uint
+esp1	lib/mmu.h	/^  uint *esp1;$/;"	m	struct:taskstate	typeref:typename:uint *
+esp2	lib/mmu.h	/^  uint *esp2;$/;"	m	struct:taskstate	typeref:typename:uint *
+etext	kernel/kernel.ld	/^	PROVIDE(etext = .);$/;"	s	assignment:provide
+extern	kernel/entry.S	/^extern entrypgdir$/;"	l
+extern	kernel/entry.S	/^extern main$/;"	l
+f	boot/bootmain.asm	/^   f:	01 1b                	add    %ebx,(%ebx)$/;"	l
+f	boot/bootmain.asm	/^   f:	74 75                	je     86 <bootmain+0x46>$/;"	l
+f	kernel/kernel.asm	/^   f:	30 00                	xor    %al,(%eax)$/;"	l
+f3	boot/bootmain.asm	/^  f3:	fc                   	cld    $/;"	l
+f4	boot/bootmain.asm	/^  f4:	f3 aa                	rep stos %al,%es:(%edi)$/;"	l
+f6	boot/bootmain.asm	/^  f6:	eb cc                	jmp    c4 <bootmain+0x84>$/;"	l
+f8	boot/bootmain.asm	/^  f8:	83 ec 04             	sub    $0x4,%esp$/;"	l
+fb	boot/bootmain.asm	/^  fb:	6a 00                	push   $0x0$/;"	l
+fd	boot/bootmain.asm	/^  fd:	6a 07                	push   $0x7$/;"	l
+ff	boot/bootmain.asm	/^  ff:	68 48 00 00 00       	push   $0x48$/;"	l
+filesz	lib/elf.h	/^  uint filesz;$/;"	m	struct:proghdr	typeref:typename:uint
+flags	lib/elf.h	/^  uint flags;$/;"	m	struct:elfhdr	typeref:typename:uint
+flags	lib/elf.h	/^  uint flags;$/;"	m	struct:proghdr	typeref:typename:uint
+fs	lib/mmu.h	/^  ushort fs;$/;"	m	struct:taskstate	typeref:typename:ushort
+fs	lib/x86.h	/^  ushort fs;$/;"	m	struct:trapframe	typeref:typename:ushort
+g	lib/mmu.h	/^  uint g : 1;          \/\/ Granularity: limit scaled by 4K when set$/;"	m	struct:segdesc	typeref:typename:uint:1
+gatedesc	lib/mmu.h	/^struct gatedesc {$/;"	s
+global	kernel/entry.S	/^global _start$/;"	l
+global	kernel/entry.S	/^global entry$/;"	l
+gs	lib/mmu.h	/^  ushort gs;$/;"	m	struct:taskstate	typeref:typename:ushort
+gs	lib/x86.h	/^  ushort gs;$/;"	m	struct:trapframe	typeref:typename:ushort
+halt	boot/loader.S	/^halt:$/;"	l
+inb	lib/x86.h	/^inb(ushort port)$/;"	f	typeref:typename:uchar
+init_cga	driver/cga.c	/^void init_cga()$/;"	f	typeref:typename:void
+insl	lib/x86.h	/^insl(int port, void *addr, int cnt)$/;"	f	typeref:typename:void
+int16_t	lib/types.h	/^typedef short int16_t;$/;"	t	typeref:typename:short
+int32_t	lib/types.h	/^typedef int int32_t;$/;"	t	typeref:typename:int
+int64_t	lib/types.h	/^typedef long long int64_t;$/;"	t	typeref:typename:long long
+int8_t	lib/types.h	/^typedef __signed char int8_t;$/;"	t	typeref:typename:__signed char
+intptr_t	lib/types.h	/^typedef int32_t intptr_t;$/;"	t	typeref:typename:int32_t
+invlpg	lib/x86.h	/^invlpg(void *addr)$/;"	f	typeref:typename:void
+iomb	lib/mmu.h	/^  ushort iomb;       \/\/ I\/O map base address$/;"	m	struct:taskstate	typeref:typename:ushort
+kOS	README.md	/^# kOS$/;"	c
+kOS.img	makefile	/^kOS.img: $(OBJ) boot\/bootblock.bin kernel\/kernel.elf$/;"	t
+kernel/kernel.elf	makefile	/^kernel\/kernel.elf:$/;"	t
+kernel_stack	kernel/entry.S	/^  kernel_stack:                           ; label points to beginning of memory$/;"	l
+lcr3	lib/x86.h	/^lcr3(uint val)$/;"	f	typeref:typename:void
+ldt	lib/mmu.h	/^  ushort ldt;$/;"	m	struct:taskstate	typeref:typename:ushort
+lgdt	lib/x86.h	/^lgdt(struct segdesc *p, int size)$/;"	f	typeref:typename:void
+lidt	lib/x86.h	/^lidt(struct gatedesc *p, int size)$/;"	f	typeref:typename:void
+lim_15_0	lib/mmu.h	/^  uint lim_15_0 : 16;  \/\/ Low bits of segment limit$/;"	m	struct:segdesc	typeref:typename:uint:16
+lim_19_16	lib/mmu.h	/^  uint lim_19_16 : 4;  \/\/ High bits of segment limit$/;"	m	struct:segdesc	typeref:typename:uint:4
+link	lib/mmu.h	/^  uint link;         \/\/ Old ts selector$/;"	m	struct:taskstate	typeref:typename:uint
+loader	boot/loader.S	/^loader:                         ; the loader label (defined as entry point in linker script)$/;"	l
+loadgs	lib/x86.h	/^loadgs(ushort v)$/;"	f	typeref:typename:void
+ltr	lib/x86.h	/^ltr(ushort sel)$/;"	f	typeref:typename:void
+machine	lib/elf.h	/^  ushort machine;$/;"	m	struct:elfhdr	typeref:typename:ushort
+magic	lib/elf.h	/^  uint magic;  \/\/ must equal ELF_MAGIC$/;"	m	struct:elfhdr	typeref:typename:uint
+main	kernel/main.c	/^main()$/;"	f	typeref:typename:int
+memsz	lib/elf.h	/^  uint memsz;$/;"	m	struct:proghdr	typeref:typename:uint
+mov	boot/loader.S	/^  mov dl, 0x80$/;"	d
+mov	boot/loader.S	/^  mov ds, ax$/;"	d
+normalmap	driver/keyboard.h	/^static uchar normalmap[256] =$/;"	v	typeref:typename:uchar[256]
+oesp	lib/x86.h	/^  uint oesp;      \/\/ useless & ignored$/;"	m	struct:trapframe	typeref:typename:uint
+off	lib/elf.h	/^  uint off;$/;"	m	struct:proghdr	typeref:typename:uint
+off_15_0	lib/mmu.h	/^  uint off_15_0 : 16;   \/\/ low 16 bits of offset in segment$/;"	m	struct:gatedesc	typeref:typename:uint:16
+off_31_16	lib/mmu.h	/^  uint off_31_16 : 16;  \/\/ high bits of offset in segment$/;"	m	struct:gatedesc	typeref:typename:uint:16
+off_t	lib/types.h	/^typedef int32_t off_t;$/;"	t	typeref:typename:int32_t
+offsetof	lib/types.h	/^#define offsetof(/;"	d
+org	boot/loader.S	/^org 0x7c00$/;"	l
+outb	lib/x86.h	/^outb(ushort port, uchar data)$/;"	f	typeref:typename:void
+outsl	lib/x86.h	/^outsl(int port, const void *addr, int cnt)$/;"	f	typeref:typename:void
+outw	lib/x86.h	/^outw(ushort port, ushort data)$/;"	f	typeref:typename:void
+p	lib/mmu.h	/^  uint p : 1;           \/\/ Present$/;"	m	struct:gatedesc	typeref:typename:uint:1
+p	lib/mmu.h	/^  uint p : 1;          \/\/ Present$/;"	m	struct:segdesc	typeref:typename:uint:1
+padding1	lib/mmu.h	/^  ushort padding1;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding1	lib/x86.h	/^  ushort padding1;$/;"	m	struct:trapframe	typeref:typename:ushort
+padding10	lib/mmu.h	/^  ushort padding10;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding2	lib/mmu.h	/^  ushort padding2;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding2	lib/x86.h	/^  ushort padding2;$/;"	m	struct:trapframe	typeref:typename:ushort
+padding3	lib/mmu.h	/^  ushort padding3;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding3	lib/x86.h	/^  ushort padding3;$/;"	m	struct:trapframe	typeref:typename:ushort
+padding4	lib/mmu.h	/^  ushort padding4;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding4	lib/x86.h	/^  ushort padding4;$/;"	m	struct:trapframe	typeref:typename:ushort
+padding5	lib/mmu.h	/^  ushort padding5;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding5	lib/x86.h	/^  ushort padding5;$/;"	m	struct:trapframe	typeref:typename:ushort
+padding6	lib/mmu.h	/^  ushort padding6;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding6	lib/x86.h	/^  ushort padding6;$/;"	m	struct:trapframe	typeref:typename:ushort
+padding7	lib/mmu.h	/^  ushort padding7;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding8	lib/mmu.h	/^  ushort padding8;$/;"	m	struct:taskstate	typeref:typename:ushort
+padding9	lib/mmu.h	/^  ushort padding9;$/;"	m	struct:taskstate	typeref:typename:ushort
+paddr	lib/elf.h	/^  uint paddr;$/;"	m	struct:proghdr	typeref:typename:uint
+pde_t	lib/custom_types.h	/^typedef uint pde_t;$/;"	t	typeref:typename:uint
+phentsize	lib/elf.h	/^  ushort phentsize;$/;"	m	struct:elfhdr	typeref:typename:ushort
+phnum	lib/elf.h	/^  ushort phnum;$/;"	m	struct:elfhdr	typeref:typename:ushort
+phoff	lib/elf.h	/^  uint phoff;$/;"	m	struct:elfhdr	typeref:typename:uint
+physaddr_t	lib/types.h	/^typedef uint32_t physaddr_t;$/;"	t	typeref:typename:uint32_t
+pmode	boot/loader.S	/^.pmode:$/;"	l
+ppn_t	lib/types.h	/^typedef uint32_t ppn_t;$/;"	t	typeref:typename:uint32_t
+print	driver/cga.c	/^print(char* c, uint8_t fg, uint8_t bg)$/;"	f	typeref:typename:void
+println	driver/cga.c	/^void println(char* c, uint8_t fg, uint8_t bg)$/;"	f	typeref:typename:void
+proghdr	lib/elf.h	/^struct proghdr {$/;"	s
+pte_t	lib/custom_types.h	/^typedef uint pte_t;$/;"	t	typeref:typename:uint
+putc	driver/cga.c	/^putc(char* c, uint8_t fg, uint8_t bg, int x, int y)$/;"	f	typeref:typename:void
+qemu	makefile	/^qemu: kOS.img$/;"	t
+rcr2	lib/x86.h	/^rcr2(void)$/;"	f	typeref:typename:uint
+read_ebp	lib/x86.h	/^read_ebp(void)$/;"	f	typeref:typename:uint32_t
+read_eflags	lib/x86.h	/^read_eflags(void)$/;"	f	typeref:typename:uint32_t
+read_esp	lib/x86.h	/^read_esp(void)$/;"	f	typeref:typename:uint32_t
+readeflags	lib/x86.h	/^readeflags(void)$/;"	f	typeref:typename:uint
+readsect	driver/disk.c	/^readsect(void *dst, uint offset)$/;"	f	typeref:typename:void
+readseg	driver/disk.c	/^readseg(uchar* pa, uint count, uint offset)$/;"	f	typeref:typename:void
+relocated	kernel/entry.S	/^relocated:$/;"	l
+rsv1	lib/mmu.h	/^  uint rsv1 : 1;       \/\/ Reserved$/;"	m	struct:segdesc	typeref:typename:uint:1
+rsv1	lib/mmu.h	/^  uint rsv1 : 3;        \/\/ reserved(should be zero I guess)$/;"	m	struct:gatedesc	typeref:typename:uint:3
+s	lib/mmu.h	/^  uint s : 1;           \/\/ must be 0 (system)$/;"	m	struct:gatedesc	typeref:typename:uint:1
+s	lib/mmu.h	/^  uint s : 1;          \/\/ 0 = system, 1 = application$/;"	m	struct:segdesc	typeref:typename:uint:1
+segdesc	lib/mmu.h	/^struct segdesc {$/;"	s
+shentsize	lib/elf.h	/^  ushort shentsize;$/;"	m	struct:elfhdr	typeref:typename:ushort
+shiftcode	driver/keyboard.h	/^static uchar shiftcode[256] =$/;"	v	typeref:typename:uchar[256]
+shiftmap	driver/keyboard.h	/^static uchar shiftmap[256] =$/;"	v	typeref:typename:uchar[256]
+shnum	lib/elf.h	/^  ushort shnum;$/;"	m	struct:elfhdr	typeref:typename:ushort
+shoff	lib/elf.h	/^  uint shoff;$/;"	m	struct:elfhdr	typeref:typename:uint
+shstrndx	lib/elf.h	/^  ushort shstrndx;$/;"	m	struct:elfhdr	typeref:typename:ushort
+size_t	lib/types.h	/^typedef uint32_t size_t;$/;"	t	typeref:typename:uint32_t
+spin	kernel/entry.S	/^spin:$/;"	l
+ss	lib/mmu.h	/^  ushort ss;$/;"	m	struct:taskstate	typeref:typename:ushort
+ss	lib/x86.h	/^  ushort ss;$/;"	m	struct:trapframe	typeref:typename:ushort
+ss0	lib/mmu.h	/^  ushort ss0;        \/\/   after an increase in privilege level$/;"	m	struct:taskstate	typeref:typename:ushort
+ss1	lib/mmu.h	/^  ushort ss1;$/;"	m	struct:taskstate	typeref:typename:ushort
+ss2	lib/mmu.h	/^  ushort ss2;$/;"	m	struct:taskstate	typeref:typename:ushort
+ssize_t	lib/types.h	/^typedef int32_t ssize_t;$/;"	t	typeref:typename:int32_t
+stage2	boot/loader.S	/^stage2:$/;"	l
+sti	lib/x86.h	/^sti(void)$/;"	f	typeref:typename:void
+stosb	lib/x86.h	/^stosb(void *addr, int data, int cnt)$/;"	f	typeref:typename:void
+stosl	lib/x86.h	/^stosl(void *addr, int data, int cnt)$/;"	f	typeref:typename:void
+t	lib/mmu.h	/^  ushort t;          \/\/ Trap on task switch$/;"	m	struct:taskstate	typeref:typename:ushort
+taskstate	lib/mmu.h	/^struct taskstate {$/;"	s
+text_palette	driver/cga.c	/^static uint8_t text_palette = 0x07;$/;"	v	typeref:typename:uint8_t	file:
+times	boot/loader.S	/^times 1024-($-$$) db 0$/;"	l
+times	boot/loader.S	/^times 510-($-$$) db 0$/;"	l
+togglecode	driver/keyboard.h	/^static uchar togglecode[256] =$/;"	v	typeref:typename:uchar[256]
+trapframe	lib/x86.h	/^struct trapframe {$/;"	s
+trapno	lib/x86.h	/^  uint trapno;$/;"	m	struct:trapframe	typeref:typename:uint
+type	lib/elf.h	/^  uint type;$/;"	m	struct:proghdr	typeref:typename:uint
+type	lib/elf.h	/^  ushort type;$/;"	m	struct:elfhdr	typeref:typename:ushort
+type	lib/mmu.h	/^  uint type : 4;        \/\/ type(STS_{TG,IG32,TG32})$/;"	m	struct:gatedesc	typeref:typename:uint:4
+type	lib/mmu.h	/^  uint type : 4;       \/\/ Segment type (see STS_ constants)$/;"	m	struct:segdesc	typeref:typename:uint:4
+uchar	lib/custom_types.h	/^typedef unsigned char  uchar;$/;"	t	typeref:typename:unsigned char
+uint	lib/custom_types.h	/^typedef unsigned int   uint;$/;"	t	typeref:typename:unsigned int
+uint16_t	lib/types.h	/^typedef unsigned short uint16_t;$/;"	t	typeref:typename:unsigned short
+uint32_t	lib/types.h	/^typedef unsigned int uint32_t;$/;"	t	typeref:typename:unsigned int
+uint64_t	lib/types.h	/^typedef unsigned long long uint64_t;$/;"	t	typeref:typename:unsigned long long
+uint8_t	lib/types.h	/^typedef unsigned char uint8_t;$/;"	t	typeref:typename:unsigned char
+uintptr_t	lib/types.h	/^typedef uint32_t uintptr_t;$/;"	t	typeref:typename:uint32_t
+ushort	lib/custom_types.h	/^typedef unsigned short ushort;$/;"	t	typeref:typename:unsigned short
+vaddr	lib/elf.h	/^  uint vaddr;$/;"	m	struct:proghdr	typeref:typename:uint
+version	lib/elf.h	/^  uint version;$/;"	m	struct:elfhdr	typeref:typename:uint
+waitdisk	driver/disk.c	/^waitdisk(void)$/;"	f	typeref:typename:void
+write_eflags	lib/x86.h	/^write_eflags(uint32_t eflags)$/;"	f	typeref:typename:void
+xchg	lib/x86.h	/^xchg(volatile uint *addr, uint newval)$/;"	f	typeref:typename:uint

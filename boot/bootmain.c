@@ -5,11 +5,11 @@ asm (
     "jmp 0x7c00\n\t" // retry booting TODO: delete?
 );
 
-#include "../driver/cga.h"
-#include "../driver/disk.h"
-#include "../lib/x86.h"
-#include "../lib/elf.h"
-#include "../lib/ulib.h"
+#include "driver/cga.h"
+#include "driver/disk.h"
+#include "lib/x86.h"
+#include "lib/elf.h"
+#include "lib/mmu.h"
 
 void error(int errcode);
 
@@ -17,55 +17,46 @@ void
 bootmain()
 {
   init_cga();
-
   struct elfhdr *elf;
-  struct proghdr *ph, *eph;
+  struct proghdr *ph, *end_ph;
   void (*entry)(void);
   uchar* pa;
-
-  // write elf file as first page
-  elf = (struct elfhdr*)0x10000;
-
-  // At this point, first 5 sectors are from 2 stage bootloader and 3 sectors
-  //  from bootmain
-  // Read 1st page off disk
-  println("Reading the segments", 0x07, 0x00);
-  readseg((uchar*)elf, 4096, 0);
-
-  // Is this an ELF executable?
+  // read first page off of the elf file into 2nd page of physical RAM
+  // used to obtain header information
+  elf = (struct elfhdr*)0;
+  // for the first read, offset is ELF_START because that's where
+  //    the file is in disk
+  readseg((uchar*)elf, 4096, ELF_START);
+  // check the magic number
   if(elf->magic != ELF_MAGIC)
     error(-1);
-
-  println("Loading the program segments", 0x07, 0x00);
-
+  println("Loading the program segments");
   // Load each program segment (ignores ph flags).
   ph = (struct proghdr*)((uchar*)elf + elf->phoff);
-  eph = ph + elf->phnum; // 0x28003?
-  asm("movl %0,%%eax\n\t"
-      "movl %1,%%ebx\n\t"
-      :
-      : "m" (elf->phnum), "m" (elf->phnum)
-      );
-  while(1);
-  char num_ph[10];
-  itoa((uint) elf->phnum + 1, num_ph, 10);
-  println(num_ph, 0x07, 0x0);
-
-  while(1);
-  for(; ph < eph; ph++){
+  end_ph = ph + elf->phnum;
+  /*
+  uint esp = 0xf000;
+  esp++;
+  // FIXME
+  asm volatile("mov %0, %1" :: "r"(elf), "r"(esp));
+  asm volatile("mov %0, %1" :: "r"(ph), "r"(esp));
+  */
+//  itoa((uint) elf->phnum + 1, num_ph, 10);
+  println("here");
+  // load each program segment into memory, but really
+  // the only segments necessary are first 2 (data and text)
+  for(; ph < end_ph; ph++){
     pa = (uchar*)ph->paddr;
     readseg(pa, ph->filesz, ph->off);
     if(ph->memsz > ph->filesz)
       stosb(pa + ph->filesz, 0, ph->memsz - ph->filesz);
   }
-
+  println("here");
   // Call the entry point from the ELF header.
   // Does not return!
   entry = (void(*)())(elf->entry);
-  println("Entering kernel", 0x07, 0x00);
-
+  println("Entering kernel");
   entry();
-
   error(-2);
 }
 
@@ -74,10 +65,9 @@ void
 error(int errcode)
 {
   if (errcode == -1)
-    println("Error: magic number not detected in kernel", 0x07, 0x00);
+    println("Error: magic number not detected in kernel");
   if (errcode == -2)
-    println("Error: entry returned", 0x07, 0x00);
-
+    println("Error: entry returned");
   // block
   while(1);
 }
