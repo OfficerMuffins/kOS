@@ -25,6 +25,7 @@ C	driver/keyboard.h	/^#define C(/;"	d
 CAPSLOCK	driver/keyboard.h	/^#define CAPSLOCK /;"	d
 CC	makefile	/^CC = gcc$/;"	m
 CC_FLAGS	makefile	/^CC_FLAGS = -m32 -c -nostdlib -nostdinc -fno-builtin -fno-pie -fno-stack-protector -nostartfiles /;"	m
+CC_INCLUDES	makefile	/^CC_INCLUDES := -I$(ROOT)$/;"	m
 COLOR	driver/cga.h	/^#define COLOR(/;"	d
 CPUS	makefile	/^CPUS = 1$/;"	m
 CR0_AM	lib/mmu.h	/^#define CR0_AM /;"	d
@@ -49,73 +50,31 @@ DPL_USER	lib/mmu.h	/^#define DPL_USER /;"	d
 DRIVER_OBJ	makefile	/^DRIVER_OBJ := $(addprefix driver\/,$(DRIVER_OBJ))$/;"	m
 DRIVER_OBJ	makefile	/^DRIVER_OBJ = cga.o\\$/;"	m
 DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000001$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000041$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000042$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000043$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 000000d8$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 14 to 000000e6$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 14 to 00000112$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 15 to 0000007f$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 15 to 000000d1$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 19 to 00000017$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000019$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000001b$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000002f$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000031$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000004d$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000004f$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000005e$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000081$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000008b$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000008d$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 000000b3$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 000000b5$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 000000fd$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 000000ff$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000114$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000116$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 21 to 000000fb$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 3 to 00000004$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 3 to 00000089$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 3 to 000000d4$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 3 to 000000d7$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 31 to 000000b1$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000020$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 0000002d$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000036$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000054$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000063$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000068$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000086$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000092$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 000000ba$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 00000104$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 5 to 0000011b$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 00000028$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 0000003e$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 0000004b$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 0000005c$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 00000070$/;"	l
-DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 8 to 000000c2$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 0000000b$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 0000002e$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 0000002f$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 1 to 00000156$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000003$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000000d$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 0000000f$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 2 to 00000158$/;"	l
+DW_CFA_advance_loc	boot/bootmain.asm	/^  DW_CFA_advance_loc: 30 to 0000002d$/;"	l
+DW_CFA_advance_loc2	boot/bootmain.asm	/^  DW_CFA_advance_loc2: 337 to 00000154$/;"	l
 DW_CFA_def_cfa	boot/bootmain.asm	/^  DW_CFA_def_cfa: r4 (esp) ofs 4$/;"	l
-DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 12$/;"	l
-DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 16$/;"	l
-DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 20$/;"	l
-DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 24$/;"	l
-DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 28$/;"	l
-DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 32$/;"	l
 DW_CFA_def_cfa_offset	boot/bootmain.asm	/^  DW_CFA_def_cfa_offset: 8$/;"	l
+DW_CFA_def_cfa_register	boot/bootmain.asm	/^  DW_CFA_def_cfa_register: r5 (ebp)$/;"	l
 DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r3 (ebx) at cfa-16$/;"	l
-DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r3 (ebx) at cfa-8$/;"	l
-DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r6 (esi) at cfa-12$/;"	l
-DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r7 (edi) at cfa-8$/;"	l
+DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r5 (ebp) at cfa-8$/;"	l
+DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r7 (edi) at cfa-12$/;"	l
 DW_CFA_offset	boot/bootmain.asm	/^  DW_CFA_offset: r8 (eip) at cfa-4$/;"	l
+DW_CFA_restore	boot/bootmain.asm	/^  DW_CFA_restore: r3 (ebx)$/;"	l
+DW_CFA_restore	boot/bootmain.asm	/^  DW_CFA_restore: r5 (ebp)$/;"	l
+DW_CFA_restore	boot/bootmain.asm	/^  DW_CFA_restore: r7 (edi)$/;"	l
 Disassembly	boot/bootblock.asm	/^Disassembly of section .data:$/;"	l
 Disassembly	boot/bootmain.asm	/^Disassembly of section .comment:$/;"	l
 Disassembly	boot/bootmain.asm	/^Disassembly of section .eh_frame:$/;"	l
 Disassembly	boot/bootmain.asm	/^Disassembly of section .entry:$/;"	l
-Disassembly	boot/bootmain.asm	/^Disassembly of section .rodata.str1.1:$/;"	l
-Disassembly	boot/bootmain.asm	/^Disassembly of section .rodata.str1.4:$/;"	l
+Disassembly	boot/bootmain.asm	/^Disassembly of section .rodata:$/;"	l
 Disassembly	boot/bootmain.asm	/^Disassembly of section .text:$/;"	l
 Disassembly	kernel/kernel.asm	/^Disassembly of section .bss:$/;"	l
 Disassembly	kernel/kernel.asm	/^Disassembly of section .comment:$/;"	l
@@ -131,6 +90,7 @@ ELF_PROG_FLAG_EXEC	lib/elf.h	/^#define ELF_PROG_FLAG_EXEC /;"	d
 ELF_PROG_FLAG_READ	lib/elf.h	/^#define ELF_PROG_FLAG_READ /;"	d
 ELF_PROG_FLAG_WRITE	lib/elf.h	/^#define ELF_PROG_FLAG_WRITE /;"	d
 ELF_PROG_LOAD	lib/elf.h	/^#define ELF_PROG_LOAD /;"	d
+ELF_START	driver/disk.h	/^#define ELF_START /;"	d
 ENABLE	driver/lapic.h	/^  #define ENABLE /;"	d
 EOI	driver/lapic.h	/^#define EOI /;"	d
 ERROR	driver/lapic.h	/^#define ERROR /;"	d
@@ -185,11 +145,12 @@ KEY_PGDN	driver/keyboard.h	/^#define KEY_PGDN /;"	d
 KEY_PGUP	driver/keyboard.h	/^#define KEY_PGUP /;"	d
 KEY_RT	driver/keyboard.h	/^#define KEY_RT /;"	d
 KEY_UP	driver/keyboard.h	/^#define KEY_UP /;"	d
+LBA	driver/disk.h	/^#define LBA(/;"	d
 LD	makefile	/^LD = ld$/;"	m
 LDFLAGS	makefile	/^LDFLAGS = \\$/;"	m
 LEVEL	driver/lapic.h	/^  #define LEVEL /;"	d
 LIB_OBJ	makefile	/^LIB_OBJ := $(addprefix lib\/,$(LIB_OBJ))$/;"	m
-LIB_OBJ	makefile	/^LIB_OBJ = #ulib.o$/;"	m
+LIB_OBJ	makefile	/^LIB_OBJ = lib.o$/;"	m
 LINT0	driver/lapic.h	/^#define LINT0 /;"	d
 LINT1	driver/lapic.h	/^#define LINT1 /;"	d
 LoadingMsg	boot/loader.S	/^LoadingMsg db 0x0D, 0x0A, '<kOS>', 0x0D, 0x0A, 0x0A, 0x00$/;"	d
@@ -235,9 +196,12 @@ PTXSHIFT	lib/mmu.h	/^#define PTXSHIFT /;"	d
 QEMU	makefile	/^QEMU = qemu-system-i386$/;"	m
 QEMU_FLAGS	makefile	/^QEMU_FLAGS := -drive file=kOS.img,index=0,media=disk,format=raw -smp $(CPUS) -m 512$/;"	m
 QEMU_OPTS	makefile	/^QEMU_OPTS = -monitor stdio$/;"	m
+ROOT	makefile	/^ROOT = $(shell pwd)$/;"	m
 ROUNDDOWN	lib/types.h	/^#define ROUNDDOWN(/;"	d
 ROUNDUP	lib/types.h	/^#define ROUNDUP(/;"	d
 SCROLLLOCK	driver/keyboard.h	/^#define SCROLLLOCK /;"	d
+SECROUNDDOWN	driver/disk.h	/^#define SECROUNDDOWN(/;"	d
+SECROUNDUP	driver/disk.h	/^#define SECROUNDUP(/;"	d
 SECTSIZE	driver/disk.h	/^#define SECTSIZE /;"	d
 SEG	lib/mmu.h	/^#define SEG(/;"	d
 SEG16	lib/mmu.h	/^#define SEG16(/;"	d
@@ -280,6 +244,7 @@ V2P_WO	lib/memlayout.h	/^#define V2P_WO(/;"	d
 VER	driver/lapic.h	/^#define VER /;"	d
 Version	boot/bootmain.asm	/^  Version:               1$/;"	l
 X1	driver/lapic.h	/^  #define X1 /;"	d
+XOR_SWAP	lib/lib.c	/^#   define XOR_SWAP(/;"	d	file:
 __CUSTOM_TYPES__	lib/custom_types.h	/^#define __CUSTOM_TYPES__$/;"	d
 __DISK__	driver/disk.h	/^#define __DISK__$/;"	d
 __ELF_HEADER__	lib/elf.h	/^#define __ELF_HEADER__$/;"	d
@@ -294,40 +259,34 @@ __VGA_TEXTMODE_H__	driver/cga.h	/^#define __VGA_TEXTMODE_H__$/;"	d
 __X86__	lib/x86.h	/^#define __X86__$/;"	d
 _start	kernel/entry.S	/^_start equ V2P_WO(entry)$/;"	d
 a	boot/bootmain.asm	/^   a:	29 20                	sub    %esp,(%eax)$/;"	l
-a2	boot/bootmain.asm	/^  a2:	0f b7 35 2c 00 01 00 	movzwl 0x1002c,%esi$/;"	l
-a2	boot/bootmain.asm	/^  a2:	14 42                	adc    $0x42,%al$/;"	l
-a4	boot/bootmain.asm	/^  a4:	0e                   	push   %cs$/;"	l
-a5	boot/bootmain.asm	/^  a5:	18 42 0e             	sbb    %al,0xe(%edx)$/;"	l
-a8	boot/bootmain.asm	/^  a8:	1c 45                	sbb    $0x45,%al$/;"	l
-a9	boot/bootmain.asm	/^  a9:	c1 e6 05             	shl    $0x5,%esi$/;"	l
-aa	boot/bootmain.asm	/^  aa:	0e                   	push   %cs$/;"	l
-ab	boot/bootmain.asm	/^  ab:	20 48 0e             	and    %cl,0xe(%eax)$/;"	l
-ac	boot/bootmain.asm	/^  ac:	01 de                	add    %ebx,%esi$/;"	l
-ae	boot/bootmain.asm	/^  ae:	10 4f 0e             	adc    %cl,0xe(%edi)$/;"	l
-ae	boot/bootmain.asm	/^  ae:	83 c4 0c             	add    $0xc,%esp$/;"	l
+a	boot/bootmain.asm	/^   a:	55                   	push   %ebp$/;"	l
+a	kernel/main.c	/^char *a = "91231";$/;"	v	typeref:typename:char *
+a0	boot/bootmain.asm	/^  a0:	72 6e                	jb     110 <stosb+0x106>$/;"	l
+a2	boot/bootmain.asm	/^  a2:	65                   	gs$/;"	l
+a2	boot/bootmain.asm	/^  a2:	e8 fc ff ff ff       	call   a3 <bootmain+0xa3>$/;"	l
+a3	boot/bootmain.asm	/^  a3:	64                   	fs$/;"	l
+a7	boot/bootmain.asm	/^  a7:	83 c4 10             	add    $0x10,%esp$/;"	l
+aa	boot/bootmain.asm	/^  aa:	8b 45 f4             	mov    -0xc(%ebp),%eax$/;"	l
+ad	boot/bootmain.asm	/^  ad:	8b 40 0c             	mov    0xc(%eax),%eax$/;"	l
 align	lib/elf.h	/^  uint align;$/;"	m	struct:proghdr	typeref:typename:uint
 all	makefile	/^all:$/;"	t
 args	lib/mmu.h	/^  uint args : 5;        \/\/ # args, 0 for interrupt\/trap gates$/;"	m	struct:gatedesc	typeref:typename:uint:5
 avl	lib/mmu.h	/^  uint avl : 1;        \/\/ Unused (available for software use)$/;"	m	struct:segdesc	typeref:typename:uint:1
 b	boot/bootmain.asm	/^   b:	00 01                	add    %al,(%ecx)$/;"	l
-b	boot/bootmain.asm	/^   b:	74 07                	je     14 <error+0x14>$/;"	l
-b	boot/bootmain.asm	/^   b:	79 20                	jns    2d <.rodata.str1.1+0x2d>$/;"	l
+b	boot/bootmain.asm	/^   b:	6f                   	outsl  %ds:(%esi),(%dx)$/;"	l
+b	boot/bootmain.asm	/^   b:	83 ec 0c             	sub    $0xc,%esp$/;"	l
+b	boot/bootmain.asm	/^   b:	89 e5                	mov    %esp,%ebp$/;"	l
 b	kernel/kernel.asm	/^   b:	39 2e                	cmp    %ebp,(%esi)$/;"	l
-b1	boot/bootmain.asm	/^  b1:	14 43                	adc    $0x43,%al$/;"	l
-b1	boot/bootmain.asm	/^  b1:	6a 00                	push   $0x0$/;"	l
-b3	boot/bootmain.asm	/^  b3:	0e                   	push   %cs$/;"	l
-b3	boot/bootmain.asm	/^  b3:	6a 07                	push   $0x7$/;"	l
-b4	boot/bootmain.asm	/^  b4:	18 43 0e             	sbb    %al,0xe(%ebx)$/;"	l
-b5	boot/bootmain.asm	/^  b5:	68 48 00 00 00       	push   $0x48$/;"	l
-b7	boot/bootmain.asm	/^  b7:	1c 41                	sbb    $0x41,%al$/;"	l
-b9	boot/bootmain.asm	/^  b9:	0e                   	push   %cs$/;"	l
-ba	boot/bootmain.asm	/^  ba:	20 4e 0e             	and    %cl,0xe(%esi)$/;"	l
-ba	boot/bootmain.asm	/^  ba:	e8 fc ff ff ff       	call   bb <bootmain+0x7b>$/;"	l
+b0	boot/bootmain.asm	/^  b0:	89 45 e4             	mov    %eax,-0x1c(%ebp)$/;"	l
+b3	boot/bootmain.asm	/^  b3:	8b 45 f4             	mov    -0xc(%ebp),%eax$/;"	l
+b6	boot/bootmain.asm	/^  b6:	8b 50 04             	mov    0x4(%eax),%edx$/;"	l
+b9	boot/bootmain.asm	/^  b9:	8b 45 f4             	mov    -0xc(%ebp),%eax$/;"	l
 base_15_0	lib/mmu.h	/^  uint base_15_0 : 16; \/\/ Low bits of segment base address$/;"	m	struct:segdesc	typeref:typename:uint:16
 base_23_16	lib/mmu.h	/^  uint base_23_16 : 8; \/\/ Middle bits of segment base address$/;"	m	struct:segdesc	typeref:typename:uint:8
 base_31_24	lib/mmu.h	/^  uint base_31_24 : 8; \/\/ High bits of segment base address$/;"	m	struct:segdesc	typeref:typename:uint:8
-bd	boot/bootmain.asm	/^  bd:	10 55 0e             	adc    %dl,0xe(%ebp)$/;"	l
-bf	boot/bootmain.asm	/^  bf:	83 c4 10             	add    $0x10,%esp$/;"	l
+bc	boot/bootmain.asm	/^  bc:	8b 40 10             	mov    0x10(%eax),%eax$/;"	l
+bf	boot/bootmain.asm	/^  bf:	83 ec 04             	sub    $0x4,%esp$/;"	l
+bg_palette	driver/cga.c	/^static uint8_t bg_palette = 0x0; \/\/ white$/;"	v	typeref:typename:uint8_t	file:
 bits	boot/loader.S	/^bits 16$/;"	l
 bits	boot/loader.S	/^bits 32$/;"	l
 bochs	makefile	/^bochs: kOS.img$/;"	t
@@ -336,21 +295,13 @@ bootmain	boot/bootmain.c	/^bootmain()$/;"	f	typeref:typename:void
 bootsect_begin	boot/bootlinker.ld	/^        bootsect_begin = .;$/;"	s	section:.text
 breakpoint	lib/x86.h	/^breakpoint(void)$/;"	f	typeref:typename:void
 c	boot/bootmain.asm	/^   c:	39 2e                	cmp    %ebp,(%esi)$/;"	l
-c0	boot/bootmain.asm	/^  c0:	14 42                	adc    $0x42,%al$/;"	l
-c2	boot/bootmain.asm	/^  c2:	0e                   	push   %cs$/;"	l
-c2	boot/bootmain.asm	/^  c2:	eb 03                	jmp    c7 <bootmain+0x87>$/;"	l
-c3	boot/bootmain.asm	/^  c3:	18 42 0e             	sbb    %al,0xe(%edx)$/;"	l
-c4	boot/bootmain.asm	/^  c4:	83 c3 20             	add    $0x20,%ebx$/;"	l
-c6	boot/bootmain.asm	/^  c6:	1c 45                	sbb    $0x45,%al$/;"	l
-c7	boot/bootmain.asm	/^  c7:	39 f3                	cmp    %esi,%ebx$/;"	l
-c8	boot/bootmain.asm	/^  c8:	0e                   	push   %cs$/;"	l
-c9	boot/bootmain.asm	/^  c9:	20 4e 0e             	and    %cl,0xe(%esi)$/;"	l
-c9	boot/bootmain.asm	/^  c9:	73 2d                	jae    f8 <bootmain+0xb8>$/;"	l
-cb	boot/bootmain.asm	/^  cb:	8b 7b 0c             	mov    0xc(%ebx),%edi$/;"	l
-cc	boot/bootmain.asm	/^  cc:	14 42                	adc    $0x42,%al$/;"	l
-ce	boot/bootmain.asm	/^  ce:	0e                   	push   %cs$/;"	l
-ce	boot/bootmain.asm	/^  ce:	83 ec 04             	sub    $0x4,%esp$/;"	l
-cf	boot/bootmain.asm	/^  cf:	18 42 0e             	sbb    %al,0xe(%edx)$/;"	l
+c	boot/bootmain.asm	/^   c:	74 6d                	je     7b <.rodata+0x7b>$/;"	l
+c2	boot/bootmain.asm	/^  c2:	52                   	push   %edx$/;"	l
+c3	boot/bootmain.asm	/^  c3:	50                   	push   %eax$/;"	l
+c4	boot/bootmain.asm	/^  c4:	ff 75 e4             	pushl  -0x1c(%ebp)$/;"	l
+c7	boot/bootmain.asm	/^  c7:	e8 fc ff ff ff       	call   c8 <bootmain+0xc8>$/;"	l
+cc	boot/bootmain.asm	/^  cc:	83 c4 10             	add    $0x10,%esp$/;"	l
+cf	boot/bootmain.asm	/^  cf:	8b 45 f4             	mov    -0xc(%ebp),%eax$/;"	l
 cga_mem	driver/cga.c	/^static volatile uint16_t *cga_mem = (volatile uint16_t*) 0xb8000;$/;"	v	typeref:typename:volatile uint16_t *	file:
 clean	makefile	/^clean:$/;"	t
 clear_screen	driver/cga.c	/^clear_screen()$/;"	f	typeref:typename:void
@@ -362,21 +313,18 @@ cs	lib/mmu.h	/^  ushort cs;$/;"	m	struct:taskstate	typeref:typename:ushort
 cs	lib/x86.h	/^  ushort cs;$/;"	m	struct:trapframe	typeref:typename:ushort
 ctlmap	driver/keyboard.h	/^static uchar ctlmap[256] =$/;"	v	typeref:typename:uchar[256]
 curr_row	driver/cga.c	/^static uint8_t curr_row = 0;$/;"	v	typeref:typename:uint8_t	file:
-cursor_offset	driver/cga.c	/^static uint8_t cursor_offset = 1;$/;"	v	typeref:typename:uint8_t	file:
-d	boot/bootmain.asm	/^   d:	72 65                	jb     74 <bootmain+0x34>$/;"	l
+cursor_offset	driver/cga.c	/^static uint8_t cursor_offset = 0;$/;"	v	typeref:typename:uint8_t	file:
+d	boot/bootmain.asm	/^   d:	57                   	push   %edi$/;"	l
 d	boot/bootmain.asm	/^   d:	7c 08                	jl     17 <.eh_frame+0x17>$/;"	l
-d	boot/bootmain.asm	/^   d:	83 fb fe             	cmp    $0xfffffffe,%ebx$/;"	l
 d	kernel/kernel.asm	/^   d:	32 2e                	xor    (%esi),%ch$/;"	l
-d1	boot/bootmain.asm	/^  d1:	ff 73 04             	pushl  0x4(%ebx)$/;"	l
-d2	boot/bootmain.asm	/^  d2:	1c 45                	sbb    $0x45,%al$/;"	l
-d4	boot/bootmain.asm	/^  d4:	0e                   	push   %cs$/;"	l
-d4	boot/bootmain.asm	/^  d4:	ff 73 10             	pushl  0x10(%ebx)$/;"	l
-d5	boot/bootmain.asm	/^  d5:	20 00                	and    %al,(%eax)$/;"	l
-d7	boot/bootmain.asm	/^  d7:	57                   	push   %edi$/;"	l
-d8	boot/bootmain.asm	/^  d8:	e8 fc ff ff ff       	call   d9 <bootmain+0x99>$/;"	l
+d2	boot/bootmain.asm	/^  d2:	8b 50 14             	mov    0x14(%eax),%edx$/;"	l
+d5	boot/bootmain.asm	/^  d5:	8b 45 f4             	mov    -0xc(%ebp),%eax$/;"	l
+d8	boot/bootmain.asm	/^  d8:	8b 40 10             	mov    0x10(%eax),%eax$/;"	l
 data	kernel/kernel.ld	/^	PROVIDE(data = .);$/;"	s	assignment:provide
+db	boot/bootmain.asm	/^  db:	39 c2                	cmp    %eax,%edx$/;"	l
 db	lib/mmu.h	/^  uint db : 1;         \/\/ 0 = 16-bit segment, 1 = 32-bit segment$/;"	m	struct:segdesc	typeref:typename:uint:1
-dd	boot/bootmain.asm	/^  dd:	8b 4b 14             	mov    0x14(%ebx),%ecx$/;"	l
+dd	boot/bootmain.asm	/^  dd:	76 2c                	jbe    10b <bootmain+0x10b>$/;"	l
+df	boot/bootmain.asm	/^  df:	8b 45 f4             	mov    -0xc(%ebp),%eax$/;"	l
 dpl	lib/mmu.h	/^  uint dpl : 2;         \/\/ descriptor(meaning new) privilege level$/;"	m	struct:gatedesc	typeref:typename:uint:2
 dpl	lib/mmu.h	/^  uint dpl : 2;        \/\/ Descriptor Privilege Level$/;"	m	struct:segdesc	typeref:typename:uint:2
 draw_cursor	driver/cga.c	/^draw_cursor()$/;"	f	typeref:typename:void
@@ -384,26 +332,28 @@ ds	lib/mmu.h	/^  ushort ds;$/;"	m	struct:taskstate	typeref:typename:ushort
 ds	lib/x86.h	/^  ushort ds;$/;"	m	struct:trapframe	typeref:typename:ushort
 dw	boot/loader.S	/^dw 0xaa55$/;"	l
 e	boot/bootmain.asm	/^   e:	32 2e                	xor    (%esi),%ch$/;"	l
-e0	boot/bootmain.asm	/^  e0:	8b 43 10             	mov    0x10(%ebx),%eax$/;"	l
-e3	boot/bootmain.asm	/^  e3:	83 c4 10             	add    $0x10,%esp$/;"	l
-e6	boot/bootmain.asm	/^  e6:	39 c1                	cmp    %eax,%ecx$/;"	l
-e8	boot/bootmain.asm	/^  e8:	76 da                	jbe    c4 <bootmain+0x84>$/;"	l
-ea	boot/bootmain.asm	/^  ea:	29 c1                	sub    %eax,%ecx$/;"	l
+e	boot/bootmain.asm	/^   e:	53                   	push   %ebx$/;"	l
+e	boot/bootmain.asm	/^   e:	61                   	popa   $/;"	l
+e	boot/bootmain.asm	/^   e:	68 00 00 00 00       	push   $0x0$/;"	l
+e2	boot/bootmain.asm	/^  e2:	8b 50 14             	mov    0x14(%eax),%edx$/;"	l
+e5	boot/bootmain.asm	/^  e5:	8b 45 f4             	mov    -0xc(%ebp),%eax$/;"	l
+e8	boot/bootmain.asm	/^  e8:	8b 40 10             	mov    0x10(%eax),%eax$/;"	l
 eax	lib/mmu.h	/^  uint eax;          \/\/ More saved state (registers)$/;"	m	struct:taskstate	typeref:typename:uint
 eax	lib/x86.h	/^  uint eax;$/;"	m	struct:trapframe	typeref:typename:uint
+eb	boot/bootmain.asm	/^  eb:	29 c2                	sub    %eax,%edx$/;"	l
 ebp	lib/mmu.h	/^  uint *ebp;$/;"	m	struct:taskstate	typeref:typename:uint *
 ebp	lib/x86.h	/^  uint ebp;$/;"	m	struct:trapframe	typeref:typename:uint
 ebx	lib/mmu.h	/^  uint ebx;$/;"	m	struct:taskstate	typeref:typename:uint
 ebx	lib/x86.h	/^  uint ebx;$/;"	m	struct:trapframe	typeref:typename:uint
-ec	boot/bootmain.asm	/^  ec:	01 c7                	add    %eax,%edi$/;"	l
 ecx	lib/mmu.h	/^  uint ecx;$/;"	m	struct:taskstate	typeref:typename:uint
 ecx	lib/x86.h	/^  uint ecx;$/;"	m	struct:trapframe	typeref:typename:uint
+ed	boot/bootmain.asm	/^  ed:	89 d0                	mov    %edx,%eax$/;"	l
 edata	kernel/kernel.ld	/^	PROVIDE(edata = .);$/;"	s	assignment:provide
 edi	lib/mmu.h	/^  uint edi;$/;"	m	struct:taskstate	typeref:typename:uint
 edi	lib/x86.h	/^  uint edi;$/;"	m	struct:trapframe	typeref:typename:uint
 edx	lib/mmu.h	/^  uint edx;$/;"	m	struct:taskstate	typeref:typename:uint
 edx	lib/x86.h	/^  uint edx;$/;"	m	struct:trapframe	typeref:typename:uint
-ee	boot/bootmain.asm	/^  ee:	b8 00 00 00 00       	mov    $0x0,%eax$/;"	l
+ef	boot/bootmain.asm	/^  ef:	89 c1                	mov    %eax,%ecx$/;"	l
 eflags	lib/mmu.h	/^  uint eflags;$/;"	m	struct:taskstate	typeref:typename:uint
 eflags	lib/x86.h	/^  uint eflags;$/;"	m	struct:trapframe	typeref:typename:uint
 ehsize	lib/elf.h	/^  ushort ehsize;$/;"	m	struct:elfhdr	typeref:typename:ushort
@@ -434,15 +384,15 @@ etext	kernel/kernel.ld	/^	PROVIDE(etext = .);$/;"	s	assignment:provide
 extern	kernel/entry.S	/^extern entrypgdir$/;"	l
 extern	kernel/entry.S	/^extern main$/;"	l
 f	boot/bootmain.asm	/^   f:	01 1b                	add    %ebx,(%ebx)$/;"	l
-f	boot/bootmain.asm	/^   f:	74 75                	je     86 <bootmain+0x46>$/;"	l
+f	boot/bootmain.asm	/^   f:	69 6e 00 52 65 61 64 	imul   $0x64616552,0x0(%esi),%ebp$/;"	l
+f	boot/bootmain.asm	/^   f:	8b 4d 08             	mov    0x8(%ebp),%ecx$/;"	l
 f	kernel/kernel.asm	/^   f:	30 00                	xor    %al,(%eax)$/;"	l
-f3	boot/bootmain.asm	/^  f3:	fc                   	cld    $/;"	l
-f4	boot/bootmain.asm	/^  f4:	f3 aa                	rep stos %al,%es:(%edi)$/;"	l
-f6	boot/bootmain.asm	/^  f6:	eb cc                	jmp    c4 <bootmain+0x84>$/;"	l
-f8	boot/bootmain.asm	/^  f8:	83 ec 04             	sub    $0x4,%esp$/;"	l
-fb	boot/bootmain.asm	/^  fb:	6a 00                	push   $0x0$/;"	l
-fd	boot/bootmain.asm	/^  fd:	6a 07                	push   $0x7$/;"	l
-ff	boot/bootmain.asm	/^  ff:	68 48 00 00 00       	push   $0x48$/;"	l
+f1	boot/bootmain.asm	/^  f1:	8b 45 f4             	mov    -0xc(%ebp),%eax$/;"	l
+f4	boot/bootmain.asm	/^  f4:	8b 50 10             	mov    0x10(%eax),%edx$/;"	l
+f7	boot/bootmain.asm	/^  f7:	8b 45 e4             	mov    -0x1c(%ebp),%eax$/;"	l
+fa	boot/bootmain.asm	/^  fa:	01 d0                	add    %edx,%eax$/;"	l
+fc	boot/bootmain.asm	/^  fc:	83 ec 04             	sub    $0x4,%esp$/;"	l
+ff	boot/bootmain.asm	/^  ff:	51                   	push   %ecx$/;"	l
 filesz	lib/elf.h	/^  uint filesz;$/;"	m	struct:proghdr	typeref:typename:uint
 flags	lib/elf.h	/^  uint flags;$/;"	m	struct:elfhdr	typeref:typename:uint
 flags	lib/elf.h	/^  uint flags;$/;"	m	struct:proghdr	typeref:typename:uint
@@ -458,6 +408,7 @@ halt	boot/loader.S	/^halt:$/;"	l
 inb	lib/x86.h	/^inb(ushort port)$/;"	f	typeref:typename:uchar
 init_cga	driver/cga.c	/^void init_cga()$/;"	f	typeref:typename:void
 insl	lib/x86.h	/^insl(int port, void *addr, int cnt)$/;"	f	typeref:typename:void
+insw	lib/x86.h	/^insw(int port, void *addr, int cnt)$/;"	f	typeref:typename:void
 int16_t	lib/types.h	/^typedef short int16_t;$/;"	t	typeref:typename:short
 int32_t	lib/types.h	/^typedef int int32_t;$/;"	t	typeref:typename:int
 int64_t	lib/types.h	/^typedef long long int64_t;$/;"	t	typeref:typename:long long
@@ -465,8 +416,9 @@ int8_t	lib/types.h	/^typedef __signed char int8_t;$/;"	t	typeref:typename:__sign
 intptr_t	lib/types.h	/^typedef int32_t intptr_t;$/;"	t	typeref:typename:int32_t
 invlpg	lib/x86.h	/^invlpg(void *addr)$/;"	f	typeref:typename:void
 iomb	lib/mmu.h	/^  ushort iomb;       \/\/ I\/O map base address$/;"	m	struct:taskstate	typeref:typename:ushort
+itoa	lib/lib.c	/^char* itoa(int num, char* str, int base)$/;"	f	typeref:typename:char *
 kOS	README.md	/^# kOS$/;"	c
-kOS.img	makefile	/^kOS.img: $(OBJ) boot\/bootblock.bin kernel\/kernel.elf$/;"	t
+kOS.img	makefile	/^kOS.img: clean $(OBJ) boot\/bootblock.bin kernel\/kernel.elf$/;"	t
 kernel/kernel.elf	makefile	/^kernel\/kernel.elf:$/;"	t
 kernel_stack	kernel/entry.S	/^  kernel_stack:                           ; label points to beginning of memory$/;"	l
 lcr3	lib/x86.h	/^lcr3(uint val)$/;"	f	typeref:typename:void
@@ -522,20 +474,21 @@ phoff	lib/elf.h	/^  uint phoff;$/;"	m	struct:elfhdr	typeref:typename:uint
 physaddr_t	lib/types.h	/^typedef uint32_t physaddr_t;$/;"	t	typeref:typename:uint32_t
 pmode	boot/loader.S	/^.pmode:$/;"	l
 ppn_t	lib/types.h	/^typedef uint32_t ppn_t;$/;"	t	typeref:typename:uint32_t
-print	driver/cga.c	/^print(char* c, uint8_t fg, uint8_t bg)$/;"	f	typeref:typename:void
-println	driver/cga.c	/^void println(char* c, uint8_t fg, uint8_t bg)$/;"	f	typeref:typename:void
+print	driver/cga.c	/^print(char* str)$/;"	f	typeref:typename:void
+println	driver/cga.c	/^void println(char* str)$/;"	f	typeref:typename:void
 proghdr	lib/elf.h	/^struct proghdr {$/;"	s
 pte_t	lib/custom_types.h	/^typedef uint pte_t;$/;"	t	typeref:typename:uint
-putc	driver/cga.c	/^putc(char* c, uint8_t fg, uint8_t bg, int x, int y)$/;"	f	typeref:typename:void
+putc	driver/cga.c	/^putc(char* c, int fg, int bg)$/;"	f	typeref:typename:void
 qemu	makefile	/^qemu: kOS.img$/;"	t
 rcr2	lib/x86.h	/^rcr2(void)$/;"	f	typeref:typename:uint
 read_ebp	lib/x86.h	/^read_ebp(void)$/;"	f	typeref:typename:uint32_t
 read_eflags	lib/x86.h	/^read_eflags(void)$/;"	f	typeref:typename:uint32_t
 read_esp	lib/x86.h	/^read_esp(void)$/;"	f	typeref:typename:uint32_t
 readeflags	lib/x86.h	/^readeflags(void)$/;"	f	typeref:typename:uint
-readsect	driver/disk.c	/^readsect(void *dst, uint offset)$/;"	f	typeref:typename:void
+readsect	driver/disk.c	/^readsect(void *dst, uint lba)$/;"	f	typeref:typename:void
 readseg	driver/disk.c	/^readseg(uchar* pa, uint count, uint offset)$/;"	f	typeref:typename:void
 relocated	kernel/entry.S	/^relocated:$/;"	l
+reverse	lib/lib.c	/^reverse(char * str)$/;"	f	typeref:typename:void
 rsv1	lib/mmu.h	/^  uint rsv1 : 1;       \/\/ Reserved$/;"	m	struct:segdesc	typeref:typename:uint:1
 rsv1	lib/mmu.h	/^  uint rsv1 : 3;        \/\/ reserved(should be zero I guess)$/;"	m	struct:gatedesc	typeref:typename:uint:3
 s	lib/mmu.h	/^  uint s : 1;           \/\/ must be 0 (system)$/;"	m	struct:gatedesc	typeref:typename:uint:1
@@ -559,9 +512,10 @@ stage2	boot/loader.S	/^stage2:$/;"	l
 sti	lib/x86.h	/^sti(void)$/;"	f	typeref:typename:void
 stosb	lib/x86.h	/^stosb(void *addr, int data, int cnt)$/;"	f	typeref:typename:void
 stosl	lib/x86.h	/^stosl(void *addr, int data, int cnt)$/;"	f	typeref:typename:void
+strlen	lib/lib.c	/^int strlen(char *str)$/;"	f	typeref:typename:int
 t	lib/mmu.h	/^  ushort t;          \/\/ Trap on task switch$/;"	m	struct:taskstate	typeref:typename:ushort
 taskstate	lib/mmu.h	/^struct taskstate {$/;"	s
-text_palette	driver/cga.c	/^static uint8_t text_palette = 0x07;$/;"	v	typeref:typename:uint8_t	file:
+text_palette	driver/cga.c	/^static uint8_t text_palette = 0x07; \/\/ black$/;"	v	typeref:typename:uint8_t	file:
 times	boot/loader.S	/^times 1024-($-$$) db 0$/;"	l
 times	boot/loader.S	/^times 510-($-$$) db 0$/;"	l
 togglecode	driver/keyboard.h	/^static uchar togglecode[256] =$/;"	v	typeref:typename:uchar[256]

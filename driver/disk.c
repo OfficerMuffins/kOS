@@ -11,10 +11,6 @@ readsect(void *dst, uint lba)
  * Directly communicates with the IDE via PATA. The LBA address is the index of the sector.
  */
 {
-  char s[10];
-  print("Reading LBA ");
-  itoa(lba, s, 10);
-  println(s);
   waitdisk();
   // communication with the master(0xE0) drive
   // outb(0x1F6, 0xE0 | (slavebit << 4) | ((LBA >> 24) & 0x0F))
@@ -30,7 +26,7 @@ readsect(void *dst, uint lba)
   outb(0x1F7, 0x20);
   // Reading data...
   waitdisk();
-  // transfer 256 words, a word at a time into dst
+  // transfer 256 words, from port 0x1F0
   insw(0x1F0, dst, 256);
 }
 
@@ -63,7 +59,18 @@ readseg(uchar* pa, uint count, uint offset)
   epa += SECROUNDUP(epa);
   // create an LBA from a physical address on the block
   uint lba = LBA(SECROUNDDOWN(offset + ELF_START));
+  //TODO
+  print("Found offset ");
+  char s[30] = "FFFFF";
+  itoa(pa, s, 10);
+  print(s);
+  print(" therefore reading LBAs:");
+  itoa(lba, s, 10);
+  print(s);
+  print("-");
   // reads one sector at a time up into epa
   for(; pa < epa; pa += SECTSIZE, lba++)
     readsect(pa, lba);
+  itoa(lba - 1, s, 10);
+  println(s);
 }

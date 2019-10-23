@@ -1,4 +1,4 @@
-%define KERNBASE   0x80000000
+%define KERNBASE        0x80000000
 %define V2P_WO(va) (va - KERNBASE)
 %define CR0_PG          0x80000000      ; Paging
 %define CR0_WP          0x00010000      ; Write Protect
@@ -24,10 +24,9 @@ entry:
   mov eax, V2P_WO(entrypgdir)
   mov cr3, eax
 
-  ; FIXME:
   ; turn on paging
   mov eax, cr0
-  or  eax, (CR0_PG|CR0_WP|CR0_PE)
+  or  eax, (CR0_PG|CR0_WP)
   mov cr0, eax
 
   mov eax, relocated

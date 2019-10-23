@@ -17,16 +17,18 @@ void
 bootmain()
 {
   init_cga();
+  println("Entering bootmain");
   struct elfhdr *elf;
   struct proghdr *ph, *end_ph;
   void (*entry)(void);
   uchar* pa;
   // read first page off of the elf file into 2nd page of physical RAM
   // used to obtain header information
+  // FIXME, this is wiping out boot information
   elf = (struct elfhdr*)0;
   // for the first read, offset is ELF_START because that's where
   //    the file is in disk
-  readseg((uchar*)elf, 4096, ELF_START);
+  readseg((uchar*)elf, 4096, 0);
   // check the magic number
   if(elf->magic != ELF_MAGIC)
     error(-1);
@@ -34,24 +36,20 @@ bootmain()
   // Load each program segment (ignores ph flags).
   ph = (struct proghdr*)((uchar*)elf + elf->phoff);
   end_ph = ph + elf->phnum;
-  /*
-  uint esp = 0xf000;
-  esp++;
   // FIXME
+  /*
   asm volatile("mov %0, %1" :: "r"(elf), "r"(esp));
   asm volatile("mov %0, %1" :: "r"(ph), "r"(esp));
   */
-//  itoa((uint) elf->phnum + 1, num_ph, 10);
-  println("here");
   // load each program segment into memory, but really
   // the only segments necessary are first 2 (data and text)
+  char s[10];
   for(; ph < end_ph; ph++){
     pa = (uchar*)ph->paddr;
     readseg(pa, ph->filesz, ph->off);
     if(ph->memsz > ph->filesz)
       stosb(pa + ph->filesz, 0, ph->memsz - ph->filesz);
   }
-  println("here");
   // Call the entry point from the ELF header.
   // Does not return!
   entry = (void(*)())(elf->entry);
