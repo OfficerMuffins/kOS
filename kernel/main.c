@@ -19,7 +19,7 @@ __attribute__((__aligned__(PGSIZE)))
 pde_t entrypgdir[NPDENTRIES] =
 {
   // Map VA's [0, 4MB) to PA's [0, 4MB)
-  [0] = ((uintptr_t)entrypgtable - KERNBASE) + PTE_P + PTE_W,
+  [0] =  PTE_P | PTE_W | PTE_PS,
   // Map VA's [KERNBASE, KERNBASE+4MB) to PA's [0, 4MB)
-  [KERNBASE>>PDXSHIFT] = ((uintptr_t)entrypgtable - KERNBASE) + PTE_P + PTE_W
+  [KERNBASE>>PDXSHIFT] =  PTE_P | PTE_W | PTE_PS
 };
