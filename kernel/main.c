@@ -11,12 +11,13 @@ pte_t entrypgtable[NPTENTRIES];
 int
 main()
 {
-  println("Starting kernel");
+  kinit1();
   while(1);
 }
 
 __attribute__((__aligned__(PGSIZE)))
 pde_t entrypgdir[NPDENTRIES] =
+// first page must be identitied map to itself in high memory
 {
   // Map VA's [0, 4MB) to PA's [0, 4MB)
   [0] =  PTE_P | PTE_W | PTE_PS,

@@ -15,7 +15,6 @@ readsect(void *dst, uint lba)
   // communication with the master(0xE0) drive
   // outb(0x1F6, 0xE0 | (slavebit << 4) | ((LBA >> 24) & 0x0F))
   outb(0x1F6, (lba >> 24) | 0xE0);
-  // TODO correct sector count?
   // send sector count, we are only reading 1 sector
   outb(0x1F2, 1);
   // sending the rest of the LBA address to the ATA PIO
@@ -59,18 +58,7 @@ readseg(uchar* pa, uint count, uint offset)
   epa += SECROUNDUP(epa);
   // create an LBA from a physical address on the block
   uint lba = LBA(SECROUNDDOWN(offset + ELF_START));
-  //TODO
-  print("Found offset ");
-  char s[30] = "FFFFF";
-  itoa(pa, s, 10);
-  print(s);
-  print(" therefore reading LBAs:");
-  itoa(lba, s, 10);
-  print(s);
-  print("-");
   // reads one sector at a time up into epa
   for(; pa < epa; pa += SECTSIZE, lba++)
     readsect(pa, lba);
-  itoa(lba - 1, s, 10);
-  println(s);
 }

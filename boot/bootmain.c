@@ -2,7 +2,7 @@
 asm (
     ".section .entry\n\t"
     "call bootmain\n\t"
-    "jmp 0x7c00\n\t" // retry booting TODO: delete?
+    "jmp 0x7c00\n\t"
 );
 
 #include "driver/cga.h"
@@ -24,7 +24,6 @@ bootmain()
   uchar* pa;
   // read first page off of the elf file into 2nd page of physical RAM
   // used to obtain header information
-  // FIXME, this is wiping out boot information
   elf = (struct elfhdr*)0;
   // for the first read, offset is ELF_START because that's where
   //    the file is in disk
@@ -36,11 +35,6 @@ bootmain()
   // Load each program segment (ignores ph flags).
   ph = (struct proghdr*)((uchar*)elf + elf->phoff);
   end_ph = ph + elf->phnum;
-  // FIXME
-  /*
-  asm volatile("mov %0, %1" :: "r"(elf), "r"(esp));
-  asm volatile("mov %0, %1" :: "r"(ph), "r"(esp));
-  */
   // load each program segment into memory, but really
   // the only segments necessary are first 2 (data and text)
   char s[10];

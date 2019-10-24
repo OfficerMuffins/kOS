@@ -28,7 +28,6 @@ entry:
   mov eax, cr0
   or  eax, (CR0_PG|CR0_PE|CR0_WP)
   mov cr0, eax
-  jmp spin
 
   mov eax, relocated
   jmp relocated ; jmp to high address
