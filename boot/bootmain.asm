@@ -282,7 +282,7 @@ Disassembly of section .eh_frame:
   73:	08 85 02 42 0d 05    	or     %al,0x50d4202(%ebp)
   79:	00 00                	add    %al,(%eax)
 	...
-Contents of the .eh_frame section:
+Contents of the .eh_frame section (loaded from boot/bootmain.o):
 
 
 00000000 00000014 00000000 CIE

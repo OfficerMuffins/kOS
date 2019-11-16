@@ -1057,7 +1057,7 @@ Disassembly of section .data:
     889d:	44                   	inc    %esp
     889e:	83 03 02             	addl   $0x2,(%ebx)
     88a1:	49                   	dec    %ecx
-    88a2:	c5 c3 0c             	(bad)  
+    88a2:	c5 c3 0c             	(bad)
     88a5:	04 04                	add    $0x4,%al
     88a7:	00 1c 00             	add    %bl,(%eax,%eax,1)
     88aa:	00 00                	add    %al,(%eax)

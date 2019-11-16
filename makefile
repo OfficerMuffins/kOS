@@ -12,7 +12,7 @@ CC_INCLUDES := -I$(ROOT)
 # QEMU configs and stuff
 CPUS = 1
 QEMU = qemu-system-i386
-QEMU_FLAGS := -drive file=kOS.img,index=0,media=disk,format=raw -smp $(CPUS) -m 512
+QEMU_FLAGS := -drive file=kOS.img,index=0,media=disk,format=raw -soundhw pcspk -audiodev id=alsa,driver=alsa -smp $(CPUS) -m 512
 QEMU_OPTS = -monitor stdio
 
 # LD stuff
